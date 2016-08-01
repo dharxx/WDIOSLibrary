@@ -8,6 +8,6 @@
 
 @import UIKit;
 
-@interface WDIOSViewController : UIViewController
+@interface WDIOSViewController : UITableViewController
 
 @end

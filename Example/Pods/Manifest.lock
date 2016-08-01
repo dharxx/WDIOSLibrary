@@ -1,0 +1,21 @@
+PODS:
+  - FBSnapshotTestCase (2.1.2):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.2)
+  - FBSnapshotTestCase/Core (2.1.2)
+  - FBSnapshotTestCase/SwiftSupport (2.1.2):
+    - FBSnapshotTestCase/Core
+  - WDIOSLibrary (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - WDIOSLibrary (from `../`)
+
+EXTERNAL SOURCES:
+  WDIOSLibrary:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 918c55861356ee83aee7843d759f55a18ff6982b
+  WDIOSLibrary: b63252e57d8dc255587e07d90278bff47d46deb0
+
+COCOAPODS: 0.38.2

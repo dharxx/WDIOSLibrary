@@ -4,7 +4,7 @@ target 'WDIOSLibrary_Example' do
   pod 'WDIOSLibrary', :path => '../'
 
   target 'WDIOSLibrary_Tests' do
-    inherit! :search_paths
+    #inherit! :search_paths
 
     pod 'FBSnapshotTestCase'
   end
