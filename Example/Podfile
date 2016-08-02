@@ -1,11 +1,11 @@
 use_frameworks!
 
 target 'WDIOSLibrary_Example' do
-  pod 'WDIOSLibrary', :path => '../'
+    pod 'WDIOSLibrary', :path => '../'
+    pod 'MQTTKit'
 
-  target 'WDIOSLibrary_Tests' do
-    #inherit! :search_paths
-
+    target 'WDIOSLibrary_Tests' do
+        #inherit! :search_paths
     pod 'FBSnapshotTestCase'
   end
 end

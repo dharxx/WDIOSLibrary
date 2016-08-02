@@ -4,10 +4,13 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.2)
   - FBSnapshotTestCase/SwiftSupport (2.1.2):
     - FBSnapshotTestCase/Core
-  - WDIOSLibrary (0.1.0)
+  - MQTTKit (0.1.0)
+  - WDIOSLibrary (0.1.0):
+    - MQTTKit (~> 0.1)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
+  - MQTTKit
   - WDIOSLibrary (from `../`)
 
 EXTERNAL SOURCES:
@@ -16,6 +19,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 918c55861356ee83aee7843d759f55a18ff6982b
-  WDIOSLibrary: b63252e57d8dc255587e07d90278bff47d46deb0
+  MQTTKit: a4e6b8aa92db1aeae917d2b773fd72a7749937c4
+  WDIOSLibrary: 8751add03210fc45bb7dcbb9a6f57e7371f94d0f
 
 COCOAPODS: 0.38.2

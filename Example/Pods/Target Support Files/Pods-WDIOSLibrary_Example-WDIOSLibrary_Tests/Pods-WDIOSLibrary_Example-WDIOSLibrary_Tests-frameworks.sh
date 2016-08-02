@@ -52,10 +52,12 @@ code_sign_if_enabled() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework 'Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests/MQTTKit.framework'
   install_framework 'Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests/WDIOSLibrary.framework'
   install_framework 'Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests/FBSnapshotTestCase.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework 'Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests/MQTTKit.framework'
   install_framework 'Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests/WDIOSLibrary.framework'
   install_framework 'Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests/FBSnapshotTestCase.framework'
 fi

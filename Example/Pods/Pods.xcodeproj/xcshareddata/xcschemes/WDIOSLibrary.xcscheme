@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C3D8566AB62D5DE33D8C0A7B"
+               BlueprintIdentifier = "9CAB9E752F24BC4AD575B522"
                BuildableName = "WDIOSLibrary.framework"
                BlueprintName = "WDIOSLibrary"
                ReferencedContainer = "container:Pods.xcodeproj">

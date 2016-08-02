@@ -1,9 +1,9 @@
 {
   "name": "WDIOSLibrary",
   "version": "0.1.0",
-  "summary": "A short description of WDIOSLibrary.",
+  "summary": "Library for WDIOS Team.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/WDIOSLibrary",
+  "homepage": "https://github.com/dharxx/WDIOSLibrary",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,21 @@
     "Dhanu Saksrisathaporn": "dharxx@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/WDIOSLibrary.git",
+    "git": "https://github.com/dharxx/WDIOSLibrary.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "WDIOSLibrary/Classes/**/*"
+  "source_files": "WDIOSLibrary/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "CoreMotoion",
+    "AVFoundation"
+  ],
+  "dependencies": {
+    "MQTTKit": [
+      "~> 0.1"
+    ]
+  }
 }
