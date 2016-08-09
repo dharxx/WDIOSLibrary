@@ -23,19 +23,5 @@
     "UIKit",
     "CoreMotion",
     "AVFoundation"
-  ],
-  "dependencies": {
-    "MQTTKit": [
-
-    ],
-    "CommonCrypto": [
-
-    ],
-    "GoogleMaps": [
-
-    ],
-    "CHTCollectionViewWaterfallLayout": [
-
-    ]
-  }
+  ]
 }

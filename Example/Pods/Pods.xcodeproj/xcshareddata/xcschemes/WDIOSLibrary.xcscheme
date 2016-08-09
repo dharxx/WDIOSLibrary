@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3497EA6C79F49EF28BBE54DD2D641866"
+               BlueprintIdentifier = "66CF28D530FEF9AF194A98F018FCD0AE"
                BuildableName = "WDIOSLibrary.framework"
                BlueprintName = "WDIOSLibrary"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3497EA6C79F49EF28BBE54DD2D641866"
+            BlueprintIdentifier = "66CF28D530FEF9AF194A98F018FCD0AE"
             BuildableName = "WDIOSLibrary.framework"
             BlueprintName = "WDIOSLibrary"
             ReferencedContainer = "container:Pods.xcodeproj">
