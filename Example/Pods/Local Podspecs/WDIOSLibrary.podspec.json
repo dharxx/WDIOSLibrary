@@ -21,7 +21,7 @@
   "source_files": "WDIOSLibrary/Classes/**/*",
   "frameworks": [
     "UIKit",
-    "CoreMotoion",
+    "CoreMotion",
     "AVFoundation"
   ],
   "dependencies": {
