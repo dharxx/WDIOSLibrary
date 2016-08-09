@@ -27,7 +27,6 @@
 		34EE01D61D54C5E60068D942 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EE01D51D54C5E60068D942 /* 7.jpg */; };
 		34EE01D81D54C5F50068D942 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EE01D71D54C5F50068D942 /* 8.jpg */; };
 		34EE01DA1D54C6020068D942 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EE01D91D54C6020068D942 /* 9.jpg */; };
-		34EE01DD1D54D2230068D942 /* CHTCollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EE01DC1D54D2230068D942 /* CHTCollectionViewWaterfallLayout.m */; };
 		34EE01DF1D54D88F0068D942 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34EE01DE1D54D88F0068D942 /* ImageIO.framework */; };
 		34F83AFC1D5098FB00EB89F1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F83AFB1D5098FB00EB89F1 /* AVFoundation.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -94,8 +93,6 @@
 		34EE01D51D54C5E60068D942 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
 		34EE01D71D54C5F50068D942 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
 		34EE01D91D54C6020068D942 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
-		34EE01DB1D54D2230068D942 /* CHTCollectionViewWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTCollectionViewWaterfallLayout.h; sourceTree = "<group>"; };
-		34EE01DC1D54D2230068D942 /* CHTCollectionViewWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTCollectionViewWaterfallLayout.m; sourceTree = "<group>"; };
 		34EE01DE1D54D88F0068D942 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		34F83AF71D5098B500EB89F1 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		34F83AFB1D5098FB00EB89F1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -221,8 +218,6 @@
 				34A431121D51EE1B00CEBDFD /* WDIOSStartViewController.m */,
 				34EE01C51D54C49E0068D942 /* WDIOSCollectionViewController.h */,
 				34EE01C61D54C49E0068D942 /* WDIOSCollectionViewController.m */,
-				34EE01DB1D54D2230068D942 /* CHTCollectionViewWaterfallLayout.h */,
-				34EE01DC1D54D2230068D942 /* CHTCollectionViewWaterfallLayout.m */,
 				3483B92A1D549F0E00754B00 /* mayuyu.aiff */,
 				340269BE1D4B465000EE20DD /* Dictionary.strings */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -513,7 +508,6 @@
 				6003F59E195388D20070C39A /* WDIOSAppDelegate.m in Sources */,
 				34EE01C71D54C49E0068D942 /* WDIOSCollectionViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* WDIOSViewController.m in Sources */,
-				34EE01DD1D54D2230068D942 /* CHTCollectionViewWaterfallLayout.m in Sources */,
 				34A431101D51D48E00CEBDFD /* WDIOSMapViewController.m in Sources */,
 				34A431131D51EE1B00CEBDFD /* WDIOSStartViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
