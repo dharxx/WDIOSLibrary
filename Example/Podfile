@@ -3,6 +3,8 @@ use_frameworks!
 target 'WDIOSLibrary_Example' do
     pod 'WDIOSLibrary', :path => '../'
     pod 'MQTTKit'
+    pod 'CommonCrypto'
+    pod 'GoogleMaps'
 
     target 'WDIOSLibrary_Tests' do
         #inherit! :search_paths

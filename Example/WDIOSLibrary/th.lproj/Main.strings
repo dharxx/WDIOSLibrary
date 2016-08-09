@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "1sf-in-2Qz"; */
+"1sf-in-2Qz.text" = "Title";
+
+/* Class = "UINavigationItem"; title = "Hello"; ObjectID = "2am-cK-i4W"; */
+"2am-cK-i4W.title" = "Hello";
+
+/* Class = "UITabBarItem"; title = "Language"; ObjectID = "Goo-ne-nhH"; */
+"Goo-ne-nhH.title" = "Language";
+
+/* Class = "UINavigationController"; title = "Map"; ObjectID = "KJL-kv-AYT"; */
+"KJL-kv-AYT.title" = "Map";
+
+/* Class = "UITabBarItem"; title = "Map"; ObjectID = "f0U-Hq-DDs"; */
+"f0U-Hq-DDs.title" = "Map";
+
+/* Class = "UIButton"; normalTitle = "NEXT"; ObjectID = "pCH-C3-8Fo"; */
+"pCH-C3-8Fo.normalTitle" = "NEXT";
+
+/* Class = "UINavigationController"; title = "Language"; ObjectID = "pep-sH-P5T"; */
+"pep-sH-P5T.title" = "Language";

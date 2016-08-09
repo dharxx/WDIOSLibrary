@@ -7,7 +7,7 @@
 //
 
 #import "WDIOSViewController.h"
-
+#import "WDIOSStartViewController.h"
 @import WDIOSLibrary;
 
 @interface WDIOSViewController ()
@@ -30,12 +30,17 @@
     self.data = nil;
     [self.tableView reloadData];
     self.navigationItem.title = [[@"hello" localString] capitalizedString];
+    for (UIViewController *vc in self.navigationController.tabBarController.viewControllers) {
+        vc.tabBarItem = [[UITabBarItem alloc] initWithTitle:[vc.title localString] image:nil tag:1];
+    }
 }
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [@"Dictionary" setAsTableLanguage];
+    [self.navigationController setHidesBarsOnSwipe:YES];
+    [self.navigationController setHidesBarsWhenVerticallyCompact:YES];
     [self refresh];
 }
 
@@ -58,5 +63,13 @@
 {
     [self.data[indexPath.row] setAsPreferLanguage];
     [self refresh];
+//    [gWDIOSStartViewController resetApplicationView];
+//
+//    if (self.navigationController.tabBarItem.tag == 0) {
+//    }
+//    else {
+//        self.navigationController.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemSearch tag:0];
+//    }
+//    self.tabBarController.viewControllers = self.tabBarController.viewControllers;
 }
 @end

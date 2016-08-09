@@ -37,6 +37,7 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit', 'CoreMotoion','AVFoundation'
-  s.dependency 'MQTTKit', '~> 0.1'
+  s.frameworks = 'UIKit', 'CoreMotion','AVFoundation'
+#s.dependency 'MQTTKit'
+    s.dependency 'MQTTKit', 'CommonCrypto'
 end

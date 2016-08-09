@@ -1,1 +1,1 @@
-WDIOSLIBRARY_OTHER_LDFLAGS = -framework "AVFoundation" -framework "CoreMotoion" -framework "UIKit"
+WDIOSLIBRARY_OTHER_LDFLAGS = -framework "AVFoundation" -framework "CoreMotion" -framework "UIKit"

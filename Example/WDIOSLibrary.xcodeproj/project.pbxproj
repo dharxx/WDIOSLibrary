@@ -10,10 +10,29 @@
 		1E7C0E0C1A086CA0B7F23FF1 /* Pods_WDIOSLibrary_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF05D9740D5D0322A4C7810B /* Pods_WDIOSLibrary_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		2FBE7C8440A411BD95605612 /* Pods_WDIOSLibrary_Example_WDIOSLibrary_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DB6E1DA3BAD5A5FA204E01 /* Pods_WDIOSLibrary_Example_WDIOSLibrary_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		340269BC1D4B465000EE20DD /* Dictionary.strings in Resources */ = {isa = PBXBuildFile; fileRef = 340269BE1D4B465000EE20DD /* Dictionary.strings */; };
+		3483B92B1D549F0E00754B00 /* mayuyu.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 3483B92A1D549F0E00754B00 /* mayuyu.aiff */; };
+		348435CF1D5105A10005990F /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F83AF71D5098B500EB89F1 /* CoreMotion.framework */; };
+		34A4310B1D51A1F500CEBDFD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A4310A1D51A1F500CEBDFD /* MapKit.framework */; };
+		34A4310D1D51AB8D00CEBDFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A4310C1D51AB8D00CEBDFD /* LaunchScreen.storyboard */; };
+		34A431101D51D48E00CEBDFD /* WDIOSMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A4310F1D51D48E00CEBDFD /* WDIOSMapViewController.m */; };
+		34A431131D51EE1B00CEBDFD /* WDIOSStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A431121D51EE1B00CEBDFD /* WDIOSStartViewController.m */; };
+		34A433191D523DF60027EA4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A433171D523DF60027EA4A /* Main.storyboard */; };
+		34EE01C71D54C49E0068D942 /* WDIOSCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EE01C61D54C49E0068D942 /* WDIOSCollectionViewController.m */; };
+		34EE01CA1D54C56A0068D942 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EE01C91D54C56A0068D942 /* 1.jpg */; };
+		34EE01CC1D54C5890068D942 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EE01CB1D54C5890068D942 /* 2.jpg */; };
+		34EE01CE1D54C5960068D942 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EE01CD1D54C5960068D942 /* 3.jpg */; };
+		34EE01D01D54C59F0068D942 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EE01CF1D54C59F0068D942 /* 4.jpg */; };
+		34EE01D21D54C5AB0068D942 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EE01D11D54C5AB0068D942 /* 5.jpg */; };
+		34EE01D41D54C5B20068D942 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EE01D31D54C5B20068D942 /* 6.jpg */; };
+		34EE01D61D54C5E60068D942 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EE01D51D54C5E60068D942 /* 7.jpg */; };
+		34EE01D81D54C5F50068D942 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EE01D71D54C5F50068D942 /* 8.jpg */; };
+		34EE01DA1D54C6020068D942 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EE01D91D54C6020068D942 /* 9.jpg */; };
+		34EE01DD1D54D2230068D942 /* CHTCollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EE01DC1D54D2230068D942 /* CHTCollectionViewWaterfallLayout.m */; };
+		34EE01DF1D54D88F0068D942 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34EE01DE1D54D88F0068D942 /* ImageIO.framework */; };
+		34F83AFC1D5098FB00EB89F1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F83AFB1D5098FB00EB89F1 /* AVFoundation.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
-		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* WDIOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* WDIOSAppDelegate.m */; };
 		6003F5A7195388D20070C39A /* WDIOSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* WDIOSViewController.m */; };
@@ -23,7 +42,6 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,21 +58,13 @@
 		0A7F2C19314937AC043A1C85 /* Pods-WDIOSLibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDIOSLibrary_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-WDIOSLibrary_Example/Pods-WDIOSLibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2FEE5AB9C27DD518CC9BF3E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		30DB6E1DA3BAD5A5FA204E01 /* Pods_WDIOSLibrary_Example_WDIOSLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WDIOSLibrary_Example_WDIOSLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		340269AC1D4B460200EE20DD /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		340269AD1D4B460200EE20DD /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		340269AE1D4B460E00EE20DD /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		340269AF1D4B460E00EE20DD /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		340269B01D4B461A00EE20DD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		340269B11D4B461A00EE20DD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		340269B21D4B461F00EE20DD /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		340269B31D4B461F00EE20DD /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		340269B41D4B462500EE20DD /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		340269B51D4B462500EE20DD /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		340269B61D4B462A00EE20DD /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		340269B71D4B462A00EE20DD /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		340269B81D4B463200EE20DD /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		340269B91D4B463200EE20DD /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		340269BA1D4B464300EE20DD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		340269BB1D4B464300EE20DD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		340269C01D4B469600EE20DD /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Dictionary.strings; sourceTree = "<group>"; };
 		340269C11D4B469700EE20DD /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Dictionary.strings; sourceTree = "<group>"; };
@@ -65,13 +75,36 @@
 		340269C61D4B469E00EE20DD /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Dictionary.strings; sourceTree = "<group>"; };
 		340269C71D4B46A100EE20DD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Dictionary.strings; sourceTree = "<group>"; };
 		340269C91D4B4AFD00EE20DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Dictionary.strings; sourceTree = "<group>"; };
+		3483B92A1D549F0E00754B00 /* mayuyu.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = mayuyu.aiff; sourceTree = "<group>"; };
+		34A4310A1D51A1F500CEBDFD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		34A4310C1D51AB8D00CEBDFD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34A4310E1D51D48E00CEBDFD /* WDIOSMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDIOSMapViewController.h; sourceTree = "<group>"; };
+		34A4310F1D51D48E00CEBDFD /* WDIOSMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDIOSMapViewController.m; sourceTree = "<group>"; };
+		34A431111D51EE1B00CEBDFD /* WDIOSStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDIOSStartViewController.h; sourceTree = "<group>"; };
+		34A431121D51EE1B00CEBDFD /* WDIOSStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDIOSStartViewController.m; sourceTree = "<group>"; };
+		34A433181D523DF60027EA4A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34EE01C51D54C49E0068D942 /* WDIOSCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDIOSCollectionViewController.h; sourceTree = "<group>"; };
+		34EE01C61D54C49E0068D942 /* WDIOSCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDIOSCollectionViewController.m; sourceTree = "<group>"; };
+		34EE01C91D54C56A0068D942 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		34EE01CB1D54C5890068D942 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		34EE01CD1D54C5960068D942 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		34EE01CF1D54C59F0068D942 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		34EE01D11D54C5AB0068D942 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		34EE01D31D54C5B20068D942 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		34EE01D51D54C5E60068D942 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		34EE01D71D54C5F50068D942 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		34EE01D91D54C6020068D942 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
+		34EE01DB1D54D2230068D942 /* CHTCollectionViewWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTCollectionViewWaterfallLayout.h; sourceTree = "<group>"; };
+		34EE01DC1D54D2230068D942 /* CHTCollectionViewWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTCollectionViewWaterfallLayout.m; sourceTree = "<group>"; };
+		34EE01DE1D54D88F0068D942 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		34F83AF71D5098B500EB89F1 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		34F83AFB1D5098FB00EB89F1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4614BA501335F566E1CC43F8 /* Pods-WDIOSLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDIOSLibrary_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WDIOSLibrary_Example/Pods-WDIOSLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* WDIOSLibrary_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDIOSLibrary_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6003F595195388D20070C39A /* WDIOSLibrary-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WDIOSLibrary-Info.plist"; sourceTree = "<group>"; };
-		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6003F59B195388D20070C39A /* WDIOSLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WDIOSLibrary-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* WDIOSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDIOSAppDelegate.h; sourceTree = "<group>"; };
@@ -87,7 +120,6 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		61F756974360EA42DEA2E4C3 /* Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests/Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7E6609854FBCD33CA50BCFE6 /* Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests/Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B8B7563A692BCE00E79EF016 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		CF05D9740D5D0322A4C7810B /* Pods_WDIOSLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WDIOSLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC62445876A4C629E8A16A43 /* WDIOSLibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WDIOSLibrary.podspec; path = ../WDIOSLibrary.podspec; sourceTree = "<group>"; };
@@ -98,6 +130,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34EE01DF1D54D88F0068D942 /* ImageIO.framework in Frameworks */,
+				34A4310B1D51A1F500CEBDFD /* MapKit.framework in Frameworks */,
+				348435CF1D5105A10005990F /* CoreMotion.framework in Frameworks */,
+				34F83AFC1D5098FB00EB89F1 /* AVFoundation.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -119,6 +155,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34EE01C81D54C5490068D942 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				34EE01C91D54C56A0068D942 /* 1.jpg */,
+				34EE01CB1D54C5890068D942 /* 2.jpg */,
+				34EE01CD1D54C5960068D942 /* 3.jpg */,
+				34EE01CF1D54C59F0068D942 /* 4.jpg */,
+				34EE01D11D54C5AB0068D942 /* 5.jpg */,
+				34EE01D31D54C5B20068D942 /* 6.jpg */,
+				34EE01D51D54C5E60068D942 /* 7.jpg */,
+				34EE01D71D54C5F50068D942 /* 8.jpg */,
+				34EE01D91D54C6020068D942 /* 9.jpg */,
+			);
+			name = Photos;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +195,10 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				34EE01DE1D54D88F0068D942 /* ImageIO.framework */,
+				34A4310A1D51A1F500CEBDFD /* MapKit.framework */,
+				34F83AFB1D5098FB00EB89F1 /* AVFoundation.framework */,
+				34F83AF71D5098B500EB89F1 /* CoreMotion.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -156,14 +212,23 @@
 		6003F593195388D20070C39A /* Example for WDIOSLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				34EE01C81D54C5490068D942 /* Photos */,
 				6003F59C195388D20070C39A /* WDIOSAppDelegate.h */,
 				6003F59D195388D20070C39A /* WDIOSAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* WDIOSViewController.h */,
 				6003F5A6195388D20070C39A /* WDIOSViewController.m */,
+				34A431111D51EE1B00CEBDFD /* WDIOSStartViewController.h */,
+				34A431121D51EE1B00CEBDFD /* WDIOSStartViewController.m */,
+				34EE01C51D54C49E0068D942 /* WDIOSCollectionViewController.h */,
+				34EE01C61D54C49E0068D942 /* WDIOSCollectionViewController.m */,
+				34EE01DB1D54D2230068D942 /* CHTCollectionViewWaterfallLayout.h */,
+				34EE01DC1D54D2230068D942 /* CHTCollectionViewWaterfallLayout.m */,
+				3483B92A1D549F0E00754B00 /* mayuyu.aiff */,
 				340269BE1D4B465000EE20DD /* Dictionary.strings */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				34A4310E1D51D48E00CEBDFD /* WDIOSMapViewController.h */,
+				34A4310F1D51D48E00CEBDFD /* WDIOSMapViewController.m */,
 			);
 			name = "Example for WDIOSLibrary";
 			path = WDIOSLibrary;
@@ -172,8 +237,9 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				34A433171D523DF60027EA4A /* Main.storyboard */,
+				34A4310C1D51AB8D00CEBDFD /* LaunchScreen.storyboard */,
 				6003F595195388D20070C39A /* WDIOSLibrary-Info.plist */,
-				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
 				6003F59B195388D20070C39A /* WDIOSLibrary-Prefix.pch */,
 			);
@@ -274,6 +340,14 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Dhanu Saksrisathaporn";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = ADE4UVH4RK;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -311,10 +385,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3483B92B1D549F0E00754B00 /* mayuyu.aiff in Resources */,
+				34EE01D21D54C5AB0068D942 /* 5.jpg in Resources */,
 				340269BC1D4B465000EE20DD /* Dictionary.strings in Resources */,
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				34EE01CE1D54C5960068D942 /* 3.jpg in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				34A4310D1D51AB8D00CEBDFD /* LaunchScreen.storyboard in Resources */,
+				34EE01D41D54C5B20068D942 /* 6.jpg in Resources */,
+				34EE01D01D54C59F0068D942 /* 4.jpg in Resources */,
+				34EE01D81D54C5F50068D942 /* 8.jpg in Resources */,
+				34EE01DA1D54C6020068D942 /* 9.jpg in Resources */,
+				34EE01CC1D54C5890068D942 /* 2.jpg in Resources */,
+				34EE01D61D54C5E60068D942 /* 7.jpg in Resources */,
+				34A433191D523DF60027EA4A /* Main.storyboard in Resources */,
+				34EE01CA1D54C56A0068D942 /* 1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +511,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* WDIOSAppDelegate.m in Sources */,
+				34EE01C71D54C49E0068D942 /* WDIOSCollectionViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* WDIOSViewController.m in Sources */,
+				34EE01DD1D54D2230068D942 /* CHTCollectionViewWaterfallLayout.m in Sources */,
+				34A431101D51D48E00CEBDFD /* WDIOSMapViewController.m in Sources */,
+				34A431131D51EE1B00CEBDFD /* WDIOSStartViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,20 +555,12 @@
 			name = Dictionary.strings;
 			sourceTree = "<group>";
 		};
-		6003F596195388D20070C39A /* InfoPlist.strings */ = {
+		34A433171D523DF60027EA4A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6003F597195388D20070C39A /* en */,
-				340269AC1D4B460200EE20DD /* th */,
-				340269AE1D4B460E00EE20DD /* ja */,
-				340269B01D4B461A00EE20DD /* zh-Hans */,
-				340269B21D4B461F00EE20DD /* zh-Hant */,
-				340269B41D4B462500EE20DD /* de */,
-				340269B61D4B462A00EE20DD /* fr */,
-				340269B81D4B463200EE20DD /* sv */,
-				340269BA1D4B464300EE20DD /* ru */,
+				34A433181D523DF60027EA4A /* en */,
 			);
-			name = InfoPlist.strings;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
@@ -581,12 +661,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dhanu Saksrisathaporn (T3T93BJ7K9)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WDIOSLibrary/WDIOSLibrary-Prefix.pch";
 				INFOPLIST_FILE = "WDIOSLibrary/WDIOSLibrary-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "33dabf65-25bd-4c28-a63b-19cacca131d7";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -598,12 +681,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WDIOSLibrary/WDIOSLibrary-Prefix.pch";
 				INFOPLIST_FILE = "WDIOSLibrary/WDIOSLibrary-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "33dabf65-25bd-4c28-a63b-19cacca131d7";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

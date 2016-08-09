@@ -1,15 +1,23 @@
 PODS:
+  - CommonCrypto (1.1)
   - FBSnapshotTestCase (2.1.2):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.2)
   - FBSnapshotTestCase/Core (2.1.2)
   - FBSnapshotTestCase/SwiftSupport (2.1.2):
     - FBSnapshotTestCase/Core
+  - GoogleMaps (2.0.1):
+    - GoogleMaps/Maps (= 2.0.1)
+  - GoogleMaps/Base (2.0.1)
+  - GoogleMaps/Maps (2.0.1):
+    - GoogleMaps/Base (= 2.0.1)
   - MQTTKit (0.1.0)
   - WDIOSLibrary (0.1.0):
     - MQTTKit (~> 0.1)
 
 DEPENDENCIES:
+  - CommonCrypto
   - FBSnapshotTestCase
+  - GoogleMaps
   - MQTTKit
   - WDIOSLibrary (from `../`)
 
@@ -18,8 +26,10 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
+  CommonCrypto: e18c8416332cca5efe80c197f2a522d471c42626
   FBSnapshotTestCase: 918c55861356ee83aee7843d759f55a18ff6982b
+  GoogleMaps: f09da64fc987c1aa29394567c3cab5a3df83c402
   MQTTKit: a4e6b8aa92db1aeae917d2b773fd72a7749937c4
-  WDIOSLibrary: 8751add03210fc45bb7dcbb9a6f57e7371f94d0f
+  WDIOSLibrary: f00641e047552a62b4ab501c3c137fb2aba6a5ef
 
 COCOAPODS: 0.38.2
