@@ -1,6 +1,0 @@
-framework module Pods_WDIOSLibrary_Example {
-  umbrella header "Pods-WDIOSLibrary_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}

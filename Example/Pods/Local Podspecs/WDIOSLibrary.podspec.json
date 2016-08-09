@@ -26,7 +26,16 @@
   ],
   "dependencies": {
     "MQTTKit": [
-      "~> 0.1"
+
+    ],
+    "CommonCrypto": [
+
+    ],
+    "GoogleMaps": [
+
+    ],
+    "CHTCollectionViewWaterfallLayout": [
+
     ]
   }
 }

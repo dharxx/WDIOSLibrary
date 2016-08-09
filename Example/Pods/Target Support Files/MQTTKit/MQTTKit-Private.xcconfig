@@ -1,5 +1,0 @@
-#include "MQTTKit.xcconfig"
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/MQTTKit" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/GoogleMaps" "${PODS_ROOT}/Headers/Public/GoogleMaps/GoogleMaps" "${PODS_ROOT}/Headers/Public/GoogleMaps/GoogleMapsBase" "${PODS_ROOT}/Headers/Public/GoogleMaps/GoogleMapsCore"
-PODS_ROOT = ${SRCROOT}
-SKIP_INSTALL = YES
