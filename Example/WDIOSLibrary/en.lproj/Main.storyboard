@@ -74,7 +74,6 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="KJL-kv-AYT" kind="relationship" relationship="viewControllers" id="NGH-0O-C2Y"/>
                         <segue destination="pep-sH-P5T" kind="relationship" relationship="viewControllers" id="woX-e0-HSH"/>
                         <segue destination="GVp-Tf-iKU" kind="relationship" relationship="viewControllers" id="zLv-9m-j0U"/>
                     </connections>
@@ -83,48 +82,11 @@
             </objects>
             <point key="canvasLocation" x="-154" y="201"/>
         </scene>
-        <!--Map-->
-        <scene sceneID="ZHy-Jg-tAc">
-            <objects>
-                <navigationController title="Map" id="KJL-kv-AYT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" id="f0U-Hq-DDs"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kOo-3k-QNB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="pqR-Az-uwG" kind="relationship" relationship="rootViewController" id="07L-82-8gz"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iGZ-Pw-tkA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="586" y="-418"/>
-        </scene>
-        <!--iOS Map View Controller-->
-        <scene sceneID="mq2-aO-gSD">
-            <objects>
-                <viewController id="pqR-Az-uwG" customClass="WDIOSMapViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="CYC-C5-wlF"/>
-                        <viewControllerLayoutGuide type="bottom" id="aVD-ih-hbW"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="jqs-kf-Qml">
-                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
-                    <navigationItem key="navigationItem" id="CKB-2i-hRt"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BNh-xn-XHa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1395" y="-425"/>
-        </scene>
         <!--Language-->
         <scene sceneID="BCt-kC-BI1">
             <objects>
                 <navigationController title="Language" id="pep-sH-P5T" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Languages" id="Goo-ne-nhH"/>
+                    <tabBarItem key="tabBarItem" title="Language" id="Goo-ne-nhH"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="66O-Qa-Ygo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -137,7 +99,7 @@
             </objects>
             <point key="canvasLocation" x="706" y="404"/>
         </scene>
-        <!--iOS Collection View Controller-->
+        <!--Gallery-->
         <scene sceneID="Wd2-30-2oo">
             <objects>
                 <collectionViewController id="Mia-t0-KUM" customClass="WDIOSCollectionViewController" sceneMemberID="viewController">
@@ -173,7 +135,7 @@
                             <outlet property="delegate" destination="Mia-t0-KUM" id="yhw-TN-91u"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="0f3-s4-14Y"/>
+                    <navigationItem key="navigationItem" title="Gallery" id="0f3-s4-14Y"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jaK-qp-SQD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -200,7 +162,7 @@
         <!--Gallery-->
         <scene sceneID="09t-Kh-7ii">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GVp-Tf-iKU" sceneMemberID="viewController">
+                <navigationController title="Gallery" automaticallyAdjustsScrollViewInsets="NO" id="GVp-Tf-iKU" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Gallery" id="ema-rN-Cmk"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5D1-Sg-Y8X">

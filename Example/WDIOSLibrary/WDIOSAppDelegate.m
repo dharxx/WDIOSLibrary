@@ -7,8 +7,7 @@
 //
 
 #import "WDIOSAppDelegate.h"
-#import <CommonCrypto/CommonDigest.h>
-
+@import WDIOSLibrary;
 @implementation WDIOSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -16,37 +15,14 @@
     if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]){
         [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
     }
-    
-    // Override point for customization after application launch.
-    // Create NSData object
-    NSData *nsdata = [@"iOS Developer Tips encoded in Base64"
-                      dataUsingEncoding:NSUTF8StringEncoding];
-    
-    // Get NSString from NSData object in Base64
-    NSString *base64Encoded = [nsdata base64EncodedStringWithOptions:0];
-    
-    // Print the Base64 encoded string
-    NSLog(@"Encoded: %@", base64Encoded);
-    
-    // Let's go the other way...
-    
-    // NSData from the Base64 encoded str
-    NSData *nsdataFromBase64String = [[NSData alloc]
-                                      initWithBase64EncodedString:base64Encoded options:0];
-    
-    // Decoded NSString from the NSData
-    NSString *base64Decoded = [[NSString alloc]
-                               initWithData:nsdataFromBase64String encoding:NSUTF8StringEncoding];
-    NSLog(@"Decoded: %@", base64Decoded);
-    
-    
-    NSData *dataIn = [@"Now is the time for all good computers to come to the aid of their masters." dataUsingEncoding:NSASCIIStringEncoding];
-    NSMutableData *macOut = [NSMutableData dataWithLength:CC_SHA256_DIGEST_LENGTH];
-    
-    CC_SHA256(dataIn.bytes, (CC_LONG)dataIn.length,  macOut.mutableBytes);
-    
-    NSLog(@"dataIn: %@", dataIn);
-    NSLog(@"macOut: %@", macOut);
+    NSString *token = [WDJWTString jwtString:@{
+                                              @"iss":@"itsmemario",
+                                              @"exp":@(123456)
+                                              } subject:@"test" secret:@"dafuqAreYouDoing"];
+
+    NSString *secret = [@"test" stringByAppendingString:@"dafuqAreYouDoing"];
+    secret = [[secret dataUsingEncoding:NSASCIIStringEncoding] base64EncodedStringWithOptions:0];
+    NSLog(@"\nJWT: %@\nsecret: %@", token,secret);
     return YES;
 }
 

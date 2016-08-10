@@ -1,0 +1,6 @@
+framework module WDIOSLibrary {
+  umbrella header "WDIOSLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}

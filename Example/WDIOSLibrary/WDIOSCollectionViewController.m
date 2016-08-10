@@ -8,7 +8,7 @@
 
 #import "WDIOSCollectionViewController.h"
 #import <ImageIO/ImageIO.h>
-#import "CHTCollectionViewWaterfallLayout.h"
+#import <CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.h>
 
 @interface WDIOSCollectionViewController ()<CHTCollectionViewDelegateWaterfallLayout>
 

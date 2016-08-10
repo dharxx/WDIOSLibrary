@@ -10,11 +10,9 @@
 		1E7C0E0C1A086CA0B7F23FF1 /* Pods_WDIOSLibrary_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF05D9740D5D0322A4C7810B /* Pods_WDIOSLibrary_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		2FBE7C8440A411BD95605612 /* Pods_WDIOSLibrary_Example_WDIOSLibrary_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DB6E1DA3BAD5A5FA204E01 /* Pods_WDIOSLibrary_Example_WDIOSLibrary_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		340269BC1D4B465000EE20DD /* Dictionary.strings in Resources */ = {isa = PBXBuildFile; fileRef = 340269BE1D4B465000EE20DD /* Dictionary.strings */; };
-		3483B92B1D549F0E00754B00 /* mayuyu.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 3483B92A1D549F0E00754B00 /* mayuyu.aiff */; };
 		348435CF1D5105A10005990F /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F83AF71D5098B500EB89F1 /* CoreMotion.framework */; };
 		34A4310B1D51A1F500CEBDFD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A4310A1D51A1F500CEBDFD /* MapKit.framework */; };
 		34A4310D1D51AB8D00CEBDFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A4310C1D51AB8D00CEBDFD /* LaunchScreen.storyboard */; };
-		34A431101D51D48E00CEBDFD /* WDIOSMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A4310F1D51D48E00CEBDFD /* WDIOSMapViewController.m */; };
 		34A431131D51EE1B00CEBDFD /* WDIOSStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A431121D51EE1B00CEBDFD /* WDIOSStartViewController.m */; };
 		34A433191D523DF60027EA4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A433171D523DF60027EA4A /* Main.storyboard */; };
 		34EE01C71D54C49E0068D942 /* WDIOSCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EE01C61D54C49E0068D942 /* WDIOSCollectionViewController.m */; };
@@ -74,11 +72,8 @@
 		340269C61D4B469E00EE20DD /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Dictionary.strings; sourceTree = "<group>"; };
 		340269C71D4B46A100EE20DD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Dictionary.strings; sourceTree = "<group>"; };
 		340269C91D4B4AFD00EE20DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Dictionary.strings; sourceTree = "<group>"; };
-		3483B92A1D549F0E00754B00 /* mayuyu.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = mayuyu.aiff; sourceTree = "<group>"; };
 		34A4310A1D51A1F500CEBDFD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		34A4310C1D51AB8D00CEBDFD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		34A4310E1D51D48E00CEBDFD /* WDIOSMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDIOSMapViewController.h; sourceTree = "<group>"; };
-		34A4310F1D51D48E00CEBDFD /* WDIOSMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDIOSMapViewController.m; sourceTree = "<group>"; };
 		34A431111D51EE1B00CEBDFD /* WDIOSStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDIOSStartViewController.h; sourceTree = "<group>"; };
 		34A431121D51EE1B00CEBDFD /* WDIOSStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDIOSStartViewController.m; sourceTree = "<group>"; };
 		34A433181D523DF60027EA4A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -218,12 +213,9 @@
 				34A431121D51EE1B00CEBDFD /* WDIOSStartViewController.m */,
 				34EE01C51D54C49E0068D942 /* WDIOSCollectionViewController.h */,
 				34EE01C61D54C49E0068D942 /* WDIOSCollectionViewController.m */,
-				3483B92A1D549F0E00754B00 /* mayuyu.aiff */,
 				340269BE1D4B465000EE20DD /* Dictionary.strings */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
-				34A4310E1D51D48E00CEBDFD /* WDIOSMapViewController.h */,
-				34A4310F1D51D48E00CEBDFD /* WDIOSMapViewController.m */,
 			);
 			name = "Example for WDIOSLibrary";
 			path = WDIOSLibrary;
@@ -380,7 +372,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3483B92B1D549F0E00754B00 /* mayuyu.aiff in Resources */,
 				34EE01D21D54C5AB0068D942 /* 5.jpg in Resources */,
 				340269BC1D4B465000EE20DD /* Dictionary.strings in Resources */,
 				34EE01CE1D54C5960068D942 /* 3.jpg in Resources */,
@@ -508,7 +499,6 @@
 				6003F59E195388D20070C39A /* WDIOSAppDelegate.m in Sources */,
 				34EE01C71D54C49E0068D942 /* WDIOSCollectionViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* WDIOSViewController.m in Sources */,
-				34A431101D51D48E00CEBDFD /* WDIOSMapViewController.m in Sources */,
 				34A431131D51EE1B00CEBDFD /* WDIOSStartViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -580,6 +570,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -620,6 +611,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;

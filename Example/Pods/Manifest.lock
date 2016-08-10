@@ -1,27 +1,23 @@
 PODS:
+  - Base64 (1.1.2)
   - CHTCollectionViewWaterfallLayout (0.9.4):
     - CHTCollectionViewWaterfallLayout/ObjC (= 0.9.4)
   - CHTCollectionViewWaterfallLayout/ObjC (0.9.4)
-  - CommonCrypto (1.1)
   - FBSnapshotTestCase (2.1.2):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.2)
   - FBSnapshotTestCase/Core (2.1.2)
   - FBSnapshotTestCase/SwiftSupport (2.1.2):
     - FBSnapshotTestCase/Core
-  - GoogleMaps (2.0.1):
-    - GoogleMaps/Maps (= 2.0.1)
-  - GoogleMaps/Base (2.0.1)
-  - GoogleMaps/Maps (2.0.1):
-    - GoogleMaps/Base (= 2.0.1)
+  - JWT (2.0.2):
+    - Base64 (~> 1.1.2)
   - MQTTKit (0.1.0)
-  - WDIOSLibrary (0.1.0)
+  - WDIOSLibrary (0.1.0):
+    - CHTCollectionViewWaterfallLayout
+    - JWT
+    - MQTTKit
 
 DEPENDENCIES:
-  - CHTCollectionViewWaterfallLayout
-  - CommonCrypto
   - FBSnapshotTestCase
-  - GoogleMaps
-  - MQTTKit
   - WDIOSLibrary (from `../`)
 
 EXTERNAL SOURCES:
@@ -29,11 +25,11 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
+  Base64: cecfb41a004124895a7bcee567a89bae5a89d49b
   CHTCollectionViewWaterfallLayout: db74be9135826d285f45ff163fd090e57c99fc50
-  CommonCrypto: e18c8416332cca5efe80c197f2a522d471c42626
   FBSnapshotTestCase: 918c55861356ee83aee7843d759f55a18ff6982b
-  GoogleMaps: f09da64fc987c1aa29394567c3cab5a3df83c402
+  JWT: af1172153afe5f2536f57816f3e12cb4a6ac7769
   MQTTKit: a4e6b8aa92db1aeae917d2b773fd72a7749937c4
-  WDIOSLibrary: 9c5b3f2ea57dd6ce15a69b7daf6d36c9725ffa83
+  WDIOSLibrary: 81376ff8801dc37e3863a711a6d334af4f69975f
 
 COCOAPODS: 0.38.2

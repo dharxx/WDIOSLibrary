@@ -39,7 +39,6 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
     s.frameworks = 'CoreMotion','AVFoundation'
     s.dependency 'MQTTKit'
-    s.dependency 'CommonCrypto'
-    s.dependency 'GoogleMaps'
+    s.dependency 'JWT'
     s.dependency 'CHTCollectionViewWaterfallLayout'
 end
