@@ -31,17 +31,17 @@
 		2BB69670ED4148CD3294E0EB2B140654 /* NSLocale+WDLocalized.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B84F347A1FFDEB20AECFF5B5EA29416 /* NSLocale+WDLocalized.m */; };
 		3166B9B4F822CA3AC6829C79ED988DCD /* mqtt3_protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F5A005F8C0C10AF0A321EDF5FC0690A /* mqtt3_protocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		328DE9E19A6FF7B1D7C798DF36B2655C /* send_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 38B09AFE6BEF6856F301FCC3E0C37FAB /* send_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3499112E1D6345ED00DC6634 /* UIImage+StupidApplePhotoFix.h in Headers */ = {isa = PBXBuildFile; fileRef = 3499112C1D6345ED00DC6634 /* UIImage+StupidApplePhotoFix.h */; };
+		3499112E1D6345ED00DC6634 /* UIImage+StupidApplePhotoFix.h in Headers */ = {isa = PBXBuildFile; fileRef = 3499112C1D6345ED00DC6634 /* UIImage+StupidApplePhotoFix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3499112F1D6345ED00DC6634 /* UIImage+StupidApplePhotoFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 3499112D1D6345ED00DC6634 /* UIImage+StupidApplePhotoFix.m */; };
-		349911321D63499400DC6634 /* NSObject+MVCSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 349911301D63499400DC6634 /* NSObject+MVCSupport.h */; };
+		349911321D63499400DC6634 /* NSObject+MVCSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 349911301D63499400DC6634 /* NSObject+MVCSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		349911331D63499400DC6634 /* NSObject+MVCSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 349911311D63499400DC6634 /* NSObject+MVCSupport.m */; };
-		349911361D6349E600DC6634 /* UITableView+MVCSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 349911341D6349E600DC6634 /* UITableView+MVCSupport.h */; };
+		349911361D6349E600DC6634 /* UITableView+MVCSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 349911341D6349E600DC6634 /* UITableView+MVCSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		349911371D6349E600DC6634 /* UITableView+MVCSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 349911351D6349E600DC6634 /* UITableView+MVCSupport.m */; };
-		349911391D634B6600DC6634 /* Macro.h in Headers */ = {isa = PBXBuildFile; fileRef = 349911381D634B6600DC6634 /* Macro.h */; };
+		349911391D634B6600DC6634 /* Macro.h in Headers */ = {isa = PBXBuildFile; fileRef = 349911381D634B6600DC6634 /* Macro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		349AF598845DBE62B1ECBD823EF21F26 /* CHTCollectionViewWaterfallLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4138B851CC153E13BC90CBE9ABF393D /* CHTCollectionViewWaterfallLayout-dummy.m */; };
 		34B47DE71D5B377300A5298A /* WDJWTString.h in Headers */ = {isa = PBXBuildFile; fileRef = 34B47DE51D5B377300A5298A /* WDJWTString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		34B47DE81D5B377300A5298A /* WDJWTString.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B47DE61D5B377300A5298A /* WDJWTString.m */; };
-		34F291521D631C96007C6E4B /* UIFont+WDMoreFonts.h in Headers */ = {isa = PBXBuildFile; fileRef = 34F291501D631C96007C6E4B /* UIFont+WDMoreFonts.h */; };
+		34F291521D631C96007C6E4B /* UIFont+WDMoreFonts.h in Headers */ = {isa = PBXBuildFile; fileRef = 34F291501D631C96007C6E4B /* UIFont+WDMoreFonts.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		34F291531D631C96007C6E4B /* UIFont+WDMoreFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F291511D631C96007C6E4B /* UIFont+WDMoreFonts.m */; };
 		3B9760A54A856D8095721711C745A80A /* MF_Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D44D3B2A83B118726FD1D2E04F8E8BC /* MF_Base64Additions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		3C4A24942FD261BFAFAB35069E06DE30 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C12E81ED007784CB0DEF923541E7504F /* UIApplication+StrictKeyWindow.m */; };
@@ -906,15 +906,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				349911321D63499400DC6634 /* NSObject+MVCSupport.h in Headers */,
 				9074DFBF433CFBFD072939DF7CD11996 /* NSLocale+WDLocalized.h in Headers */,
 				3F1F65426739C22D60C04559433A7291 /* NSString+WDLocalized.h in Headers */,
 				34B47DE71D5B377300A5298A /* WDJWTString.h in Headers */,
+				349911321D63499400DC6634 /* NSObject+MVCSupport.h in Headers */,
 				34F291521D631C96007C6E4B /* UIFont+WDMoreFonts.h in Headers */,
 				349911361D6349E600DC6634 /* UITableView+MVCSupport.h in Headers */,
 				349911391D634B6600DC6634 /* Macro.h in Headers */,
-				8E86EF115E561275017B2A28047D90E0 /* WDIOSLibrary-umbrella.h in Headers */,
 				3499112E1D6345ED00DC6634 /* UIImage+StupidApplePhotoFix.h in Headers */,
+				8E86EF115E561275017B2A28047D90E0 /* WDIOSLibrary-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
