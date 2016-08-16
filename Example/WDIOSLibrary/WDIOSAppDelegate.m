@@ -15,14 +15,15 @@
     if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]){
         [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
     }
+    
+    NSString *secret = @"foodplace";
     NSString *token = [WDJWTString jwtString:@{
                                               @"iss":@"itsmemario",
-                                              @"exp":@(123456)
-                                              } subject:@"test" secret:@"dafuqAreYouDoing"];
-
-    NSString *secret = [@"test" stringByAppendingString:@"dafuqAreYouDoing"];
-    secret = [[secret dataUsingEncoding:NSASCIIStringEncoding] base64EncodedStringWithOptions:0];
-    NSLog(@"\nJWT: %@\nsecret: %@", token,secret);
+                                              @"exp":@(0)
+                                              } subject:@"test" secret:secret];
+    
+    NSLog(@"token = %@\ntrue secret = %@",token,secret);
+    
     return YES;
 }
 

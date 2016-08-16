@@ -34,6 +34,8 @@
 		349AF598845DBE62B1ECBD823EF21F26 /* CHTCollectionViewWaterfallLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4138B851CC153E13BC90CBE9ABF393D /* CHTCollectionViewWaterfallLayout-dummy.m */; };
 		34B47DE71D5B377300A5298A /* WDJWTString.h in Headers */ = {isa = PBXBuildFile; fileRef = 34B47DE51D5B377300A5298A /* WDJWTString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		34B47DE81D5B377300A5298A /* WDJWTString.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B47DE61D5B377300A5298A /* WDJWTString.m */; };
+		34F291521D631C96007C6E4B /* UIFont+WDMoreFonts.h in Headers */ = {isa = PBXBuildFile; fileRef = 34F291501D631C96007C6E4B /* UIFont+WDMoreFonts.h */; };
+		34F291531D631C96007C6E4B /* UIFont+WDMoreFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F291511D631C96007C6E4B /* UIFont+WDMoreFonts.m */; };
 		3B9760A54A856D8095721711C745A80A /* MF_Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D44D3B2A83B118726FD1D2E04F8E8BC /* MF_Base64Additions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		3C4A24942FD261BFAFAB35069E06DE30 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C12E81ED007784CB0DEF923541E7504F /* UIApplication+StrictKeyWindow.m */; };
 		3C66EDB70F713B8753392C485F1B0EF5 /* JWT.h in Headers */ = {isa = PBXBuildFile; fileRef = 25FF9C4955BBA067D5556CE5849F75B7 /* JWT.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -275,6 +277,8 @@
 		348DCB6A9F984BB201B0A18F5AADA4CE /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		34B47DE51D5B377300A5298A /* WDJWTString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDJWTString.h; sourceTree = "<group>"; };
 		34B47DE61D5B377300A5298A /* WDJWTString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDJWTString.m; sourceTree = "<group>"; };
+		34F291501D631C96007C6E4B /* UIFont+WDMoreFonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+WDMoreFonts.h"; sourceTree = "<group>"; };
+		34F291511D631C96007C6E4B /* UIFont+WDMoreFonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+WDMoreFonts.m"; sourceTree = "<group>"; };
 		354D913F12F97EB55DA10D420AF46B84 /* WDIOSLibrary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WDIOSLibrary-umbrella.h"; sourceTree = "<group>"; };
 		363694089C8DC4CAF02BFCF2666DF0FA /* JWT.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JWT.m; path = JWT/JWT.m; sourceTree = "<group>"; };
 		366B6169A69B73FD26DA9F19D6E838E2 /* JWTClaimsSetSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JWTClaimsSetSerializer.m; path = JWT/ClaimSet/JWTClaimsSetSerializer.m; sourceTree = "<group>"; };
@@ -706,6 +710,8 @@
 				5A400FED18ECB6411FB77D6EC2A9DA67 /* NSString+WDLocalized.m */,
 				34B47DE51D5B377300A5298A /* WDJWTString.h */,
 				34B47DE61D5B377300A5298A /* WDJWTString.m */,
+				34F291501D631C96007C6E4B /* UIFont+WDMoreFonts.h */,
+				34F291511D631C96007C6E4B /* UIFont+WDMoreFonts.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -882,6 +888,7 @@
 				9074DFBF433CFBFD072939DF7CD11996 /* NSLocale+WDLocalized.h in Headers */,
 				3F1F65426739C22D60C04559433A7291 /* NSString+WDLocalized.h in Headers */,
 				34B47DE71D5B377300A5298A /* WDJWTString.h in Headers */,
+				34F291521D631C96007C6E4B /* UIFont+WDMoreFonts.h in Headers */,
 				8E86EF115E561275017B2A28047D90E0 /* WDIOSLibrary-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1274,6 +1281,7 @@
 				2BB69670ED4148CD3294E0EB2B140654 /* NSLocale+WDLocalized.m in Sources */,
 				AC9E60DDDDBE3B8B41BE6F41099C5235 /* NSString+WDLocalized.m in Sources */,
 				7B6D28BE738976D7B3ADA467AC4A07D9 /* WDIOSLibrary-dummy.m in Sources */,
+				34F291531D631C96007C6E4B /* UIFont+WDMoreFonts.m in Sources */,
 				34B47DE81D5B377300A5298A /* WDJWTString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

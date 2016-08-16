@@ -37,7 +37,7 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-    s.frameworks = 'CoreMotion','AVFoundation'
+    s.frameworks = 'CoreMotion','AVFoundation','CoreText'
     s.dependency 'MQTTKit'
     s.dependency 'JWT'
     s.dependency 'CHTCollectionViewWaterfallLayout'

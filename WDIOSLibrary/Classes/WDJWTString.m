@@ -22,15 +22,12 @@
                         @"HS256",
                         @"HS384",
                         @"HS512",
-#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
-                        @"RS256"
-#endif
                         ];
         srand(time(NULL));
     }
     return algorithms;
 }
-+(instancetype)jwtString:(NSDictionary *)payload subject:(NSString *)subject secret:(NSString *)secret
++(NSString *)jwtString:(NSDictionary *)payload subject:(NSString *)subject secret:(NSString *)secret
 {
     NSTimeInterval timeInterval = [[NSDate date] timeIntervalSince1970];
     NSInteger timeIntervalInteger = (NSInteger)timeInterval;
@@ -45,11 +42,15 @@
     
     JWTBuilder *jwt = [[JWTBuilder alloc] init];
     NSString *usedSecret = [subject stringByAppendingString:secret];
-    usedSecret = [[usedSecret dataUsingEncoding:NSASCIIStringEncoding] base64EncodedStringWithOptions:0];
+    usedSecret = [[usedSecret dataUsingEncoding:NSUTF8StringEncoding] base64EncodedStringWithOptions:0];
+    
     NSArray *algs = [self jwtAlgorithms];
     int randomAlgorithms = rand() % algs.count;
+    NSLog(@"\nalgorithm : %@",algs[randomAlgorithms]);
+    NSLog(@"\npayload : %@",allPayload);
+    NSLog(@"\ngenerated secret : %@",usedSecret);
     
-    jwt.secret(usedSecret).payload(payload).algorithm([JWTAlgorithmFactory algorithmByName:algs[randomAlgorithms]]);
+    jwt.secret(usedSecret).payload(allPayload).algorithm([JWTAlgorithmFactory algorithmByName:algs[randomAlgorithms]]);
     
     return [jwt encode];
 }

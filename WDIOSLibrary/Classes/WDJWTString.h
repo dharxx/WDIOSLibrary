@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface WDJWTString : NSString
-+(instancetype)jwtString:(NSDictionary *)payload subject:(NSString *)subject secret:(NSString *)secret;
+@interface WDJWTString : NSObject
++(NSString *)jwtString:(NSDictionary *)payload subject:(NSString *)subject secret:(NSString *)secret;
 @end
