@@ -10,7 +10,7 @@
 #import <CoreText/CoreText.h>
 @implementation UIFont (WDMoreFonts)
 
--(NSString *)addFontFromFile:(NSString *)fontPath
++ (NSString *)addFontFromFile:(NSString *)fontPath
 {
     
     NSData *inData = [NSData dataWithContentsOfFile:fontPath]/* your font-file data */;

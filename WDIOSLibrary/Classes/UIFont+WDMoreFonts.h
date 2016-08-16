@@ -10,5 +10,5 @@
 
 @interface UIFont (WDMoreFonts)
 //return name of font return nil if not font file .ttf
--(NSString *)addFontFromFile:(NSString *)fontPath;
++ (NSString *)addFontFromFile:(NSString *)fontPath;
 @end
