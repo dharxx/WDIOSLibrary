@@ -40,7 +40,7 @@
 {
     NSArray *a = [[NSLocale preferredLanguages].firstObject componentsSeparatedByString:@"-"];
     NSString *s = a[0];
-    if (a > 2) {
+    if (a.count > 2) {
         s = [[s stringByAppendingString:@"-"] stringByAppendingString:a[1]];
     }
     return s;
