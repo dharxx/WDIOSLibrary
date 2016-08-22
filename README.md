@@ -9,6 +9,14 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+## Desciption
+
+language change:
+
+add font:
+
+fix photo orientation from camera
+
 ## Requirements
 
 ## Installation

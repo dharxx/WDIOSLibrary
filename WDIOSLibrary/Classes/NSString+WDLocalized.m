@@ -11,7 +11,7 @@
 @implementation NSString (WDLocalized)
 - (void)setAsPreferLanguage
 {
-    [[NSUserDefaults standardUserDefaults] setObject:@[self,[NSLocale currentLocale].localeIdentifier] forKey:@"AppleLanguages"];
+    [[NSUserDefaults standardUserDefaults] setObject:@[self,[NSLocale currentLocale].localeIdentifier,] forKey:@"AppleLanguages"];
 }
 - (void)setAsTableLanguage
 {
@@ -38,11 +38,16 @@
 ////
 + (NSString *)currentLanguage
 {
-    return [NSLocale preferredLanguages].firstObject;
+    NSArray *a = [[NSLocale preferredLanguages].firstObject componentsSeparatedByString:@"-"];
+    NSString *s = a[0];
+    if (a > 2) {
+        s = [[s stringByAppendingString:@"-"] stringByAppendingString:a[1]];
+    }
+    return s;
 }
 + (NSString *)baseLanguage
 {
-    return [NSLocale preferredLanguages].lastObject;
+    return @"Base";//[NSLocale preferredLanguages].lastObject;
 }
 + (NSArray<NSString *> *)languages
 {

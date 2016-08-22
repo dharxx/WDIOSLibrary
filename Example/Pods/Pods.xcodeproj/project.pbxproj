@@ -31,6 +31,22 @@
 		2BB69670ED4148CD3294E0EB2B140654 /* NSLocale+WDLocalized.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B84F347A1FFDEB20AECFF5B5EA29416 /* NSLocale+WDLocalized.m */; };
 		3166B9B4F822CA3AC6829C79ED988DCD /* mqtt3_protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F5A005F8C0C10AF0A321EDF5FC0690A /* mqtt3_protocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		328DE9E19A6FF7B1D7C798DF36B2655C /* send_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 38B09AFE6BEF6856F301FCC3E0C37FAB /* send_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3461B6781D6ABA19001B22B7 /* WDRequestMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 3461B6761D6ABA19001B22B7 /* WDRequestMaker.h */; };
+		3461B6791D6ABA19001B22B7 /* WDRequestMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 3461B6761D6ABA19001B22B7 /* WDRequestMaker.h */; };
+		3461B67A1D6ABA19001B22B7 /* WDRequestMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 3461B6761D6ABA19001B22B7 /* WDRequestMaker.h */; };
+		3461B67B1D6ABA19001B22B7 /* WDRequestMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 3461B6761D6ABA19001B22B7 /* WDRequestMaker.h */; };
+		3461B67C1D6ABA19001B22B7 /* WDRequestMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 3461B6761D6ABA19001B22B7 /* WDRequestMaker.h */; };
+		3461B67D1D6ABA19001B22B7 /* WDRequestMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 3461B6761D6ABA19001B22B7 /* WDRequestMaker.h */; };
+		3461B67E1D6ABA19001B22B7 /* WDRequestMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 3461B6761D6ABA19001B22B7 /* WDRequestMaker.h */; };
+		3461B67F1D6ABA19001B22B7 /* WDRequestMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 3461B6761D6ABA19001B22B7 /* WDRequestMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3461B6801D6ABA19001B22B7 /* WDRequestMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3461B6771D6ABA19001B22B7 /* WDRequestMaker.m */; };
+		3461B6811D6ABA19001B22B7 /* WDRequestMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3461B6771D6ABA19001B22B7 /* WDRequestMaker.m */; };
+		3461B6821D6ABA19001B22B7 /* WDRequestMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3461B6771D6ABA19001B22B7 /* WDRequestMaker.m */; };
+		3461B6831D6ABA19001B22B7 /* WDRequestMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3461B6771D6ABA19001B22B7 /* WDRequestMaker.m */; };
+		3461B6841D6ABA19001B22B7 /* WDRequestMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3461B6771D6ABA19001B22B7 /* WDRequestMaker.m */; };
+		3461B6851D6ABA19001B22B7 /* WDRequestMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3461B6771D6ABA19001B22B7 /* WDRequestMaker.m */; };
+		3461B6861D6ABA19001B22B7 /* WDRequestMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3461B6771D6ABA19001B22B7 /* WDRequestMaker.m */; };
+		3461B6871D6ABA19001B22B7 /* WDRequestMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3461B6771D6ABA19001B22B7 /* WDRequestMaker.m */; };
 		3499112E1D6345ED00DC6634 /* UIImage+StupidApplePhotoFix.h in Headers */ = {isa = PBXBuildFile; fileRef = 3499112C1D6345ED00DC6634 /* UIImage+StupidApplePhotoFix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3499112F1D6345ED00DC6634 /* UIImage+StupidApplePhotoFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 3499112D1D6345ED00DC6634 /* UIImage+StupidApplePhotoFix.m */; };
 		349911321D63499400DC6634 /* NSObject+MVCSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 349911301D63499400DC6634 /* NSObject+MVCSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -281,6 +297,8 @@
 		2BDF241BC62844A52A8E05BD74723933 /* JWTClaimsSetVerifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWTClaimsSetVerifier.h; path = JWT/ClaimSet/JWTClaimsSetVerifier.h; sourceTree = "<group>"; };
 		2C70186EA71CB8895EAAC8392BE4CA07 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 		300A6A06E9D46B8DC31764A97FA1D5DA /* mosquitto_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mosquitto_internal.h; path = libmosquitto/mosquitto_internal.h; sourceTree = "<group>"; };
+		3461B6761D6ABA19001B22B7 /* WDRequestMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDRequestMaker.h; sourceTree = "<group>"; };
+		3461B6771D6ABA19001B22B7 /* WDRequestMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDRequestMaker.m; sourceTree = "<group>"; };
 		348DCB6A9F984BB201B0A18F5AADA4CE /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		3499112C1D6345ED00DC6634 /* UIImage+StupidApplePhotoFix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+StupidApplePhotoFix.h"; sourceTree = "<group>"; };
 		3499112D1D6345ED00DC6634 /* UIImage+StupidApplePhotoFix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+StupidApplePhotoFix.m"; sourceTree = "<group>"; };
@@ -719,6 +737,8 @@
 			isa = PBXGroup;
 			children = (
 				349911381D634B6600DC6634 /* Macro.h */,
+				3461B6761D6ABA19001B22B7 /* WDRequestMaker.h */,
+				3461B6771D6ABA19001B22B7 /* WDRequestMaker.m */,
 				DD8F9B21A0881DFAEFCC4589BE4D3B1E /* NSLocale+WDLocalized.h */,
 				2B84F347A1FFDEB20AECFF5B5EA29416 /* NSLocale+WDLocalized.m */,
 				FAA30A17697EA9470D9DC9218A431C33 /* NSString+WDLocalized.h */,
@@ -914,6 +934,7 @@
 				349911361D6349E600DC6634 /* UITableView+MVCSupport.h in Headers */,
 				349911391D634B6600DC6634 /* Macro.h in Headers */,
 				3499112E1D6345ED00DC6634 /* UIImage+StupidApplePhotoFix.h in Headers */,
+				3461B67F1D6ABA19001B22B7 /* WDRequestMaker.h in Headers */,
 				8E86EF115E561275017B2A28047D90E0 /* WDIOSLibrary-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -922,6 +943,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3461B67D1D6ABA19001B22B7 /* WDRequestMaker.h in Headers */,
 				08FAE65F867F0719C4E481A1FA7CD9CA /* Pods-WDIOSLibrary_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -940,6 +962,7 @@
 				B16AD53CD88DD25DCB3871DA7DD47734 /* mosquitto.h in Headers */,
 				D6F7487513EAA451987809AF291ADBF3 /* mosquitto_internal.h in Headers */,
 				3166B9B4F822CA3AC6829C79ED988DCD /* mqtt3_protocol.h in Headers */,
+				3461B67C1D6ABA19001B22B7 /* WDRequestMaker.h in Headers */,
 				AA7D25CD723949F8E1349450C9A95BA3 /* net_mosq.h in Headers */,
 				22FDE258151F7BDC2267CE3DAEE0A460 /* read_handle.h in Headers */,
 				328DE9E19A6FF7B1D7C798DF36B2655C /* send_mosq.h in Headers */,
@@ -955,6 +978,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCB8BFBA715ECEB062B515AEDDB285DF /* Base64-umbrella.h in Headers */,
+				3461B6781D6ABA19001B22B7 /* WDRequestMaker.h in Headers */,
 				ABF10F307195D66ABFE3376F9929A47B /* MF_Base64Additions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -964,6 +988,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D39FDA912FCDF7EF5CAFE9A9549AE15B /* CHTCollectionViewWaterfallLayout-umbrella.h in Headers */,
+				3461B6791D6ABA19001B22B7 /* WDRequestMaker.h in Headers */,
 				E0BAB6CADB2A050482D934C7D761A63D /* CHTCollectionViewWaterfallLayout.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -972,6 +997,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3461B67E1D6ABA19001B22B7 /* WDRequestMaker.h in Headers */,
 				5662AE85757F12233155697C713EB846 /* Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -990,6 +1016,7 @@
 				16D5FC61FB5E30745EBA39E027269738 /* JWTAlgorithmHSBase.h in Headers */,
 				ADF47A82CA8C44216D3362076F03471C /* JWTAlgorithmHSFamily.h in Headers */,
 				F8BA4E63B949DE54617B30BD38169A46 /* JWTAlgorithmNone.h in Headers */,
+				3461B67B1D6ABA19001B22B7 /* WDRequestMaker.h in Headers */,
 				59C021C0E9B81B4A5F1964D133A933C5 /* JWTAlgorithmRS256.h in Headers */,
 				B1FDBB1D7D9D1843F59424BB8C95F531 /* JWTAlgorithmRSBase.h in Headers */,
 				E23E2F42BD9F471BC0AFA0553B735D46 /* JWTClaim.h in Headers */,
@@ -1005,6 +1032,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3D89D0476253AA736AE65378C6B310D /* FBSnapshotTestCase-umbrella.h in Headers */,
+				3461B67A1D6ABA19001B22B7 /* WDRequestMaker.h in Headers */,
 				0E80FE4ECA445BD3F27DB1336832FD57 /* FBSnapshotTestCase.h in Headers */,
 				5E997A3134068C4416F2456298A9D9CA /* FBSnapshotTestCasePlatform.h in Headers */,
 				B10A5574F4E16E67A3C80B3088F5ACD7 /* FBSnapshotTestController.h in Headers */,
@@ -1212,6 +1240,7 @@
 				424EDA87F296948AE983C3641A472CB6 /* FBSnapshotTestCasePlatform.m in Sources */,
 				6DADDCEE4F7E07FADBD7CA3AC26A7B55 /* FBSnapshotTestController.m in Sources */,
 				D88AB8066D5157CAC4A1FEDD40D7EC69 /* SwiftSupport.swift in Sources */,
+				3461B6821D6ABA19001B22B7 /* WDRequestMaker.m in Sources */,
 				3C4A24942FD261BFAFAB35069E06DE30 /* UIApplication+StrictKeyWindow.m in Sources */,
 				F76A1761544CBC694E89757D7A1A0CA1 /* UIImage+Compare.m in Sources */,
 				2AA48B23B6E17278281B7E6111D375E7 /* UIImage+Diff.m in Sources */,
@@ -1238,6 +1267,7 @@
 				B78AB19884AE2BC7DFDEF6D73A803360 /* JWTClaimsSet.m in Sources */,
 				A86EDC22727BD691769E64A2505D3DEC /* JWTClaimsSetSerializer.m in Sources */,
 				E5090C67800B9882B97E46A01D7B9102 /* JWTClaimsSetVerifier.m in Sources */,
+				3461B6831D6ABA19001B22B7 /* WDRequestMaker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1250,6 +1280,7 @@
 				4A70DA856E246CD51C8C5A08EC48C0C4 /* logging_mosq.c in Sources */,
 				D073C2B59A0C648D87AE6706B24EA7E7 /* memory_mosq.c in Sources */,
 				5E627F0D4253B61D55D70C6C3292311D /* messages_mosq.c in Sources */,
+				3461B6841D6ABA19001B22B7 /* WDRequestMaker.m in Sources */,
 				EF7F3A0029F9EE55F8E26D7E2E950E9D /* mosquitto.c in Sources */,
 				7CF6F58B4549F5F2302AAC4840B42B7A /* net_mosq.c in Sources */,
 				CA491E9700A9EAE4669ADBAB4B774F4A /* read_handle.c in Sources */,
@@ -1270,6 +1301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C20B08CCDC94D429DCECAD68876CA00A /* Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests-dummy.m in Sources */,
+				3461B6861D6ABA19001B22B7 /* WDRequestMaker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1279,6 +1311,7 @@
 			files = (
 				349AF598845DBE62B1ECBD823EF21F26 /* CHTCollectionViewWaterfallLayout-dummy.m in Sources */,
 				C17B7930E7DC1C504F6BDAB2695CC82F /* CHTCollectionViewWaterfallLayout.m in Sources */,
+				3461B6811D6ABA19001B22B7 /* WDRequestMaker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1288,6 +1321,7 @@
 			files = (
 				D641CE3307C4D505B2C8226BF01AE2C2 /* Base64-dummy.m in Sources */,
 				3B9760A54A856D8095721711C745A80A /* MF_Base64Additions.m in Sources */,
+				3461B6801D6ABA19001B22B7 /* WDRequestMaker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1296,6 +1330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				010A2738CA1EEE077B13B3203E7085CF /* Pods-WDIOSLibrary_Example-dummy.m in Sources */,
+				3461B6851D6ABA19001B22B7 /* WDRequestMaker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1308,6 +1343,7 @@
 				349911371D6349E600DC6634 /* UITableView+MVCSupport.m in Sources */,
 				3499112F1D6345ED00DC6634 /* UIImage+StupidApplePhotoFix.m in Sources */,
 				349911331D63499400DC6634 /* NSObject+MVCSupport.m in Sources */,
+				3461B6871D6ABA19001B22B7 /* WDRequestMaker.m in Sources */,
 				7B6D28BE738976D7B3ADA467AC4A07D9 /* WDIOSLibrary-dummy.m in Sources */,
 				34F291531D631C96007C6E4B /* UIFont+WDMoreFonts.m in Sources */,
 				34B47DE81D5B377300A5298A /* WDJWTString.m in Sources */,
