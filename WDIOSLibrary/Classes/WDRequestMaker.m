@@ -35,21 +35,9 @@ static NSString *wdRequestMainURL = nil;
     }
     return nil;
 }
-+ (NSString *)mainURL:(NSString *)component
-{
-    return [wdRequestMainURL stringByAppendingPathComponent:component];
-}
 + (NSString *)defaultURL:(NSString *)component
 {
-    return [[self mainURL:@"api"] stringByAppendingPathComponent:component];
-}
-+ (NSString *)thumbnailURL:(NSString *)name
-{
-    return [[self mainURL:@"thumbnails"] stringByAppendingPathComponent:name];
-}
-+ (NSString *)imageURL:(NSString *)name
-{
-    return [[self mainURL:@"wine_image"] stringByAppendingPathComponent:name];
+    return [wdRequestMainURL stringByAppendingPathComponent:component];
 }
 //
 + (NSURL *)URLWithString:(NSString *)string

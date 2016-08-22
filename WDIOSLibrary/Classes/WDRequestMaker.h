@@ -12,9 +12,6 @@
 
 //custom more
 + (NSString *)defaultURL:(NSString *)component;
-//
-+ (NSString *)thumbnailURL:(NSString *)component;
-+ (NSString *)imageURL:(NSString *)component;
 //info = @{@"files":@{key:path},@"params":@{key:value}}
 + (NSURLRequest *)uploadDataRequest:(NSString *)urlString method:(NSString *)method info:(NSDictionary *)info;
 
