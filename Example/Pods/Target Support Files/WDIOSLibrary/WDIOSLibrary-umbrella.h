@@ -6,6 +6,7 @@
 #import "UIImage+StupidApplePhotoFix.h"
 #import "UITableView+MVCSupport.h"
 #import "NSObject+MVCSupport.h"
+#import "WDRequestMaker.h"
 
 
 FOUNDATION_EXPORT double WDIOSLibraryVersionNumber;
