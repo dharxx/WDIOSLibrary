@@ -31,6 +31,8 @@
 		2BB69670ED4148CD3294E0EB2B140654 /* NSLocale+WDLocalized.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B84F347A1FFDEB20AECFF5B5EA29416 /* NSLocale+WDLocalized.m */; };
 		3166B9B4F822CA3AC6829C79ED988DCD /* mqtt3_protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F5A005F8C0C10AF0A321EDF5FC0690A /* mqtt3_protocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		328DE9E19A6FF7B1D7C798DF36B2655C /* send_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 38B09AFE6BEF6856F301FCC3E0C37FAB /* send_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		344BCA551D6C2FA60000E9A0 /* UIViewController+MVCSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 344BCA531D6C2FA60000E9A0 /* UIViewController+MVCSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		344BCA561D6C2FA60000E9A0 /* UIViewController+MVCSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 344BCA541D6C2FA60000E9A0 /* UIViewController+MVCSupport.m */; };
 		3461B6781D6ABA19001B22B7 /* WDRequestMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 3461B6761D6ABA19001B22B7 /* WDRequestMaker.h */; };
 		3461B6791D6ABA19001B22B7 /* WDRequestMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 3461B6761D6ABA19001B22B7 /* WDRequestMaker.h */; };
 		3461B67A1D6ABA19001B22B7 /* WDRequestMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 3461B6761D6ABA19001B22B7 /* WDRequestMaker.h */; };
@@ -297,6 +299,8 @@
 		2BDF241BC62844A52A8E05BD74723933 /* JWTClaimsSetVerifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWTClaimsSetVerifier.h; path = JWT/ClaimSet/JWTClaimsSetVerifier.h; sourceTree = "<group>"; };
 		2C70186EA71CB8895EAAC8392BE4CA07 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 		300A6A06E9D46B8DC31764A97FA1D5DA /* mosquitto_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mosquitto_internal.h; path = libmosquitto/mosquitto_internal.h; sourceTree = "<group>"; };
+		344BCA531D6C2FA60000E9A0 /* UIViewController+MVCSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MVCSupport.h"; sourceTree = "<group>"; };
+		344BCA541D6C2FA60000E9A0 /* UIViewController+MVCSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MVCSupport.m"; sourceTree = "<group>"; };
 		3461B6761D6ABA19001B22B7 /* WDRequestMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDRequestMaker.h; sourceTree = "<group>"; };
 		3461B6771D6ABA19001B22B7 /* WDRequestMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDRequestMaker.m; sourceTree = "<group>"; };
 		348DCB6A9F984BB201B0A18F5AADA4CE /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
@@ -753,6 +757,8 @@
 				349911311D63499400DC6634 /* NSObject+MVCSupport.m */,
 				349911341D6349E600DC6634 /* UITableView+MVCSupport.h */,
 				349911351D6349E600DC6634 /* UITableView+MVCSupport.m */,
+				344BCA531D6C2FA60000E9A0 /* UIViewController+MVCSupport.h */,
+				344BCA541D6C2FA60000E9A0 /* UIViewController+MVCSupport.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -933,6 +939,7 @@
 				34F291521D631C96007C6E4B /* UIFont+WDMoreFonts.h in Headers */,
 				349911361D6349E600DC6634 /* UITableView+MVCSupport.h in Headers */,
 				349911391D634B6600DC6634 /* Macro.h in Headers */,
+				344BCA551D6C2FA60000E9A0 /* UIViewController+MVCSupport.h in Headers */,
 				3499112E1D6345ED00DC6634 /* UIImage+StupidApplePhotoFix.h in Headers */,
 				3461B67F1D6ABA19001B22B7 /* WDRequestMaker.h in Headers */,
 				8E86EF115E561275017B2A28047D90E0 /* WDIOSLibrary-umbrella.h in Headers */,
@@ -1343,6 +1350,7 @@
 				349911371D6349E600DC6634 /* UITableView+MVCSupport.m in Sources */,
 				3499112F1D6345ED00DC6634 /* UIImage+StupidApplePhotoFix.m in Sources */,
 				349911331D63499400DC6634 /* NSObject+MVCSupport.m in Sources */,
+				344BCA561D6C2FA60000E9A0 /* UIViewController+MVCSupport.m in Sources */,
 				3461B6871D6ABA19001B22B7 /* WDRequestMaker.m in Sources */,
 				7B6D28BE738976D7B3ADA467AC4A07D9 /* WDIOSLibrary-dummy.m in Sources */,
 				34F291531D631C96007C6E4B /* UIFont+WDMoreFonts.m in Sources */,
