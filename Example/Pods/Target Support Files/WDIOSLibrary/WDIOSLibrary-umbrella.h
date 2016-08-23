@@ -7,6 +7,7 @@
 #import "UITableView+MVCSupport.h"
 #import "NSObject+MVCSupport.h"
 #import "WDRequestMaker.h"
+#import "UIViewController+MVCSupport.h"
 
 
 FOUNDATION_EXPORT double WDIOSLibraryVersionNumber;
