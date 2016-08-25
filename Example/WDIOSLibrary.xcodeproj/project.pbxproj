@@ -15,7 +15,6 @@
 		34A4310D1D51AB8D00CEBDFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A4310C1D51AB8D00CEBDFD /* LaunchScreen.storyboard */; };
 		34A431131D51EE1B00CEBDFD /* WDIOSStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A431121D51EE1B00CEBDFD /* WDIOSStartViewController.m */; };
 		34A433191D523DF60027EA4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A433171D523DF60027EA4A /* Main.storyboard */; };
-		34EE01C71D54C49E0068D942 /* WDIOSCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EE01C61D54C49E0068D942 /* WDIOSCollectionViewController.m */; };
 		34EE01CA1D54C56A0068D942 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EE01C91D54C56A0068D942 /* 1.jpg */; };
 		34EE01CC1D54C5890068D942 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EE01CB1D54C5890068D942 /* 2.jpg */; };
 		34EE01CE1D54C5960068D942 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EE01CD1D54C5960068D942 /* 3.jpg */; };
@@ -26,6 +25,8 @@
 		34EE01D81D54C5F50068D942 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EE01D71D54C5F50068D942 /* 8.jpg */; };
 		34EE01DA1D54C6020068D942 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EE01D91D54C6020068D942 /* 9.jpg */; };
 		34EE01DF1D54D88F0068D942 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34EE01DE1D54D88F0068D942 /* ImageIO.framework */; };
+		34F1A69A1D6DFD5F00E0B77E /* ExampleCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F1A6991D6DFD5F00E0B77E /* ExampleCollectionViewController.m */; };
+		34F1A6B21D6F257000E0B77E /* SampleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F1A6B11D6F257000E0B77E /* SampleCollectionViewCell.m */; };
 		34F83AFC1D5098FB00EB89F1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F83AFB1D5098FB00EB89F1 /* AVFoundation.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -80,8 +81,6 @@
 		34A431111D51EE1B00CEBDFD /* WDIOSStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDIOSStartViewController.h; sourceTree = "<group>"; };
 		34A431121D51EE1B00CEBDFD /* WDIOSStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDIOSStartViewController.m; sourceTree = "<group>"; };
 		34A433181D523DF60027EA4A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
-		34EE01C51D54C49E0068D942 /* WDIOSCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDIOSCollectionViewController.h; sourceTree = "<group>"; };
-		34EE01C61D54C49E0068D942 /* WDIOSCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDIOSCollectionViewController.m; sourceTree = "<group>"; };
 		34EE01C91D54C56A0068D942 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		34EE01CB1D54C5890068D942 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		34EE01CD1D54C5960068D942 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
@@ -92,6 +91,10 @@
 		34EE01D71D54C5F50068D942 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
 		34EE01D91D54C6020068D942 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
 		34EE01DE1D54D88F0068D942 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		34F1A6981D6DFD5F00E0B77E /* ExampleCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleCollectionViewController.h; sourceTree = "<group>"; };
+		34F1A6991D6DFD5F00E0B77E /* ExampleCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleCollectionViewController.m; sourceTree = "<group>"; };
+		34F1A6B01D6F257000E0B77E /* SampleCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleCollectionViewCell.h; sourceTree = "<group>"; };
+		34F1A6B11D6F257000E0B77E /* SampleCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleCollectionViewCell.m; sourceTree = "<group>"; };
 		34F83AF71D5098B500EB89F1 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		34F83AFB1D5098FB00EB89F1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4614BA501335F566E1CC43F8 /* Pods-WDIOSLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDIOSLibrary_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WDIOSLibrary_Example/Pods-WDIOSLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -214,8 +217,10 @@
 				6003F5A6195388D20070C39A /* WDIOSViewController.m */,
 				34A431111D51EE1B00CEBDFD /* WDIOSStartViewController.h */,
 				34A431121D51EE1B00CEBDFD /* WDIOSStartViewController.m */,
-				34EE01C51D54C49E0068D942 /* WDIOSCollectionViewController.h */,
-				34EE01C61D54C49E0068D942 /* WDIOSCollectionViewController.m */,
+				34F1A6981D6DFD5F00E0B77E /* ExampleCollectionViewController.h */,
+				34F1A6991D6DFD5F00E0B77E /* ExampleCollectionViewController.m */,
+				34F1A6B01D6F257000E0B77E /* SampleCollectionViewCell.h */,
+				34F1A6B11D6F257000E0B77E /* SampleCollectionViewCell.m */,
 				340269BE1D4B465000EE20DD /* Dictionary.strings */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -500,8 +505,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34F1A6B21D6F257000E0B77E /* SampleCollectionViewCell.m in Sources */,
 				6003F59E195388D20070C39A /* WDIOSAppDelegate.m in Sources */,
-				34EE01C71D54C49E0068D942 /* WDIOSCollectionViewController.m in Sources */,
+				34F1A69A1D6DFD5F00E0B77E /* ExampleCollectionViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* WDIOSViewController.m in Sources */,
 				34A431131D51EE1B00CEBDFD /* WDIOSStartViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,

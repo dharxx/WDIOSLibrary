@@ -141,4 +141,29 @@ static BOOL RequestThumb = NO;
     
     return imageCopy;
 }
+
++ (CGSize)imageSize:(NSString *)path
+{
+    NSURL *imageFileURL = [NSURL fileURLWithPath:path];
+    CGImageSourceRef imageSource = CGImageSourceCreateWithURL((CFURLRef)imageFileURL, NULL);
+    NSValue *value = nil;
+    
+    if (imageSource != NULL) {
+        
+        NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:
+                                 [NSNumber numberWithBool:NO], (NSString *)kCGImageSourceShouldCache,
+                                 nil];
+        CFDictionaryRef imageProperties = CGImageSourceCopyPropertiesAtIndex(imageSource, 0, (CFDictionaryRef)options);
+        if (imageProperties) {
+            NSNumber *width = (NSNumber *)CFDictionaryGetValue(imageProperties, kCGImagePropertyPixelWidth);
+            NSNumber *height = (NSNumber *)CFDictionaryGetValue(imageProperties, kCGImagePropertyPixelHeight);
+            CGSize size = CGSizeMake(width.floatValue,height.floatValue);
+            value = [NSValue valueWithCGSize:size];
+            CFRelease(imageProperties);
+        }
+        CFRelease(imageSource);
+    }
+    
+    return value.CGSizeValue;
+}
 @end

@@ -74,8 +74,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="pep-sH-P5T" kind="relationship" relationship="viewControllers" id="woX-e0-HSH"/>
                         <segue destination="GVp-Tf-iKU" kind="relationship" relationship="viewControllers" id="zLv-9m-j0U"/>
+                        <segue destination="pep-sH-P5T" kind="relationship" relationship="viewControllers" id="woX-e0-HSH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HUA-zc-XQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -86,7 +86,7 @@
         <scene sceneID="BCt-kC-BI1">
             <objects>
                 <navigationController title="Language" id="pep-sH-P5T" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Language" id="Goo-ne-nhH"/>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="Goo-ne-nhH"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="66O-Qa-Ygo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -102,32 +102,52 @@
         <!--Gallery-->
         <scene sceneID="Wd2-30-2oo">
             <objects>
-                <collectionViewController id="Mia-t0-KUM" customClass="WDIOSCollectionViewController" sceneMemberID="viewController">
+                <collectionViewController id="Mia-t0-KUM" customClass="ExampleCollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="gdk-Sl-7EG">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewLayout key="collectionViewLayout" id="Omb-EF-LOt" customClass="CHTCollectionViewWaterfallLayout"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewLayout key="collectionViewLayout" id="Omb-EF-LOt" customClass="WDIOSCollectionViewLayout"/>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Tun-zS-FKm">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Tun-zS-FKm" customClass="SampleCollectionViewCell">
                                 <rect key="frame" x="0.0" y="64" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="9" contentMode="scaleAspectFit" image="2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Cel-1v-79n">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="9" contentMode="scaleAspectFill" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Cel-1v-79n">
+                                            <rect key="frame" x="0.0" y="-13" width="50" height="76"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="75" id="RmW-Lz-820"/>
+                                            </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="8" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="I&lt;3MAYUYU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dP8-NH-s2x">
+                                            <rect key="frame" x="0.0" y="20" width="50" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="16"/>
+                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <color key="shadowColor" red="0.078431372550000003" green="0.0" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <size key="shadowOffset" width="1" height="1"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="Cel-1v-79n" firstAttribute="top" secondItem="Tun-zS-FKm" secondAttribute="top" id="Icl-BX-lfs"/>
-                                    <constraint firstAttribute="bottom" secondItem="Cel-1v-79n" secondAttribute="bottom" id="Pxz-n1-ven"/>
-                                    <constraint firstItem="Cel-1v-79n" firstAttribute="leading" secondItem="Tun-zS-FKm" secondAttribute="leading" id="RKc-kL-ej2"/>
-                                    <constraint firstAttribute="trailing" secondItem="Cel-1v-79n" secondAttribute="trailing" id="XgG-W4-JEd"/>
+                                    <constraint firstAttribute="bottom" secondItem="dP8-NH-s2x" secondAttribute="bottom" id="76d-8d-5K4"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cel-1v-79n" secondAttribute="trailing" id="BUU-w3-NdT"/>
+                                    <constraint firstAttribute="trailing" secondItem="dP8-NH-s2x" secondAttribute="trailing" id="Exl-wG-t64"/>
+                                    <constraint firstItem="dP8-NH-s2x" firstAttribute="leading" secondItem="Tun-zS-FKm" secondAttribute="leading" id="LyC-aS-7cd"/>
+                                    <constraint firstItem="Cel-1v-79n" firstAttribute="centerY" secondItem="Tun-zS-FKm" secondAttribute="centerY" id="MRD-CC-DSS"/>
+                                    <constraint firstItem="Cel-1v-79n" firstAttribute="leading" secondItem="Tun-zS-FKm" secondAttribute="leading" id="Tlg-vA-jvV"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="imageCenter" destination="MRD-CC-DSS" id="uSY-Xs-Itl"/>
+                                    <outlet property="imageHeight" destination="RmW-Lz-820" id="09p-ff-hBo"/>
+                                    <outlet property="imageView" destination="Cel-1v-79n" id="VDj-XL-cbS"/>
+                                    <outlet property="numberLabel" destination="dP8-NH-s2x" id="Vjj-EZ-c6m"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -163,7 +183,7 @@
         <scene sceneID="09t-Kh-7ii">
             <objects>
                 <navigationController title="Gallery" automaticallyAdjustsScrollViewInsets="NO" id="GVp-Tf-iKU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Gallery" id="ema-rN-Cmk"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="ema-rN-Cmk"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5D1-Sg-Y8X">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -180,6 +200,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="2.jpg" width="402" height="406"/>
+        <image name="1.jpg" width="1072" height="1599"/>
     </resources>
 </document>

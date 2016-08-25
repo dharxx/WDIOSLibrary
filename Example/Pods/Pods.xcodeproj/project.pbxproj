@@ -59,6 +59,13 @@
 		349AF598845DBE62B1ECBD823EF21F26 /* CHTCollectionViewWaterfallLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4138B851CC153E13BC90CBE9ABF393D /* CHTCollectionViewWaterfallLayout-dummy.m */; };
 		34B47DE71D5B377300A5298A /* WDJWTString.h in Headers */ = {isa = PBXBuildFile; fileRef = 34B47DE51D5B377300A5298A /* WDJWTString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		34B47DE81D5B377300A5298A /* WDJWTString.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B47DE61D5B377300A5298A /* WDJWTString.m */; };
+		34F1A6A21D6F06C500E0B77E /* WDIOSCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 34F1A69B1D6F06C500E0B77E /* WDIOSCollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34F1A6A31D6F06C500E0B77E /* WDIOSCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F1A69C1D6F06C500E0B77E /* WDIOSCollectionViewController.m */; };
+		34F1A6A41D6F06C500E0B77E /* WDIOSWaitingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 34F1A69E1D6F06C500E0B77E /* WDIOSWaitingView.h */; };
+		34F1A6A51D6F06C500E0B77E /* WDIOSWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F1A69F1D6F06C500E0B77E /* WDIOSWaitingView.m */; };
+		34F1A6A61D6F06C500E0B77E /* WDIOSCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 34F1A6A01D6F06C500E0B77E /* WDIOSCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34F1A6A71D6F06C500E0B77E /* WDIOSCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F1A6A11D6F06C500E0B77E /* WDIOSCollectionViewLayout.m */; };
+		34F1A6AA1D6F08E300E0B77E /* WDIOSDataViewerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 34F1A6A91D6F06FB00E0B77E /* WDIOSDataViewerHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		34F291521D631C96007C6E4B /* UIFont+WDMoreFonts.h in Headers */ = {isa = PBXBuildFile; fileRef = 34F291501D631C96007C6E4B /* UIFont+WDMoreFonts.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		34F291531D631C96007C6E4B /* UIFont+WDMoreFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F291511D631C96007C6E4B /* UIFont+WDMoreFonts.m */; };
 		3B9760A54A856D8095721711C745A80A /* MF_Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D44D3B2A83B118726FD1D2E04F8E8BC /* MF_Base64Additions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -313,6 +320,14 @@
 		349911381D634B6600DC6634 /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
 		34B47DE51D5B377300A5298A /* WDJWTString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDJWTString.h; sourceTree = "<group>"; };
 		34B47DE61D5B377300A5298A /* WDJWTString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDJWTString.m; sourceTree = "<group>"; };
+		34F1A69B1D6F06C500E0B77E /* WDIOSCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDIOSCollectionViewController.h; sourceTree = "<group>"; };
+		34F1A69C1D6F06C500E0B77E /* WDIOSCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDIOSCollectionViewController.m; sourceTree = "<group>"; };
+		34F1A69E1D6F06C500E0B77E /* WDIOSWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDIOSWaitingView.h; sourceTree = "<group>"; };
+		34F1A69F1D6F06C500E0B77E /* WDIOSWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDIOSWaitingView.m; sourceTree = "<group>"; };
+		34F1A6A01D6F06C500E0B77E /* WDIOSCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDIOSCollectionViewLayout.h; sourceTree = "<group>"; };
+		34F1A6A11D6F06C500E0B77E /* WDIOSCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDIOSCollectionViewLayout.m; sourceTree = "<group>"; };
+		34F1A6A91D6F06FB00E0B77E /* WDIOSDataViewerHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDIOSDataViewerHeader.h; sourceTree = "<group>"; };
+		34F1A6AE1D6F1DF500E0B77E /* WDIOSWaitingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WDIOSWaitingView.xib; sourceTree = "<group>"; };
 		34F291501D631C96007C6E4B /* UIFont+WDMoreFonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+WDMoreFonts.h"; sourceTree = "<group>"; };
 		34F291511D631C96007C6E4B /* UIFont+WDMoreFonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+WDMoreFonts.m"; sourceTree = "<group>"; };
 		354D913F12F97EB55DA10D420AF46B84 /* WDIOSLibrary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WDIOSLibrary-umbrella.h"; sourceTree = "<group>"; };
@@ -590,6 +605,21 @@
 			name = SwiftSupport;
 			sourceTree = "<group>";
 		};
+		34F1A6A81D6F06C800E0B77E /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				34F1A69B1D6F06C500E0B77E /* WDIOSCollectionViewController.h */,
+				34F1A69C1D6F06C500E0B77E /* WDIOSCollectionViewController.m */,
+				34F1A6AE1D6F1DF500E0B77E /* WDIOSWaitingView.xib */,
+				34F1A69E1D6F06C500E0B77E /* WDIOSWaitingView.h */,
+				34F1A69F1D6F06C500E0B77E /* WDIOSWaitingView.m */,
+				34F1A6A01D6F06C500E0B77E /* WDIOSCollectionViewLayout.h */,
+				34F1A6A11D6F06C500E0B77E /* WDIOSCollectionViewLayout.m */,
+				34F1A6A91D6F06FB00E0B77E /* WDIOSDataViewerHeader.h */,
+			);
+			name = CollectionView;
+			sourceTree = "<group>";
+		};
 		3B78DD9865A44750EF464EC0D03CE446 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -740,6 +770,7 @@
 		AA5BD5AC84A9DDA0A849CD80FC430B1B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				34F1A6A81D6F06C800E0B77E /* CollectionView */,
 				349911381D634B6600DC6634 /* Macro.h */,
 				3461B6761D6ABA19001B22B7 /* WDRequestMaker.h */,
 				3461B6771D6ABA19001B22B7 /* WDRequestMaker.m */,
@@ -942,7 +973,11 @@
 				344BCA551D6C2FA60000E9A0 /* UIViewController+MVCSupport.h in Headers */,
 				3499112E1D6345ED00DC6634 /* UIImage+StupidApplePhotoFix.h in Headers */,
 				3461B67F1D6ABA19001B22B7 /* WDRequestMaker.h in Headers */,
+				34F1A6AA1D6F08E300E0B77E /* WDIOSDataViewerHeader.h in Headers */,
 				8E86EF115E561275017B2A28047D90E0 /* WDIOSLibrary-umbrella.h in Headers */,
+				34F1A6A21D6F06C500E0B77E /* WDIOSCollectionViewController.h in Headers */,
+				34F1A6A61D6F06C500E0B77E /* WDIOSCollectionViewLayout.h in Headers */,
+				34F1A6A41D6F06C500E0B77E /* WDIOSWaitingView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1346,10 +1381,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BB69670ED4148CD3294E0EB2B140654 /* NSLocale+WDLocalized.m in Sources */,
+				34F1A6A51D6F06C500E0B77E /* WDIOSWaitingView.m in Sources */,
 				AC9E60DDDDBE3B8B41BE6F41099C5235 /* NSString+WDLocalized.m in Sources */,
 				349911371D6349E600DC6634 /* UITableView+MVCSupport.m in Sources */,
 				3499112F1D6345ED00DC6634 /* UIImage+StupidApplePhotoFix.m in Sources */,
+				34F1A6A71D6F06C500E0B77E /* WDIOSCollectionViewLayout.m in Sources */,
 				349911331D63499400DC6634 /* NSObject+MVCSupport.m in Sources */,
+				34F1A6A31D6F06C500E0B77E /* WDIOSCollectionViewController.m in Sources */,
 				344BCA561D6C2FA60000E9A0 /* UIViewController+MVCSupport.m in Sources */,
 				3461B6871D6ABA19001B22B7 /* WDRequestMaker.m in Sources */,
 				7B6D28BE738976D7B3ADA467AC4A07D9 /* WDIOSLibrary-dummy.m in Sources */,

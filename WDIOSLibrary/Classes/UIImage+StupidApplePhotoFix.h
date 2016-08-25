@@ -17,4 +17,6 @@
 + (void)setPhotoAssetRequestThumbSize;
 + (void)setPhotoAssetRequestSizeWithWidth:(CGFloat)width;
 + (void)setPhotoAssetRequestSizeWithHeight:(CGFloat)height;
+
++ (CGSize)imageSize:(NSString *)path;
 @end
