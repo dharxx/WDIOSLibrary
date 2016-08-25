@@ -18,6 +18,11 @@
 - (NSString *)stringValue;
 - (NSString *)priceValue;
 
+//*SUPER SPECIAL WTF GOLDEN RATIO By Calculate is HERE!!
++ (double)goldenRatio;
+//and with just define -.-?
+#define GOLDEN_RATIO 1.61803398874989484820
+
 #define returnObjectIfNil(o,r) ((o)?(o):(r))
 #define emptyStringIfNil(o) returnObjectIfNil(o,@"")
 #define nullObjectIfNil(o) returnObjectIfNil(o,[NSNull null])

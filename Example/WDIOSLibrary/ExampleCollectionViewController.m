@@ -97,9 +97,11 @@
 {
     NSString *path = [[NSBundle mainBundle] pathForResource:object ofType:nil];
     CGSize size = [UIImage imageSize:path];
-    if (size.height > size.width) {
-        size.height = size.width;
+    CGFloat max = size.width / GOLDEN_RATIO;
+    if (size.height > max) {
+        size.height = max;
     }
+    
     return size;
 }
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView

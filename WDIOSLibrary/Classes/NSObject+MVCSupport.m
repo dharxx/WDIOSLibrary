@@ -65,4 +65,14 @@
     }
     return @"";
 }
++ (double)goldenRatio
+{
+    double oldValue = 1;
+    double newValue = 2;
+    while(oldValue != newValue) {
+        oldValue = newValue;
+        newValue = (1 / oldValue) + 1;
+    }
+    return newValue;
+}
 @end

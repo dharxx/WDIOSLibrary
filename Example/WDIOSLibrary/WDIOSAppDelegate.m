@@ -26,6 +26,8 @@
     
     NSLog(@"token = %@\ntrue secret = %@",token,secret);
     
+    NSLog(@"%@",@([NSObject goldenRatio]));
+    NSLog(@"%@",@(GOLDEN_RATIO));
     return YES;
 }
 
