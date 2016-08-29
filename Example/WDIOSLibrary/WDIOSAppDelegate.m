@@ -6,12 +6,14 @@
 //  Copyright (c) 2016 Dhanu Saksrisathaporn. All rights reserved.
 //
 
+#import "WDIOSLibrary_Example-Swift.h"
 #import "WDIOSAppDelegate.h"
 @import WDIOSLibrary;
 @implementation WDIOSAppDelegate
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [SomeSwiftClass swift];
+    
     NSLog(@"%@",[NSString languages]);
     NSLog(@"%@",[NSLocale preferredLanguages]);
     if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]){

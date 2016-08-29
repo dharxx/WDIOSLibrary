@@ -71,27 +71,7 @@
 -(void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
 {
     [super collectionView:collectionView willDisplayCell:cell forItemAtIndexPath:indexPath];
-    [self settingCellLabel:(SampleCollectionViewCell *)cell];
-}
-- (void)settingCellLabel:(SampleCollectionViewCell *)cell
-{
-    //    NSIndexPath *idPath = [self.collectionView indexPathForCell:cell];
-    //    UICollectionViewLayoutAttributes *attributes = [self.collectionView layoutAttributesForItemAtIndexPath:idPath];
-    CGRect cellRect = cell.frame;//attributes.frame;
-    UIView *superview = [self.collectionView superview];
-    CGRect cellFrameInSuperview = [self.collectionView convertRect:cellRect toView:superview];
-    CGFloat h = superview.frame.size.height - cellFrameInSuperview.size.height;
-    CGFloat y = cellFrameInSuperview.origin.y;
-    CGFloat r = y / h;
-    
-    if (r < 0) {
-        r = 0;
-    }
-    else if (r > 1) {
-        r = 1;
-    }
-    [cell setImageParallax:r];
-//    cell.numberLabel.text = @(r).stringValue;
+    [(SampleCollectionViewCell *)cell updateCellOriginByView:self.collectionView];
 }
 - (CGSize)viewSizeByObject:(id)object
 {
@@ -108,7 +88,8 @@
 {
     NSArray<UICollectionViewCell *> *cells = self.collectionView.visibleCells;
     for (SampleCollectionViewCell *cell in cells) {
-        [self settingCellLabel:cell];
+        [(SampleCollectionViewCell *)cell updateCellOriginByView:self.collectionView];
+
     }
 }
   

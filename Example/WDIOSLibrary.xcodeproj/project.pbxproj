@@ -15,6 +15,7 @@
 		34A4310D1D51AB8D00CEBDFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A4310C1D51AB8D00CEBDFD /* LaunchScreen.storyboard */; };
 		34A431131D51EE1B00CEBDFD /* WDIOSStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A431121D51EE1B00CEBDFD /* WDIOSStartViewController.m */; };
 		34A433191D523DF60027EA4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A433171D523DF60027EA4A /* Main.storyboard */; };
+		34B56A2F1D703890000903F0 /* SomeSwiftClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B56A2E1D703890000903F0 /* SomeSwiftClass.swift */; };
 		34EE01CA1D54C56A0068D942 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EE01C91D54C56A0068D942 /* 1.jpg */; };
 		34EE01CC1D54C5890068D942 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EE01CB1D54C5890068D942 /* 2.jpg */; };
 		34EE01CE1D54C5960068D942 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EE01CD1D54C5960068D942 /* 3.jpg */; };
@@ -81,6 +82,8 @@
 		34A431111D51EE1B00CEBDFD /* WDIOSStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDIOSStartViewController.h; sourceTree = "<group>"; };
 		34A431121D51EE1B00CEBDFD /* WDIOSStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDIOSStartViewController.m; sourceTree = "<group>"; };
 		34A433181D523DF60027EA4A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34B56A2E1D703890000903F0 /* SomeSwiftClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeSwiftClass.swift; sourceTree = "<group>"; };
+		34B56A301D703912000903F0 /* WDIOSLibrary_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WDIOSLibrary_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		34EE01C91D54C56A0068D942 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		34EE01CB1D54C5890068D942 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		34EE01CD1D54C5960068D942 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
@@ -213,6 +216,8 @@
 				34EE01C81D54C5490068D942 /* Photos */,
 				6003F59C195388D20070C39A /* WDIOSAppDelegate.h */,
 				6003F59D195388D20070C39A /* WDIOSAppDelegate.m */,
+				34B56A2E1D703890000903F0 /* SomeSwiftClass.swift */,
+				34B56A301D703912000903F0 /* WDIOSLibrary_Example-Bridging-Header.h */,
 				6003F5A5195388D20070C39A /* WDIOSViewController.h */,
 				6003F5A6195388D20070C39A /* WDIOSViewController.m */,
 				34A431111D51EE1B00CEBDFD /* WDIOSStartViewController.h */,
@@ -332,6 +337,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = WDIOS;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Dhanu Saksrisathaporn";
 				TargetAttributes = {
@@ -508,6 +514,7 @@
 				34F1A6B21D6F257000E0B77E /* SampleCollectionViewCell.m in Sources */,
 				6003F59E195388D20070C39A /* WDIOSAppDelegate.m in Sources */,
 				34F1A69A1D6DFD5F00E0B77E /* ExampleCollectionViewController.m in Sources */,
+				34B56A2F1D703890000903F0 /* SomeSwiftClass.swift in Sources */,
 				6003F5A7195388D20070C39A /* WDIOSViewController.m in Sources */,
 				34A431131D51EE1B00CEBDFD /* WDIOSStartViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
@@ -660,15 +667,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Dhanu Saksrisathaporn (T3T93BJ7K9)";
+				DEFINES_MODULE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WDIOSLibrary/WDIOSLibrary-Prefix.pch";
 				INFOPLIST_FILE = "WDIOSLibrary/WDIOSLibrary-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "33dabf65-25bd-4c28-a63b-19cacca131d7";
+				SWIFT_OBJC_BRIDGING_HEADER = "WDIOSLibrary/WDIOSLibrary_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -680,15 +693,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WDIOSLibrary/WDIOSLibrary-Prefix.pch";
 				INFOPLIST_FILE = "WDIOSLibrary/WDIOSLibrary-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "33dabf65-25bd-4c28-a63b-19cacca131d7";
+				SWIFT_OBJC_BRIDGING_HEADER = "WDIOSLibrary/WDIOSLibrary_Example-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

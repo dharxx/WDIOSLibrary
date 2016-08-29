@@ -26,10 +26,21 @@
         self.imageHeight.constant = _imageView.image.size.height * (frame.size.width / _imageView.image.size.width);
     }
 }
-- (void)setImageParallax:(CGFloat)imageParallax
+-(void)updateCellOriginByView:(UIView *)view
 {
+    CGRect cellRect = self.frame;//attributes.frame;
+    CGRect cellFrameInSuperview = [view convertRect:cellRect toView:view.superview];
+    CGFloat h = view.superview.frame.size.height - cellFrameInSuperview.size.height;
+    CGFloat y = cellFrameInSuperview.origin.y;
+    CGFloat r = y / h;
+    if (r < 0) {
+        r = 0;
+    }
+    else if (r > 1) {
+        r = 1;
+    }
     CGFloat diff = self.frame.size.height - self.imageView.frame.size.height;
-    CGFloat centerDiff = powf(imageParallax,2) * diff;
+    CGFloat centerDiff = powf(r,2) * diff;
     self.imageCenter.constant = centerDiff - (diff * 0.5);
 }
 @end

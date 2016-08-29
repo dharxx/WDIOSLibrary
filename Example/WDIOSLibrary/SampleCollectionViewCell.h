@@ -13,6 +13,6 @@
 @property IBOutlet NSLayoutConstraint *imageHeight;
 @property IBOutlet UIImageView *imageView;
 @property IBOutlet UILabel *numberLabel;
-- (void)setImageParallax:(CGFloat)imageParallax; //0-1 top to bottom
 - (void)setImage:(UIImage *)image;
+- (void)updateCellOriginByView:(UIView *)view;
 @end
