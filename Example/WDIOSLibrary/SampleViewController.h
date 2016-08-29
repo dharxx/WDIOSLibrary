@@ -6,7 +6,7 @@
 //  Copyright © 2559 Dhanu Saksrisathaporn. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import WDIOSLibrary;
 
 @interface SampleViewController : UIViewController
 

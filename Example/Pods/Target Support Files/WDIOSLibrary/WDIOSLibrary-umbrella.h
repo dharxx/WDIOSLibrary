@@ -11,6 +11,7 @@
 
 #import "WDIOSDataViewerHeader.h"
 
+#import "Develop-Ben-Header.h"
 
 FOUNDATION_EXPORT double WDIOSLibraryVersionNumber;
 FOUNDATION_EXPORT const unsigned char WDIOSLibraryVersionString[];

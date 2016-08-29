@@ -9,5 +9,7 @@
 #ifndef Develop_Ben_Header_h
 #define Develop_Ben_Header_h
 
+#import "ToastView.h"
+
 
 #endif /* Develop_Ben_Header_h */

@@ -40,6 +40,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		705E94B71D73ED8000AFBCE5 /* SampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 705E94B61D73ED8000AFBCE5 /* SampleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,8 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		61F756974360EA42DEA2E4C3 /* Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests/Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		705E94B51D73ED8000AFBCE5 /* SampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleViewController.h; sourceTree = "<group>"; };
+		705E94B61D73ED8000AFBCE5 /* SampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleViewController.m; sourceTree = "<group>"; };
 		7E6609854FBCD33CA50BCFE6 /* Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests/Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B8B7563A692BCE00E79EF016 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		CF05D9740D5D0322A4C7810B /* Pods_WDIOSLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WDIOSLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -221,6 +224,8 @@
 				34F1A6991D6DFD5F00E0B77E /* ExampleCollectionViewController.m */,
 				34F1A6B01D6F257000E0B77E /* SampleCollectionViewCell.h */,
 				34F1A6B11D6F257000E0B77E /* SampleCollectionViewCell.m */,
+				705E94B51D73ED8000AFBCE5 /* SampleViewController.h */,
+				705E94B61D73ED8000AFBCE5 /* SampleViewController.m */,
 				340269BE1D4B465000EE20DD /* Dictionary.strings */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -336,7 +341,7 @@
 				ORGANIZATIONNAME = "Dhanu Saksrisathaporn";
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = ADE4UVH4RK;
+						DevelopmentTeam = R485TH293S;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -510,6 +515,7 @@
 				34F1A69A1D6DFD5F00E0B77E /* ExampleCollectionViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* WDIOSViewController.m in Sources */,
 				34A431131D51EE1B00CEBDFD /* WDIOSStartViewController.m in Sources */,
+				705E94B71D73ED8000AFBCE5 /* SampleViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -660,7 +666,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Dhanu Saksrisathaporn (T3T93BJ7K9)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WDIOSLibrary/WDIOSLibrary-Prefix.pch";
 				INFOPLIST_FILE = "WDIOSLibrary/WDIOSLibrary-Info.plist";
@@ -668,7 +675,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "33dabf65-25bd-4c28-a63b-19cacca131d7";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -681,6 +688,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WDIOSLibrary/WDIOSLibrary-Prefix.pch";
 				INFOPLIST_FILE = "WDIOSLibrary/WDIOSLibrary-Info.plist";
@@ -688,7 +696,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "33dabf65-25bd-4c28-a63b-19cacca131d7";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

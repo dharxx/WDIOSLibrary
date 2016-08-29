@@ -10,4 +10,20 @@
 
 @implementation SampleViewController
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+}
+
+-(IBAction)alertMessage:(id)sender{
+    [self warningAlertViewWithTitle:@"Test"
+                            message:@"message"
+                         completion:^{}
+               closeAlertCompletion:^{}];
+}
+
+-(IBAction)alertToast:(id)sender{
+    ToastView *toast = [[ToastView alloc]initWithMessage:@"Awesome Library" iconName:@"" time:3 usingBlockWhenFinishShowing:nil];
+    [toast show];
+}
+
 @end

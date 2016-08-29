@@ -90,6 +90,9 @@
 		6CEA821BFBF466A97AF4A7C419A475F7 /* MQTTKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F84609DBBD11E51E25E27E5E59AB8769 /* MQTTKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D4475F649BA36D471167A0C868BF54A /* read_handle_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 39F8CE13867A5D4D250F20D9D6E12685 /* read_handle_client.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		6DADDCEE4F7E07FADBD7CA3AC26A7B55 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84662BE81575AEA7A4334A89929BB6A3 /* FBSnapshotTestController.m */; };
+		705E94C11D73F75D00AFBCE5 /* ToastView.h in Headers */ = {isa = PBXBuildFile; fileRef = 705E94BC1D73F28C00AFBCE5 /* ToastView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		705E94C21D73F75D00AFBCE5 /* ToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 705E94BD1D73F28C00AFBCE5 /* ToastView.m */; };
+		705E94C41D73F79900AFBCE5 /* Develop-Ben-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 705E94C31D73F79300AFBCE5 /* Develop-Ben-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72B1948039E52FC6C5E1E97A96A91A9C /* tls_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 39EDBA297EA37DA5928E62D121322470 /* tls_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7B6D28BE738976D7B3ADA467AC4A07D9 /* WDIOSLibrary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF52063A070FFCD2F1DC3DC645587A1D /* WDIOSLibrary-dummy.m */; };
 		7B6F44ED5832B47F83CEF4EA26EC3026 /* MQTTKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFC4E275EA8F43F627485E69CA564C4 /* MQTTKit.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -363,6 +366,9 @@
 		6C18862A1703762101A67A6551F4EF6B /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		6F5A005F8C0C10AF0A321EDF5FC0690A /* mqtt3_protocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mqtt3_protocol.h; path = libmosquitto/mqtt3_protocol.h; sourceTree = "<group>"; };
 		700D6E55469F9E8F1423BC822C286C9C /* Base64.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Base64.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		705E94BC1D73F28C00AFBCE5 /* ToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToastView.h; path = "Develop-Ben/ToastView.h"; sourceTree = "<group>"; };
+		705E94BD1D73F28C00AFBCE5 /* ToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ToastView.m; path = "Develop-Ben/ToastView.m"; sourceTree = "<group>"; };
+		705E94C31D73F79300AFBCE5 /* Develop-Ben-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Develop-Ben-Header.h"; path = "Develop-Ben/Develop-Ben-Header.h"; sourceTree = "<group>"; };
 		723C002772B279A7A5465489BD772E52 /* Pods-WDIOSLibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WDIOSLibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
 		72B35283B0F55DCE8973E39B2DAE7E43 /* will_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = will_mosq.c; path = libmosquitto/will_mosq.c; sourceTree = "<group>"; };
 		7429BD9BAD263CBCE8BE23AB4A0CA6D4 /* JWTClaim.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWTClaim.h; path = JWT/ClaimSet/JWTClaim.h; sourceTree = "<group>"; };
@@ -690,6 +696,16 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
+		705E94B31D73E3DA00AFBCE5 /* Develop-Ben */ = {
+			isa = PBXGroup;
+			children = (
+				705E94BC1D73F28C00AFBCE5 /* ToastView.h */,
+				705E94BD1D73F28C00AFBCE5 /* ToastView.m */,
+				705E94C31D73F79300AFBCE5 /* Develop-Ben-Header.h */,
+			);
+			name = "Develop-Ben";
+			sourceTree = "<group>";
+		};
 		73F5D7EA33A966A6E4AAB81AC2D74087 /* ObjC */ = {
 			isa = PBXGroup;
 			children = (
@@ -770,6 +786,7 @@
 		AA5BD5AC84A9DDA0A849CD80FC430B1B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				705E94B31D73E3DA00AFBCE5 /* Develop-Ben */,
 				34F1A6A81D6F06C800E0B77E /* CollectionView */,
 				349911381D634B6600DC6634 /* Macro.h */,
 				3461B6761D6ABA19001B22B7 /* WDRequestMaker.h */,
@@ -970,6 +987,7 @@
 				34F291521D631C96007C6E4B /* UIFont+WDMoreFonts.h in Headers */,
 				349911361D6349E600DC6634 /* UITableView+MVCSupport.h in Headers */,
 				349911391D634B6600DC6634 /* Macro.h in Headers */,
+				705E94C11D73F75D00AFBCE5 /* ToastView.h in Headers */,
 				344BCA551D6C2FA60000E9A0 /* UIViewController+MVCSupport.h in Headers */,
 				3499112E1D6345ED00DC6634 /* UIImage+StupidApplePhotoFix.h in Headers */,
 				3461B67F1D6ABA19001B22B7 /* WDRequestMaker.h in Headers */,
@@ -978,6 +996,7 @@
 				34F1A6A21D6F06C500E0B77E /* WDIOSCollectionViewController.h in Headers */,
 				34F1A6A61D6F06C500E0B77E /* WDIOSCollectionViewLayout.h in Headers */,
 				34F1A6A41D6F06C500E0B77E /* WDIOSWaitingView.h in Headers */,
+				705E94C41D73F79900AFBCE5 /* Develop-Ben-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1388,6 +1407,7 @@
 				34F1A6A71D6F06C500E0B77E /* WDIOSCollectionViewLayout.m in Sources */,
 				349911331D63499400DC6634 /* NSObject+MVCSupport.m in Sources */,
 				34F1A6A31D6F06C500E0B77E /* WDIOSCollectionViewController.m in Sources */,
+				705E94C21D73F75D00AFBCE5 /* ToastView.m in Sources */,
 				344BCA561D6C2FA60000E9A0 /* UIViewController+MVCSupport.m in Sources */,
 				3461B6871D6ABA19001B22B7 /* WDRequestMaker.m in Sources */,
 				7B6D28BE738976D7B3ADA467AC4A07D9 /* WDIOSLibrary-dummy.m in Sources */,

@@ -6,8 +6,18 @@
 //
 //
 
-#import <Foundation/Foundation.h>
+@class ToastView;
 
-@interface ToastView : NSObject
+typedef void (^UIToastViewCompletionBlock) (ToastView * toastView, NSInteger timer);
+
+@interface ToastView : UIView
+
+@property (nonatomic, copy) UIToastViewCompletionBlock toastDidFinishShowing;
+
+- (instancetype)initWithMessage:(NSString *)message
+                       iconName:(NSString *)iconName
+                           time:(float)time
+    usingBlockWhenFinishShowing:(UIToastViewCompletionBlock)toastBlock;
+- (void)show;
 
 @end
