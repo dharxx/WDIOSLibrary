@@ -298,7 +298,6 @@
     id object = [self objectByIndexPath:indexPath];
     return [self viewSizeByObject:object];
 }
-
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section
 {
     if (!_doneLoad && _loading && section == [self lastSectionIndex] ) {
@@ -307,7 +306,10 @@
     }
     return CGSizeZero;
 }
-
+- (CHTCollectionViewWaterfallLayout *)waterfallLayout
+{
+    return (CHTCollectionViewWaterfallLayout *)self.collectionView.collectionViewLayout;
+}
 //#pragma mark <UICollectionViewDelegate>
 
 /*

@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class CHTCollectionViewWaterfallLayout;
 @interface WDIOSCollectionViewController : UICollectionViewController
-
 @property (nonatomic) BOOL useFilter;
 //call completation when done
 - (void)loadDataOnSection:(NSInteger)section withRowRange:(NSRange)range completation:(void(^)(NSArray *data))completation;
@@ -23,4 +23,5 @@
 ////
 
 - (NSComparisonResult)compareObject:(id)o1 with:(id)o2;
+- (CHTCollectionViewWaterfallLayout *)waterfallLayout;
 @end
