@@ -22,7 +22,3 @@
 //Abstract method
 - (void)setInputData:(id)data;
 @end
-
-@interface UIView (MVCSupport)
-- (id)findFirstResponder;
-@end

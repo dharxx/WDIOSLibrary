@@ -10,4 +10,5 @@
 
 @interface UIView (MVCSupport)
 - (void)setModelObject:(id)object;
+- (id)findFirstResponder;
 @end

@@ -12,4 +12,17 @@
 - (void)setModelObject:(id)object {
     
 }
+- (id)findFirstResponder
+{
+    if (self.isFirstResponder) {
+        return self;
+    }
+    for (UIView *subView in self.subviews) {
+        id responder = [subView findFirstResponder];
+        if (responder){
+            return responder;
+        }
+    }
+    return nil;
+}
 @end
