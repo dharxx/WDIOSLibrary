@@ -127,12 +127,15 @@
     if (!self.loading) {
         self.loading = YES;
         //add loadmore cell
-  
-        [self.collectionView reloadSections:[NSIndexSet indexSetWithIndex:[self lastSectionIndex]]];
+        
         NSInteger section  = self.lastSectionIndex;
+        
         if (section < 0) {
             self.datas = [NSMutableArray arrayWithCapacity:10];
             section = 0;
+        }
+        else {
+            [self.collectionView reloadSections:[NSIndexSet indexSetWithIndex:[self lastSectionIndex]]];
         }
         
         NSRange range = NSMakeRange(section, self.preferNumberOfDatasPerLoad);
@@ -288,11 +291,11 @@
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return self.datas.count;
+    return MAX(1,self.datas.count);
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
-    return self.datas[section].count;
+    return self.datas.count == 0 ? 0: self.datas[section].count;
 }
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
