@@ -96,8 +96,12 @@
 //    [self.collectionView layoutIfNeeded];
     //    [self.refreshControl endRefreshing];
     dispatch_async(dispatch_get_main_queue(), ^{
+        [CATransaction begin];
+        [CATransaction setCompletionBlock:^{
             [self.collectionView reloadData];
-            [self.refreshControl endRefreshing];
+        }];
+        [self.refreshControl endRefreshing];
+        [CATransaction commit];
 //        [UIView animateWithDuration:0.1 animations:^{
 //            [self.refreshControl endRefreshing];
 //            self.collectionView.alpha = 0;
