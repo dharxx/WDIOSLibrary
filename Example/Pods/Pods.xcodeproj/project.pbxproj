@@ -90,6 +90,16 @@
 		6CEA821BFBF466A97AF4A7C419A475F7 /* MQTTKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F84609DBBD11E51E25E27E5E59AB8769 /* MQTTKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D4475F649BA36D471167A0C868BF54A /* read_handle_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 39F8CE13867A5D4D250F20D9D6E12685 /* read_handle_client.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		6DADDCEE4F7E07FADBD7CA3AC26A7B55 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84662BE81575AEA7A4334A89929BB6A3 /* FBSnapshotTestController.m */; };
+		704352D71D7538D400B24223 /* Button+IndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 704352D51D7538D400B24223 /* Button+IndicatorView.h */; };
+		704352D81D7538D400B24223 /* Button+IndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 704352D61D7538D400B24223 /* Button+IndicatorView.m */; };
+		704352D91D75526B00B24223 /* Button+IndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 704352D51D7538D400B24223 /* Button+IndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		704352DA1D75526B00B24223 /* Button+IndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 704352D61D7538D400B24223 /* Button+IndicatorView.m */; };
+		704352DD1D756C5600B24223 /* WDFullScreenLoading.h in Headers */ = {isa = PBXBuildFile; fileRef = 704352DB1D756C5600B24223 /* WDFullScreenLoading.h */; };
+		704352DE1D756C5600B24223 /* WDFullScreenLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 704352DC1D756C5600B24223 /* WDFullScreenLoading.m */; };
+		704352DF1D75757C00B24223 /* WDFullScreenLoading.h in Headers */ = {isa = PBXBuildFile; fileRef = 704352DB1D756C5600B24223 /* WDFullScreenLoading.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		704352E01D75757C00B24223 /* WDFullScreenLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 704352DC1D756C5600B24223 /* WDFullScreenLoading.m */; };
+		704352E41D758C1E00B24223 /* UIViewController+AndriodUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 704352E21D758C1E00B24223 /* UIViewController+AndriodUI.h */; };
+		704352E51D758C1E00B24223 /* UIViewController+AndriodUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 704352E31D758C1E00B24223 /* UIViewController+AndriodUI.m */; };
 		705E94C11D73F75D00AFBCE5 /* ToastView.h in Headers */ = {isa = PBXBuildFile; fileRef = 705E94BC1D73F28C00AFBCE5 /* ToastView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		705E94C21D73F75D00AFBCE5 /* ToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 705E94BD1D73F28C00AFBCE5 /* ToastView.m */; };
 		705E94C41D73F79900AFBCE5 /* Develop-Ben-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 705E94C31D73F79300AFBCE5 /* Develop-Ben-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -366,6 +376,12 @@
 		6C18862A1703762101A67A6551F4EF6B /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		6F5A005F8C0C10AF0A321EDF5FC0690A /* mqtt3_protocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mqtt3_protocol.h; path = libmosquitto/mqtt3_protocol.h; sourceTree = "<group>"; };
 		700D6E55469F9E8F1423BC822C286C9C /* Base64.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Base64.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		704352D51D7538D400B24223 /* Button+IndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Button+IndicatorView.h"; path = "Develop-Ben/Button+IndicatorView.h"; sourceTree = "<group>"; };
+		704352D61D7538D400B24223 /* Button+IndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Button+IndicatorView.m"; path = "Develop-Ben/Button+IndicatorView.m"; sourceTree = "<group>"; };
+		704352DB1D756C5600B24223 /* WDFullScreenLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WDFullScreenLoading.h; path = "Develop-Ben/WDFullScreenLoading.h"; sourceTree = "<group>"; };
+		704352DC1D756C5600B24223 /* WDFullScreenLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WDFullScreenLoading.m; path = "Develop-Ben/WDFullScreenLoading.m"; sourceTree = "<group>"; };
+		704352E21D758C1E00B24223 /* UIViewController+AndriodUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+AndriodUI.h"; path = "Develop-Ben/UIViewController+AndriodUI.h"; sourceTree = "<group>"; };
+		704352E31D758C1E00B24223 /* UIViewController+AndriodUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+AndriodUI.m"; path = "Develop-Ben/UIViewController+AndriodUI.m"; sourceTree = "<group>"; };
 		705E94BC1D73F28C00AFBCE5 /* ToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToastView.h; path = "Develop-Ben/ToastView.h"; sourceTree = "<group>"; };
 		705E94BD1D73F28C00AFBCE5 /* ToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ToastView.m; path = "Develop-Ben/ToastView.m"; sourceTree = "<group>"; };
 		705E94C31D73F79300AFBCE5 /* Develop-Ben-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Develop-Ben-Header.h"; path = "Develop-Ben/Develop-Ben-Header.h"; sourceTree = "<group>"; };
@@ -696,12 +712,26 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
+		704352E61D758C8700B24223 /* AndriodUI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AndriodUI;
+			sourceTree = "<group>";
+		};
 		705E94B31D73E3DA00AFBCE5 /* Develop-Ben */ = {
 			isa = PBXGroup;
 			children = (
+				704352E61D758C8700B24223 /* AndriodUI */,
+				704352E21D758C1E00B24223 /* UIViewController+AndriodUI.h */,
+				704352E31D758C1E00B24223 /* UIViewController+AndriodUI.m */,
+				705E94C31D73F79300AFBCE5 /* Develop-Ben-Header.h */,
 				705E94BC1D73F28C00AFBCE5 /* ToastView.h */,
 				705E94BD1D73F28C00AFBCE5 /* ToastView.m */,
-				705E94C31D73F79300AFBCE5 /* Develop-Ben-Header.h */,
+				704352D51D7538D400B24223 /* Button+IndicatorView.h */,
+				704352D61D7538D400B24223 /* Button+IndicatorView.m */,
+				704352DB1D756C5600B24223 /* WDFullScreenLoading.h */,
+				704352DC1D756C5600B24223 /* WDFullScreenLoading.m */,
 			);
 			name = "Develop-Ben";
 			sourceTree = "<group>";
@@ -986,7 +1016,9 @@
 				349911321D63499400DC6634 /* NSObject+MVCSupport.h in Headers */,
 				34F291521D631C96007C6E4B /* UIFont+WDMoreFonts.h in Headers */,
 				349911361D6349E600DC6634 /* UITableView+MVCSupport.h in Headers */,
+				704352DF1D75757C00B24223 /* WDFullScreenLoading.h in Headers */,
 				349911391D634B6600DC6634 /* Macro.h in Headers */,
+				704352D91D75526B00B24223 /* Button+IndicatorView.h in Headers */,
 				705E94C11D73F75D00AFBCE5 /* ToastView.h in Headers */,
 				344BCA551D6C2FA60000E9A0 /* UIViewController+MVCSupport.h in Headers */,
 				3499112E1D6345ED00DC6634 /* UIImage+StupidApplePhotoFix.h in Headers */,
@@ -1040,7 +1072,10 @@
 			files = (
 				CCB8BFBA715ECEB062B515AEDDB285DF /* Base64-umbrella.h in Headers */,
 				3461B6781D6ABA19001B22B7 /* WDRequestMaker.h in Headers */,
+				704352DD1D756C5600B24223 /* WDFullScreenLoading.h in Headers */,
+				704352E41D758C1E00B24223 /* UIViewController+AndriodUI.h in Headers */,
 				ABF10F307195D66ABFE3376F9929A47B /* MF_Base64Additions.h in Headers */,
+				704352D71D7538D400B24223 /* Button+IndicatorView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1380,8 +1415,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				704352D81D7538D400B24223 /* Button+IndicatorView.m in Sources */,
 				D641CE3307C4D505B2C8226BF01AE2C2 /* Base64-dummy.m in Sources */,
+				704352DE1D756C5600B24223 /* WDFullScreenLoading.m in Sources */,
 				3B9760A54A856D8095721711C745A80A /* MF_Base64Additions.m in Sources */,
+				704352E51D758C1E00B24223 /* UIViewController+AndriodUI.m in Sources */,
 				3461B6801D6ABA19001B22B7 /* WDRequestMaker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1401,6 +1439,7 @@
 			files = (
 				2BB69670ED4148CD3294E0EB2B140654 /* NSLocale+WDLocalized.m in Sources */,
 				34F1A6A51D6F06C500E0B77E /* WDIOSWaitingView.m in Sources */,
+				704352DA1D75526B00B24223 /* Button+IndicatorView.m in Sources */,
 				AC9E60DDDDBE3B8B41BE6F41099C5235 /* NSString+WDLocalized.m in Sources */,
 				349911371D6349E600DC6634 /* UITableView+MVCSupport.m in Sources */,
 				3499112F1D6345ED00DC6634 /* UIImage+StupidApplePhotoFix.m in Sources */,
@@ -1410,6 +1449,7 @@
 				705E94C21D73F75D00AFBCE5 /* ToastView.m in Sources */,
 				344BCA561D6C2FA60000E9A0 /* UIViewController+MVCSupport.m in Sources */,
 				3461B6871D6ABA19001B22B7 /* WDRequestMaker.m in Sources */,
+				704352E01D75757C00B24223 /* WDFullScreenLoading.m in Sources */,
 				7B6D28BE738976D7B3ADA467AC4A07D9 /* WDIOSLibrary-dummy.m in Sources */,
 				34F291531D631C96007C6E4B /* UIFont+WDMoreFonts.m in Sources */,
 				34B47DE81D5B377300A5298A /* WDJWTString.m in Sources */,

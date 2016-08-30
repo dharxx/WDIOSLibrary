@@ -10,6 +10,8 @@
 #define Develop_Ben_Header_h
 
 #import "ToastView.h"
+#import "Button+IndicatorView.h"
+#import "WDFullScreenLoading.h"
 
 
 #endif /* Develop_Ben_Header_h */

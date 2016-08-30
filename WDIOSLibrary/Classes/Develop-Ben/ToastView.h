@@ -8,6 +8,12 @@
 
 @class ToastView;
 
+typedef enum {
+    ToastShowingTimeShort = 1,
+    ToastShowingTimeNormal = 3,
+    ToastShowingTimeLong = 5
+}ToastShowingTime;
+
 typedef void (^UIToastViewCompletionBlock) (ToastView * toastView, NSInteger timer);
 
 @interface ToastView : UIView
@@ -16,7 +22,7 @@ typedef void (^UIToastViewCompletionBlock) (ToastView * toastView, NSInteger tim
 
 - (instancetype)initWithMessage:(NSString *)message
                        iconName:(NSString *)iconName
-                           time:(float)time
+                           time:(ToastShowingTime )time
     usingBlockWhenFinishShowing:(UIToastViewCompletionBlock)toastBlock;
 - (void)show;
 

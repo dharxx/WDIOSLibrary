@@ -12,16 +12,17 @@
 
 @interface ToastView ()
 @property (nonatomic, strong) UILabel *barView;
-@property float time;
 @property (nonatomic, strong) UIImageView *iconImageView;
 @property (nonatomic, strong) NSString *textTitle;
+@property NSUInteger time;
+@property ToastShowingTime showingTime;
 @end
 
 @implementation ToastView
 
 - (instancetype)initWithMessage:(NSString *)message
                        iconName:(NSString *)iconName
-                           time:(float)time
+                           time:(ToastShowingTime )showingTime
     usingBlockWhenFinishShowing:(UIToastViewCompletionBlock)toastBlock{
     
     self = [super init];
@@ -29,7 +30,7 @@
     if (self) {
         
         self.textTitle = message;
-        self.time = time;
+        self.time = showingTime;
         
         // helpers
         CGSize screenSize = [self screenSize];
@@ -42,8 +43,10 @@
         [self setBackgroundColor:[UIColor clearColor]];
         
         //label
+        NSString *paddingText = @"";
         self.barView = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 10, 10)];
-        [self.barView setText:self.textTitle];
+        if (![iconName isEqualToString:@""]) { paddingText = @"      ";}
+        [self.barView setText:[NSString stringWithFormat:@"%@%@",paddingText,self.textTitle]];
         [self.barView setFont:[UIFont systemFontOfSize:15]];
         [self.barView setTextAlignment:NSTextAlignmentCenter];
         [self.barView sizeToFit];
@@ -56,6 +59,15 @@
         [self.barView setBackgroundColor:[[UIColor blackColor]colorWithAlphaComponent:0.5]];
         [self.barView setTextColor:[UIColor whiteColor]];
         [self addSubview:self.barView];
+        
+        //icon
+        if (![iconName isEqualToString:@""]) {
+            self.iconImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:iconName]];
+            [self.iconImageView setFrame:CGRectMake(7, self.barView.frame.size.height/2-15, 30, 30)];
+            [self.iconImageView setClipsToBounds:YES];
+            [self.iconImageView.layer setCornerRadius:15];
+            [self.barView addSubview:self.iconImageView];
+        }
         
         // Motion effects
         UIInterpolatingMotionEffect *horizontalMotionEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x" type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
