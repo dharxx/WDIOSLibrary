@@ -57,6 +57,9 @@
 		349911371D6349E600DC6634 /* UITableView+MVCSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 349911351D6349E600DC6634 /* UITableView+MVCSupport.m */; };
 		349911391D634B6600DC6634 /* Macro.h in Headers */ = {isa = PBXBuildFile; fileRef = 349911381D634B6600DC6634 /* Macro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		349AF598845DBE62B1ECBD823EF21F26 /* CHTCollectionViewWaterfallLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4138B851CC153E13BC90CBE9ABF393D /* CHTCollectionViewWaterfallLayout-dummy.m */; };
+		349EB42F1D75841A0054CF14 /* UIView+MVCSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 349EB42C1D7583B00054CF14 /* UIView+MVCSupport.m */; };
+		349EB4301D7584210054CF14 /* UIView+MVCSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 349EB42B1D7583B00054CF14 /* UIView+MVCSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		349EB4321D75845B0054CF14 /* CategoryHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 349EB4311D75844E0054CF14 /* CategoryHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		34B47DE71D5B377300A5298A /* WDJWTString.h in Headers */ = {isa = PBXBuildFile; fileRef = 34B47DE51D5B377300A5298A /* WDJWTString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		34B47DE81D5B377300A5298A /* WDJWTString.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B47DE61D5B377300A5298A /* WDJWTString.m */; };
 		34F1A6A21D6F06C500E0B77E /* WDIOSCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 34F1A69B1D6F06C500E0B77E /* WDIOSCollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -318,6 +321,9 @@
 		349911341D6349E600DC6634 /* UITableView+MVCSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+MVCSupport.h"; sourceTree = "<group>"; };
 		349911351D6349E600DC6634 /* UITableView+MVCSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+MVCSupport.m"; sourceTree = "<group>"; };
 		349911381D634B6600DC6634 /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		349EB42B1D7583B00054CF14 /* UIView+MVCSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MVCSupport.h"; sourceTree = "<group>"; };
+		349EB42C1D7583B00054CF14 /* UIView+MVCSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MVCSupport.m"; sourceTree = "<group>"; };
+		349EB4311D75844E0054CF14 /* CategoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryHeader.h; sourceTree = "<group>"; };
 		34B47DE51D5B377300A5298A /* WDJWTString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDJWTString.h; sourceTree = "<group>"; };
 		34B47DE61D5B377300A5298A /* WDJWTString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDJWTString.m; sourceTree = "<group>"; };
 		34F1A69B1D6F06C500E0B77E /* WDIOSCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDIOSCollectionViewController.h; sourceTree = "<group>"; };
@@ -770,6 +776,7 @@
 			children = (
 				34F1A6A81D6F06C800E0B77E /* CollectionView */,
 				349911381D634B6600DC6634 /* Macro.h */,
+				349EB4311D75844E0054CF14 /* CategoryHeader.h */,
 				3461B6761D6ABA19001B22B7 /* WDRequestMaker.h */,
 				3461B6771D6ABA19001B22B7 /* WDRequestMaker.m */,
 				DD8F9B21A0881DFAEFCC4589BE4D3B1E /* NSLocale+WDLocalized.h */,
@@ -780,6 +787,8 @@
 				34B47DE61D5B377300A5298A /* WDJWTString.m */,
 				34F291501D631C96007C6E4B /* UIFont+WDMoreFonts.h */,
 				34F291511D631C96007C6E4B /* UIFont+WDMoreFonts.m */,
+				349EB42B1D7583B00054CF14 /* UIView+MVCSupport.h */,
+				349EB42C1D7583B00054CF14 /* UIView+MVCSupport.m */,
 				3499112C1D6345ED00DC6634 /* UIImage+StupidApplePhotoFix.h */,
 				3499112D1D6345ED00DC6634 /* UIImage+StupidApplePhotoFix.m */,
 				349911301D63499400DC6634 /* NSObject+MVCSupport.h */,
@@ -961,6 +970,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				349EB4301D7584210054CF14 /* UIView+MVCSupport.h in Headers */,
 				9074DFBF433CFBFD072939DF7CD11996 /* NSLocale+WDLocalized.h in Headers */,
 				3F1F65426739C22D60C04559433A7291 /* NSString+WDLocalized.h in Headers */,
 				34B47DE71D5B377300A5298A /* WDJWTString.h in Headers */,
@@ -968,6 +978,7 @@
 				34F291521D631C96007C6E4B /* UIFont+WDMoreFonts.h in Headers */,
 				349911361D6349E600DC6634 /* UITableView+MVCSupport.h in Headers */,
 				349911391D634B6600DC6634 /* Macro.h in Headers */,
+				349EB4321D75845B0054CF14 /* CategoryHeader.h in Headers */,
 				344BCA551D6C2FA60000E9A0 /* UIViewController+MVCSupport.h in Headers */,
 				3499112E1D6345ED00DC6634 /* UIImage+StupidApplePhotoFix.h in Headers */,
 				3461B67F1D6ABA19001B22B7 /* WDRequestMaker.h in Headers */,
@@ -1387,6 +1398,7 @@
 				349911331D63499400DC6634 /* NSObject+MVCSupport.m in Sources */,
 				34F1A6A31D6F06C500E0B77E /* WDIOSCollectionViewController.m in Sources */,
 				344BCA561D6C2FA60000E9A0 /* UIViewController+MVCSupport.m in Sources */,
+				349EB42F1D75841A0054CF14 /* UIView+MVCSupport.m in Sources */,
 				3461B6871D6ABA19001B22B7 /* WDRequestMaker.m in Sources */,
 				7B6D28BE738976D7B3ADA467AC4A07D9 /* WDIOSLibrary-dummy.m in Sources */,
 				34F291531D631C96007C6E4B /* UIFont+WDMoreFonts.m in Sources */,
