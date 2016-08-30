@@ -127,9 +127,15 @@
     if (!self.loading) {
         self.loading = YES;
         //add loadmore cell
+  
         [self.collectionView reloadSections:[NSIndexSet indexSetWithIndex:[self lastSectionIndex]]];
         NSInteger section  = self.lastSectionIndex;
-        NSRange range = NSMakeRange(self.lastRowIndex, self.preferNumberOfDatasPerLoad);
+        if (section < 0) {
+            self.datas = [NSMutableArray arrayWithCapacity:10];
+            section = 0;
+        }
+        
+        NSRange range = NSMakeRange(section, self.preferNumberOfDatasPerLoad);
         [self loadDataOnSection:section
                    withRowRange:range
                    completation:^(NSArray *data) {
@@ -230,7 +236,9 @@
     // Register cell classes
     //[self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     // Do any additional setup after loading the view.
-    [self startRefresh:nil];
+//    [self startRefresh:nil];
+    
+    [self loadMore:nil];
     
 }
 -(void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
