@@ -95,60 +95,93 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AL5-tR-ILq">
-                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AL5-tR-ILq">
+                                <rect key="frame" x="0.0" y="74" width="320" height="435"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hm-9D-1R8">
-                                        <rect key="frame" x="111" y="0.0" width="99" height="76"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hm-9D-1R8" customClass="MDButton">
+                                        <rect key="frame" x="60" y="0.0" width="200" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="GLO-h5-MOE"/>
+                                        </constraints>
                                         <state key="normal" title="Alert Message"/>
                                         <connections>
                                             <action selector="alertMessage:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="vWS-D9-b1q"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ak-Xo-KJb">
-                                        <rect key="frame" x="108" y="76" width="104" height="76"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ak-Xo-KJb" customClass="MDButton">
+                                        <rect key="frame" x="60" y="64" width="200" height="53"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="2ky-jJ-vef"/>
+                                        </constraints>
                                         <state key="normal" title="Toast Message"/>
                                         <connections>
                                             <action selector="alertToast:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="ZAN-n5-A0j"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0E-9V-Jes">
-                                        <rect key="frame" x="96" y="152" width="129" height="76"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0E-9V-Jes" customClass="MDButton">
+                                        <rect key="frame" x="60" y="127" width="200" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="ZJA-MC-c4F"/>
+                                        </constraints>
                                         <state key="normal" title="Fullscreen Loading"/>
                                         <connections>
                                             <action selector="addFullScreenLoading:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="omY-mQ-aRJ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYW-Wm-Plg">
-                                        <rect key="frame" x="104" y="228" width="112" height="75"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYW-Wm-Plg" customClass="MDButton">
+                                        <rect key="frame" x="60" y="191" width="200" height="53"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="KqI-x4-8k0"/>
+                                        </constraints>
                                         <state key="normal" title="Circular Loading"/>
+                                        <connections>
+                                            <action selector="addCircularLoading:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="xhE-Dt-7F2"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Lk-dv-vFN">
-                                        <rect key="frame" x="110" y="303" width="101" height="76"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Lk-dv-vFN" customClass="MDButton">
+                                        <rect key="frame" x="60" y="254" width="200" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="mrm-4P-AnN"/>
+                                        </constraints>
                                         <state key="normal" title="Linear Loading"/>
+                                        <connections>
+                                            <action selector="addLinearLoading:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="gPU-0g-9o6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nG7-Bh-EQL" customClass="MDButton">
+                                        <rect key="frame" x="60" y="318" width="200" height="53"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="t2c-jQ-Dbc"/>
+                                        </constraints>
+                                        <state key="normal" title="Remove Loading"/>
+                                        <connections>
+                                            <action selector="removeLoadingView:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="LTm-s1-kAB"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZXa-qL-2aS" customClass="Button_IndicatorView">
-                                        <rect key="frame" x="0.0" y="379" width="320" height="76"/>
+                                        <rect key="frame" x="0.0" y="381" width="320" height="54"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Z0E-9V-Jes" firstAttribute="top" secondItem="9ak-Xo-KJb" secondAttribute="bottom" id="AhF-6O-hAr"/>
                                     <constraint firstItem="ZXa-qL-2aS" firstAttribute="top" secondItem="5Lk-dv-vFN" secondAttribute="bottom" id="FYw-wk-Anj"/>
-                                    <constraint firstAttribute="bottom" secondItem="ZXa-qL-2aS" secondAttribute="bottom" id="Fwz-wA-5JD"/>
-                                    <constraint firstItem="ZXa-qL-2aS" firstAttribute="leading" secondItem="AL5-tR-ILq" secondAttribute="leading" id="KFb-xd-Dwy"/>
-                                    <constraint firstItem="9ak-Xo-KJb" firstAttribute="top" secondItem="5hm-9D-1R8" secondAttribute="bottom" id="Rm3-wM-mzx"/>
-                                    <constraint firstItem="5Lk-dv-vFN" firstAttribute="top" secondItem="TYW-Wm-Plg" secondAttribute="bottom" id="hW7-Cx-Y04"/>
-                                    <constraint firstItem="5hm-9D-1R8" firstAttribute="top" secondItem="AL5-tR-ILq" secondAttribute="top" id="t4K-Qw-aJy"/>
+                                    <constraint firstItem="Z0E-9V-Jes" firstAttribute="leading" secondItem="AL5-tR-ILq" secondAttribute="leading" constant="96" id="pEy-Ee-DP1"/>
+                                    <constraint firstItem="ZXa-qL-2aS" firstAttribute="leading" secondItem="AL5-tR-ILq" secondAttribute="leading" id="zH4-h2-LO4"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="pEy-Ee-DP1"/>
+                                        <exclude reference="FYw-wk-Anj"/>
+                                    </mask>
+                                </variation>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Dxo-o4-Iki" firstAttribute="top" secondItem="AL5-tR-ILq" secondAttribute="bottom" id="Kov-03-kzF"/>
-                            <constraint firstAttribute="trailing" secondItem="AL5-tR-ILq" secondAttribute="trailing" id="M5M-XL-YFN"/>
-                            <constraint firstItem="AL5-tR-ILq" firstAttribute="leading" secondItem="VT8-rV-qXo" secondAttribute="leading" id="T1u-HC-4ml"/>
-                            <constraint firstItem="AL5-tR-ILq" firstAttribute="top" secondItem="G9V-1q-BdY" secondAttribute="bottom" id="pOe-5u-Bd0"/>
+                            <constraint firstAttribute="trailing" secondItem="AL5-tR-ILq" secondAttribute="trailing" id="Asf-n3-iAX"/>
+                            <constraint firstItem="AL5-tR-ILq" firstAttribute="leading" secondItem="VT8-rV-qXo" secondAttribute="leading" id="IMy-l5-gwA"/>
+                            <constraint firstItem="AL5-tR-ILq" firstAttribute="bottom" secondItem="Dxo-o4-Iki" secondAttribute="top" constant="-10" id="WEl-E2-99Z"/>
+                            <constraint firstItem="AL5-tR-ILq" firstAttribute="top" secondItem="G9V-1q-BdY" secondAttribute="bottom" constant="10" id="m3z-hH-SLL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Test View" id="zRU-fh-FNM"/>

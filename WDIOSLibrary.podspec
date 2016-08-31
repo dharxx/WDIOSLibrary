@@ -41,4 +41,5 @@ TODO: Add long description of the pod here.
     s.dependency 'MQTTKit'
     s.dependency 'JWT'
     s.dependency 'CHTCollectionViewWaterfallLayout'
+    s.dependency 'MaterialControls'
 end

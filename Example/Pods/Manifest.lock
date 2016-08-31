@@ -1,8 +1,8 @@
 PODS:
   - Base64 (1.1.2)
-  - CHTCollectionViewWaterfallLayout (0.9.4):
-    - CHTCollectionViewWaterfallLayout/ObjC (= 0.9.4)
-  - CHTCollectionViewWaterfallLayout/ObjC (0.9.4)
+  - CHTCollectionViewWaterfallLayout (0.9.5):
+    - CHTCollectionViewWaterfallLayout/ObjC (= 0.9.5)
+  - CHTCollectionViewWaterfallLayout/ObjC (0.9.5)
   - FBSnapshotTestCase (2.1.2):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.2)
   - FBSnapshotTestCase/Core (2.1.2)
@@ -10,10 +10,12 @@ PODS:
     - FBSnapshotTestCase/Core
   - JWT (2.0.2):
     - Base64 (~> 1.1.2)
+  - MaterialControls (1.1.0)
   - MQTTKit (0.1.0)
   - WDIOSLibrary (0.1.0):
     - CHTCollectionViewWaterfallLayout
     - JWT
+    - MaterialControls
     - MQTTKit
 
 DEPENDENCIES:
@@ -26,10 +28,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Base64: cecfb41a004124895a7bcee567a89bae5a89d49b
-  CHTCollectionViewWaterfallLayout: db74be9135826d285f45ff163fd090e57c99fc50
+  CHTCollectionViewWaterfallLayout: 775ff73f48cfc13859b62d8bceb96e772e4a0318
   FBSnapshotTestCase: 918c55861356ee83aee7843d759f55a18ff6982b
   JWT: af1172153afe5f2536f57816f3e12cb4a6ac7769
+  MaterialControls: aaabe6957059da904d5750f1d2ca2eee6f977e01
   MQTTKit: a4e6b8aa92db1aeae917d2b773fd72a7749937c4
-  WDIOSLibrary: 81376ff8801dc37e3863a711a6d334af4f69975f
+  WDIOSLibrary: ca899bbd2da09276d2a760f223781996da72dfa0
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0

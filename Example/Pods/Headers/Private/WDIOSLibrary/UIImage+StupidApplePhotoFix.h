@@ -1,0 +1,1 @@
+../../../../../WDIOSLibrary/Classes/UIImage+StupidApplePhotoFix.h

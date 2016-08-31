@@ -21,7 +21,8 @@
   "source_files": "WDIOSLibrary/Classes/**/*",
   "frameworks": [
     "CoreMotion",
-    "AVFoundation"
+    "AVFoundation",
+    "CoreText"
   ],
   "dependencies": {
     "MQTTKit": [
@@ -31,6 +32,9 @@
 
     ],
     "CHTCollectionViewWaterfallLayout": [
+
+    ],
+    "MaterialControls": [
 
     ]
   }

@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MDProgress.h"
 
 @interface UIViewController (AndroidUI)
+
+-(void)showCircularProgressIndeterminate;
+-(void)showLinearProgressIndeterminate;
+-(void)removeProgressView;
 
 @end

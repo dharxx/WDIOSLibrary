@@ -7,6 +7,7 @@
 //
 
 #import "SampleViewController.h"
+#import "MDProgress.h"
 
 @implementation SampleViewController
 
@@ -41,5 +42,19 @@
 -(void)completeLoading:(WDFullScreenLoading *)loading{
     [loading hide];
 }
+
+-(IBAction)addCircularLoading:(id)sender{
+    [self showCircularProgressIndeterminate];
+    [self performSelector:@selector(removeLoadingView:) withObject:self afterDelay:5];
+}
+
+-(IBAction)addLinearLoading:(id)sender{
+    [self showLinearProgressIndeterminate];
+}
+
+-(IBAction)removeLoadingView:(id)sender{
+    [self removeProgressView];
+}
+
 
 @end
