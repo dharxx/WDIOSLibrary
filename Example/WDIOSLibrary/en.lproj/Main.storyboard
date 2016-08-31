@@ -95,100 +95,172 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AL5-tR-ILq">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="R8Y-Rg-zxw">
                                 <rect key="frame" x="0.0" y="74" width="320" height="435"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hm-9D-1R8" customClass="MDButton">
-                                        <rect key="frame" x="60" y="0.0" width="200" height="54"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wtJ-fg-6O5">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="435"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKa-lQ-UB4" customClass="MDButton">
+                                                <rect key="frame" x="5" y="0.0" width="150" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="7Rx-8h-kxA"/>
+                                                </constraints>
+                                                <state key="normal" title="Alert Message"/>
+                                                <connections>
+                                                    <action selector="alertMessage:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="fp4-MH-EHK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxj-71-Jiu" customClass="MDButton">
+                                                <rect key="frame" x="5" y="64" width="150" height="53"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="qKY-uB-RmP"/>
+                                                </constraints>
+                                                <state key="normal" title="Toast Message"/>
+                                                <connections>
+                                                    <action selector="alertToast:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="kS9-dw-hCC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLf-dE-19q" customClass="MDButton">
+                                                <rect key="frame" x="5" y="127" width="150" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="hIU-Yu-ek1"/>
+                                                </constraints>
+                                                <state key="normal" title="Fullscreen Loading"/>
+                                                <connections>
+                                                    <action selector="addFullScreenLoading:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="gHn-XA-S2L"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnm-z2-gCR" customClass="MDButton">
+                                                <rect key="frame" x="5" y="191" width="150" height="53"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="mv2-si-qZW"/>
+                                                </constraints>
+                                                <state key="normal" title="Circular Loading"/>
+                                                <connections>
+                                                    <action selector="addCircularLoading:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="F3p-Iw-a0J"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHk-Rq-KXN" customClass="MDButton">
+                                                <rect key="frame" x="5" y="254" width="150" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="oiA-Dj-sIt"/>
+                                                </constraints>
+                                                <state key="normal" title="Linear Loading"/>
+                                                <connections>
+                                                    <action selector="addLinearLoading:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="Vzy-jc-XI5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpt-tb-9dD" customClass="MDButton">
+                                                <rect key="frame" x="5" y="318" width="150" height="53"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="mac-Qr-XuK"/>
+                                                </constraints>
+                                                <state key="normal" title="Remove Loading"/>
+                                                <connections>
+                                                    <action selector="removeLoadingView:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="typ-Wk-TMR"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rfM-c8-ODP" customClass="Button_IndicatorView">
+                                                <rect key="frame" x="5" y="381" width="150" height="54"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="ue1-JB-5K7"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="GLO-h5-MOE"/>
+                                            <constraint firstItem="rfM-c8-ODP" firstAttribute="top" secondItem="cHk-Rq-KXN" secondAttribute="bottom" id="oUn-Ff-ATS"/>
+                                            <constraint firstItem="wLf-dE-19q" firstAttribute="leading" secondItem="wtJ-fg-6O5" secondAttribute="leading" constant="96" id="w2c-Ur-zaI"/>
                                         </constraints>
-                                        <state key="normal" title="Alert Message"/>
-                                        <connections>
-                                            <action selector="alertMessage:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="vWS-D9-b1q"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ak-Xo-KJb" customClass="MDButton">
-                                        <rect key="frame" x="60" y="64" width="200" height="53"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="w2c-Ur-zaI"/>
+                                                <exclude reference="oUn-Ff-ATS"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AL5-tR-ILq">
+                                        <rect key="frame" x="160" y="0.0" width="160" height="435"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hm-9D-1R8" customClass="MDButton">
+                                                <rect key="frame" x="5" y="0.0" width="150" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="gy0-UL-zIa"/>
+                                                </constraints>
+                                                <state key="normal" title="SweetAlert"/>
+                                                <connections>
+                                                    <action selector="addAlertView:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="cUJ-PG-wJZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ak-Xo-KJb" customClass="MDButton">
+                                                <rect key="frame" x="5" y="64" width="150" height="53"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="rUe-lw-FOH"/>
+                                                </constraints>
+                                                <state key="normal" title="Snackbar"/>
+                                                <connections>
+                                                    <action selector="addSneckbar:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="Qhy-mQ-61E"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0E-9V-Jes" customClass="MDButton">
+                                                <rect key="frame" x="5" y="127" width="150" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="mhv-3S-rEN"/>
+                                                </constraints>
+                                                <state key="normal" title="(Emthy)"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYW-Wm-Plg" customClass="MDButton">
+                                                <rect key="frame" x="5" y="191" width="150" height="53"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="LBn-D1-wtz"/>
+                                                </constraints>
+                                                <state key="normal" title="(Emthy)"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Lk-dv-vFN" customClass="MDButton">
+                                                <rect key="frame" x="5" y="254" width="150" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="SRT-kI-NEV"/>
+                                                </constraints>
+                                                <state key="normal" title="(Emthy)"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nG7-Bh-EQL" customClass="MDButton">
+                                                <rect key="frame" x="5" y="318" width="150" height="53"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="mMw-eN-5hD"/>
+                                                </constraints>
+                                                <state key="normal" title="(Emthy)"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cO-v7-Vv1" customClass="MDButton">
+                                                <rect key="frame" x="5" y="381" width="150" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="eh0-kL-2BM"/>
+                                                </constraints>
+                                                <state key="normal" title="(Emthy)"/>
+                                            </button>
+                                        </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="2ky-jJ-vef"/>
+                                            <constraint firstItem="Z0E-9V-Jes" firstAttribute="leading" secondItem="AL5-tR-ILq" secondAttribute="leading" constant="96" id="pEy-Ee-DP1"/>
                                         </constraints>
-                                        <state key="normal" title="Toast Message"/>
-                                        <connections>
-                                            <action selector="alertToast:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="ZAN-n5-A0j"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0E-9V-Jes" customClass="MDButton">
-                                        <rect key="frame" x="60" y="127" width="200" height="54"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="ZJA-MC-c4F"/>
-                                        </constraints>
-                                        <state key="normal" title="Fullscreen Loading"/>
-                                        <connections>
-                                            <action selector="addFullScreenLoading:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="omY-mQ-aRJ"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYW-Wm-Plg" customClass="MDButton">
-                                        <rect key="frame" x="60" y="191" width="200" height="53"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="KqI-x4-8k0"/>
-                                        </constraints>
-                                        <state key="normal" title="Circular Loading"/>
-                                        <connections>
-                                            <action selector="addCircularLoading:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="xhE-Dt-7F2"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Lk-dv-vFN" customClass="MDButton">
-                                        <rect key="frame" x="60" y="254" width="200" height="54"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="mrm-4P-AnN"/>
-                                        </constraints>
-                                        <state key="normal" title="Linear Loading"/>
-                                        <connections>
-                                            <action selector="addLinearLoading:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="gPU-0g-9o6"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nG7-Bh-EQL" customClass="MDButton">
-                                        <rect key="frame" x="60" y="318" width="200" height="53"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="t2c-jQ-Dbc"/>
-                                        </constraints>
-                                        <state key="normal" title="Remove Loading"/>
-                                        <connections>
-                                            <action selector="removeLoadingView:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="LTm-s1-kAB"/>
-                                        </connections>
-                                    </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZXa-qL-2aS" customClass="Button_IndicatorView">
-                                        <rect key="frame" x="0.0" y="381" width="320" height="54"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="pEy-Ee-DP1"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="ZXa-qL-2aS" firstAttribute="top" secondItem="5Lk-dv-vFN" secondAttribute="bottom" id="FYw-wk-Anj"/>
-                                    <constraint firstItem="Z0E-9V-Jes" firstAttribute="leading" secondItem="AL5-tR-ILq" secondAttribute="leading" constant="96" id="pEy-Ee-DP1"/>
-                                    <constraint firstItem="ZXa-qL-2aS" firstAttribute="leading" secondItem="AL5-tR-ILq" secondAttribute="leading" id="zH4-h2-LO4"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="pEy-Ee-DP1"/>
-                                        <exclude reference="FYw-wk-Anj"/>
-                                    </mask>
-                                </variation>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="AL5-tR-ILq" secondAttribute="trailing" id="Asf-n3-iAX"/>
-                            <constraint firstItem="AL5-tR-ILq" firstAttribute="leading" secondItem="VT8-rV-qXo" secondAttribute="leading" id="IMy-l5-gwA"/>
-                            <constraint firstItem="AL5-tR-ILq" firstAttribute="bottom" secondItem="Dxo-o4-Iki" secondAttribute="top" constant="-10" id="WEl-E2-99Z"/>
-                            <constraint firstItem="AL5-tR-ILq" firstAttribute="top" secondItem="G9V-1q-BdY" secondAttribute="bottom" constant="10" id="m3z-hH-SLL"/>
+                            <constraint firstItem="Dxo-o4-Iki" firstAttribute="top" secondItem="R8Y-Rg-zxw" secondAttribute="bottom" constant="10" id="C5a-fx-Q7X"/>
+                            <constraint firstItem="R8Y-Rg-zxw" firstAttribute="leading" secondItem="VT8-rV-qXo" secondAttribute="leading" id="EjH-P0-XCR"/>
+                            <constraint firstAttribute="trailing" secondItem="R8Y-Rg-zxw" secondAttribute="trailing" id="LSo-2h-O7E"/>
+                            <constraint firstItem="R8Y-Rg-zxw" firstAttribute="top" secondItem="G9V-1q-BdY" secondAttribute="bottom" constant="10" id="cfS-za-Ga1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Test View" id="zRU-fh-FNM"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="buttonView" destination="ZXa-qL-2aS" id="azn-3X-jz7"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXX-fm-TNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

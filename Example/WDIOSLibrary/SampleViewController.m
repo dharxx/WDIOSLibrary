@@ -8,6 +8,7 @@
 
 #import "SampleViewController.h"
 #import "MDProgress.h"
+#import "MDSnackbar.h"
 
 @implementation SampleViewController
 
@@ -44,17 +45,46 @@
 }
 
 -(IBAction)addCircularLoading:(id)sender{
-    [self showCircularProgressIndeterminate];
+    MDProgress *loadingView = [[MDProgress alloc] initWithFrame:self.view.bounds];
+    [loadingView setStyle:MDProgressStyleCircular];
+    [loadingView setProgressType:MDProgressTypeIndeterminate];
+    [self.view addSubview:loadingView];
     [self performSelector:@selector(removeLoadingView:) withObject:self afterDelay:5];
 }
 
 -(IBAction)addLinearLoading:(id)sender{
-    [self showLinearProgressIndeterminate];
+    MDProgress *loadingView = [[MDProgress alloc] initWithFrame:CGRectMake(0, 60, self.view.frame.size.width, 10)];
+    [loadingView setStyle:MDProgressStyleLinear];
+    [loadingView setProgressType:MDProgressTypeIndeterminate];
+    [self.view addSubview:loadingView];
 }
 
 -(IBAction)removeLoadingView:(id)sender{
     [self removeProgressView];
 }
 
+-(IBAction)addAlertView:(id)sender{
+    AlertView *alert = [[AlertView alloc]initWithTitle:@"Confirm Delete" message:@"Do you want to delete this item." confirmButtonTitle:@"Delete" cancelButtonTitle:@"No" usingBlockWhenTapButton:^(AlertView *alertView, NSInteger buttonIndex) {
+        if (buttonIndex == 0) {
+            ToastView *toast = [[ToastView alloc]initWithMessage:@"Canceled"
+                                                        iconName:@""
+                                                            time:ToastShowingTimeShort
+                                     usingBlockWhenFinishShowing:nil];
+            [toast show];
+        }else if(buttonIndex == 1){
+            ToastView *toast = [[ToastView alloc]initWithMessage:@"Deleted"
+                                                        iconName:@""
+                                                            time:ToastShowingTimeShort
+                                     usingBlockWhenFinishShowing:nil];
+            [toast show];
+        }
+    }];
+    [alert show];
+}
+
+-(IBAction)addSneckbar:(id)sender{
+    MDSnackbar *bar = [[MDSnackbar alloc]initWithText:@"No Internet Connectivity, Please check" actionTitle:@"Close" duration:3];
+    [bar show];
+}
 
 @end

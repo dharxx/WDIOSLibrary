@@ -10,6 +10,7 @@
 #define Develop_Ben_Header_h
 
 #import "ToastView.h"
+#import "AlertView.h"
 #import "Button+IndicatorView.h"
 #import "WDFullScreenLoading.h"
 #import "UIViewController+AndriodUI.h"
