@@ -227,21 +227,7 @@
     
     CHTCollectionViewWaterfallLayout *layout = (CHTCollectionViewWaterfallLayout *)self.collectionViewLayout;
     layout.footerHeight = 44;
-//    NSBundle *bundle = [NSBundle bundleWithIdentifier:@"org.cocoapods.WDIOSLibrary"];
-//    NSLog(@"%@",bundle.bundlePath);
-//    NSLog(@"nib %@",[self recursivePathsForResourcesOfType:@"nib" inDirectory:bundle.bundlePath]);
-//        NSLog(@"bundle %@",[self recursivePathsForResourcesOfType:@"bundle" inDirectory:bundle.bundlePath]);
-//    UINib *nib = [UINib nibWithNibName:@"WDIOSWaitingView" bundle:bundle];
-//    
-//    [self.collectionView registerNib:nib forSupplementaryViewOfKind:CHTCollectionElementKindSectionFooter withReuseIdentifier:@"WDIOSWaitingView"];
     [self.collectionView registerClass:[WDIOSWaitingView class] forSupplementaryViewOfKind:CHTCollectionElementKindSectionFooter withReuseIdentifier:@"WDIOSWaitingView"];
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Register cell classes
-    //[self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    // Do any additional setup after loading the view.
-//    [self startRefresh:nil];
     
     [self loadMore:nil];
     
@@ -301,8 +287,15 @@
 }
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionReusableView *v =[collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"WDIOSWaitingView" forIndexPath:indexPath];
-    return v;
+    if ([kind isEqualToString:CHTCollectionElementKindSectionFooter]) {
+        WDIOSWaitingView *v =[collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"WDIOSWaitingView" forIndexPath:indexPath];
+        UIColor *c  = [self activityIndicatorViewLoadMoreColor];
+        if (c) {
+            v.activityIndicatorView.color = c;
+        }
+        return v;
+    }
+    return nil;
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     id object = [self objectByIndexPath:indexPath];
@@ -358,4 +351,8 @@
  }
  */
 
+- (UIColor *)activityIndicatorViewLoadMoreColor
+{
+    return nil;
+}
 @end

@@ -11,6 +11,7 @@
 @class CHTCollectionViewWaterfallLayout;
 @interface WDIOSCollectionViewController : UICollectionViewController
 @property (nonatomic) BOOL useFilter;
+@property (nonatomic,readonly) UIRefreshControl *refreshControl;
 //call completation when done
 - (void)loadDataOnSection:(NSInteger)section withRowRange:(NSRange)range completation:(void(^)(NSArray *data))completation;
 - (NSInteger)preferNumberOfDatasPerLoad;
@@ -24,4 +25,5 @@
 
 - (NSComparisonResult)compareObject:(id)o1 with:(id)o2;
 - (CHTCollectionViewWaterfallLayout *)waterfallLayout;
+- (UIColor *)activityIndicatorViewLoadMoreColor;
 @end
