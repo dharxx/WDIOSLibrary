@@ -59,15 +59,6 @@
         sectionArray = self.datas[section];
     }
     
-//    for (id object in data.reverseObjectEnumerator) {
-//        if (sectionArray.count == 0) {
-//            break;
-//        }
-//        else if ([self isSameObject:object with:[sectionArray lastObject] ofSection:section]) {
-//            NSLog(@"%@",sectionArray.lastObject);
-//            [sectionArray removeLastObject];
-//        }
-//    }
     [sectionArray addObjectsFromArray:data];
 }
 - (void)startRefresh:(id)sender
@@ -180,7 +171,7 @@
 }
 - (void)didSelectObject:(id)object
 {
-    
+    NSLog(@"%@",object);
 }
 - (NSInteger)preferNumberOfDatasPerLoad
 {
@@ -245,8 +236,6 @@
 }
 -(void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
 {
-//    NSLog(@"%@ %@",@(indexPath.section),@(indexPath.row));
-//    NSLog(@"%@ %@",@(self.lastSectionIndex),@(self.lastRowIndex));
     if (!_doneLoad && !_loading && indexPath.section == self.lastSectionIndex && indexPath.row == self.lastRowIndex) {
         [self loadMore:cell];
     }
@@ -292,13 +281,11 @@
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     NSInteger n = MAX(1,self.datas.count);
-    NSLog(@"s %@",@(n));
     return n;
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
     NSInteger n = self.datas.count == 0 ? 0: self.datas[section].count;
-    NSLog(@"s %@ r %@",@(section),@(n));
     return n;
     
 }
@@ -338,6 +325,13 @@
 - (WDIOSCollectionViewLayout *)waterfallLayout
 {
     return (WDIOSCollectionViewLayout *)self.collectionView.collectionViewLayout;
+}
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    id obj = [self objectByIndexPath:indexPath];
+    if (obj) {
+        [self didSelectObject:obj];
+    }
 }
 //#pragma mark <UICollectionViewDelegate>
 
