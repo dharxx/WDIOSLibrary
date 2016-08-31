@@ -129,16 +129,18 @@
         //add loadmore cell
         
         NSInteger section  = self.lastSectionIndex;
-        
+        NSInteger location;
         if (section < 0) {
             self.datas = [NSMutableArray arrayWithCapacity:10];
             section = 0;
+            location = 0;
         }
         else {
             [self.collectionView reloadSections:[NSIndexSet indexSetWithIndex:[self lastSectionIndex]]];
+            location = self.datas[section].count;
         }
         
-        NSRange range = NSMakeRange(section, self.preferNumberOfDatasPerLoad);
+        NSRange range = NSMakeRange(location, self.preferNumberOfDatasPerLoad);
         [self loadDataOnSection:section
                    withRowRange:range
                    completation:^(NSArray *data) {
