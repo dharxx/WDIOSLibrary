@@ -37,29 +37,40 @@
 {
     return 20;
 }
+
+void (^cmp)(NSArray *data)  = nil;
+
+- (void)completation:(NSValue *)range;
+{
+    static NSInteger max = 60;
+    NSRange r = range.rangeValue;
+    if(r.location > max )
+    {
+        cmp(nil);
+    }
+    else {
+        NSMutableArray *data = [NSMutableArray arrayWithCapacity:10];
+        for (int i = r.location; i < r.location + r.length && i < max; i++) {
+            [data addObject:self.images[i%self.images.count]];
+        }
+        cmp(data);
+    }
+}
 - (void)loadDataOnSection:(NSInteger)section withRowRange:(NSRange)range completation:(void(^)(NSArray *data))completation;
 {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
-        [NSThread sleepForTimeInterval:3];
-        if (section == 0) {
-            NSMutableArray *data = [NSMutableArray arrayWithCapacity:range.length];
-            //
-            for (int i = range.location; i < range.location + range.length; i++) {
-                [data addObject:self.images[i%self.images.count]];
-            }
-            //
-            completation(data);
-        }
-        else {
-            completation(nil);
-        }
-    });
-    
+    if (section == 0) {
+        cmp = completation;
+        [self performSelector:@selector(completation:) withObject:[NSValue valueWithRange:range] afterDelay:3];
+    }
+    else {
+        completation(nil);
+    }
 }
 - (UICollectionViewCell *)cellByObject:(id)object atIndexPath:(NSIndexPath *)indexPath {
     SampleCollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     // Configure the cell
     [cell setImage:[UIImage imageNamed:object]];
+    cell.numberLabel.text = @(indexPath.row).stringValue;
     return cell;
 }
 

@@ -77,6 +77,7 @@
          [self.collectionView setContentOffset:CGPointMake(0, -self.refreshControl.frame.size.height) animated:YES];
     });
     self.loading = YES;
+    self.waterfallLayout.footerHeight = 0;
     
     NSRange range = NSMakeRange(0, self.preferNumberOfDatasPerLoad);
     [self loadDataOnSection:0
@@ -118,6 +119,8 @@
 {
     //remove loadmore cell
     self.loading = NO;
+    self.collectionView.alwaysBounceVertical = YES;
+    self.waterfallLayout.footerHeight = 0;
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.collectionView reloadData];
     });
@@ -126,17 +129,20 @@
 {
     if (!self.loading) {
         self.loading = YES;
+        self.waterfallLayout.footerHeight = 60;
+        self.collectionView.alwaysBounceVertical = NO;
         //add loadmore cell
         
         NSInteger section  = self.lastSectionIndex;
         NSInteger location;
         if (section < 0) {
             self.datas = [NSMutableArray arrayWithCapacity:10];
+            [self.datas addObject:[NSMutableArray arrayWithCapacity:10]];
             section = 0;
             location = 0;
-        }
-        else {
-            [self.collectionView reloadSections:[NSIndexSet indexSetWithIndex:[self lastSectionIndex]]];
+            [self.collectionView reloadData];
+        }else {
+            [self.collectionView reloadSections:[NSIndexSet indexSetWithIndex:section]];
             location = self.datas[section].count;
         }
         
@@ -213,6 +219,10 @@
     
     return filePaths;
 }
+- (void)setInitialDatas:(NSArray *)datas
+{
+    self.datas = datas;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -223,18 +233,21 @@
     [self.collectionView insertSubview:_refreshControl atIndex:0];
     self.collectionView.alwaysBounceVertical = YES;
     
-    self.loading = NO;
-    
-    CHTCollectionViewWaterfallLayout *layout = (CHTCollectionViewWaterfallLayout *)self.collectionViewLayout;
-    layout.footerHeight = 44;
     [self.collectionView registerClass:[WDIOSWaitingView class] forSupplementaryViewOfKind:CHTCollectionElementKindSectionFooter withReuseIdentifier:@"WDIOSWaitingView"];
-    
-    [self loadMore:nil];
-    
+    self.loading = NO;
+    self.waterfallLayout.footerHeight = 0;
+    if (_datas.count == 0) {
+        [self loadMore:nil];
+    }
+    else {
+        
+    }
 }
 -(void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (!_doneLoad && indexPath.section == self.lastSectionIndex && indexPath.row == self.lastRowIndex) {
+//    NSLog(@"%@ %@",@(indexPath.section),@(indexPath.row));
+//    NSLog(@"%@ %@",@(self.lastSectionIndex),@(self.lastRowIndex));
+    if (!_doneLoad && !_loading && indexPath.section == self.lastSectionIndex && indexPath.row == self.lastRowIndex) {
         [self loadMore:cell];
     }
 }
@@ -249,8 +262,7 @@
 }
 
 - (void)updateLayoutForOrientation:(UIInterfaceOrientation)orientation {
-    CHTCollectionViewWaterfallLayout *layout =
-    (CHTCollectionViewWaterfallLayout *)self.collectionView.collectionViewLayout;
+    WDIOSCollectionViewLayout *layout = [self waterfallLayout];
     layout.columnCount = UIInterfaceOrientationIsPortrait(orientation) ? 2 : 3;
 }
 
@@ -279,11 +291,16 @@
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return MAX(1,self.datas.count);
+    NSInteger n = MAX(1,self.datas.count);
+    NSLog(@"s %@",@(n));
+    return n;
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
-    return self.datas.count == 0 ? 0: self.datas[section].count;
+    NSInteger n = self.datas.count == 0 ? 0: self.datas[section].count;
+    NSLog(@"s %@ r %@",@(section),@(n));
+    return n;
+    
 }
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
@@ -308,17 +325,19 @@
     id object = [self objectByIndexPath:indexPath];
     return [self viewSizeByObject:object];
 }
--(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section
+//-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout heightForFooterInSection:(NSInteger)section
+//{
+//    if (!_doneLoad && _loading && section >= [self lastSectionIndex] ) {
+//        WDIOSCollectionViewLayout *fLayout = (id)collectionViewLayout;
+//        CGSize size = CGSizeMake(CGRectGetWidth(collectionView.bounds), fLayout.footerHeight);
+//        NSLog(@"%@",NSStringFromCGSize(size));
+//        return size;
+//    }
+//    return CGSizeZero;
+//}
+- (WDIOSCollectionViewLayout *)waterfallLayout
 {
-    if (!_doneLoad && _loading && section == [self lastSectionIndex] ) {
-        CHTCollectionViewWaterfallLayout *fLayout = (id)collectionViewLayout;
-        return CGSizeMake(CGRectGetWidth(collectionView.bounds), fLayout.footerHeight);
-    }
-    return CGSizeZero;
-}
-- (CHTCollectionViewWaterfallLayout *)waterfallLayout
-{
-    return (CHTCollectionViewWaterfallLayout *)self.collectionView.collectionViewLayout;
+    return (WDIOSCollectionViewLayout *)self.collectionView.collectionViewLayout;
 }
 //#pragma mark <UICollectionViewDelegate>
 

@@ -26,4 +26,5 @@
 - (NSComparisonResult)compareObject:(id)o1 with:(id)o2;
 - (CHTCollectionViewWaterfallLayout *)waterfallLayout;
 - (UIColor *)activityIndicatorViewLoadMoreColor;
+- (void)setInitialDatas:(NSArray *)datas;
 @end
