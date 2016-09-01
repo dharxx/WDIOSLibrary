@@ -6,7 +6,7 @@
 //  Copyright © 2559 BURIN TECHAMA. All rights reserved.
 //
 
-#import "AlertView.h"
+#import "WDAlertView.h"
 
 #define kOpinionzAlertWidth   280
 #define kOpinionzButtonHeight 40
@@ -26,7 +26,7 @@
 #define kButtonMargin 10
 #define kConfirmButtonColor [UIColor colorWithRed:0.40 green:0.80 blue:0.00 alpha:1.00]
 
-@interface AlertView ()
+@interface WDAlertView ()
 
 @property (nonatomic, strong) UIView *alertView;
 @property (nonatomic, strong) UIView *headerView;
@@ -41,7 +41,7 @@
 
 
 
-@implementation AlertView
+@implementation WDAlertView
 
 - (instancetype)initWithTitle:(NSString *)title
                       message:(NSString *)message

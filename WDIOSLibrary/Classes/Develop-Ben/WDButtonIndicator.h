@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Button_IndicatorView : UIView
+@interface WDButtonIndicator : UIView
 
 @property (nonatomic,strong) UIButton *button;
 

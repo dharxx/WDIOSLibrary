@@ -6,11 +6,11 @@
 //
 //
 
-#import "ToastView.h"
+#import "WDToastView.h"
 #define kBarViewMargin 40
 #define kBarViewHeight 40
 
-@interface ToastView ()
+@interface WDToastView ()
 @property (nonatomic, strong) UILabel *barView;
 @property (nonatomic, strong) UIImageView *iconImageView;
 @property (nonatomic, strong) NSString *textTitle;
@@ -18,7 +18,7 @@
 @property ToastShowingTime showingTime;
 @end
 
-@implementation ToastView
+@implementation WDToastView
 
 - (instancetype)initWithMessage:(NSString *)message
                        iconName:(NSString *)iconName

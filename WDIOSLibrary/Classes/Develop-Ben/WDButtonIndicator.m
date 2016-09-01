@@ -6,13 +6,13 @@
 //
 //
 
-#import "Button+IndicatorView.h"
+#import "WDButtonIndicator.h"
 
-@interface Button_IndicatorView()
+@interface WDButtonIndicator()
 
 @end
 
-@implementation Button_IndicatorView{
+@implementation WDButtonIndicator{
     BOOL isSpinning;
 }
 
@@ -42,7 +42,7 @@
 -(void)baseInit{
     isSpinning = NO;
     // Initialization code
-    [self setBackgroundColor:[UIColor clearColor]];
+    //[self setBackgroundColor:[UIColor clearColor]];
 }
 
 -(void)initView{

@@ -9,6 +9,6 @@
 @import WDIOSLibrary;
 
 @interface SampleViewController : UIViewController
-@property (weak, nonatomic) IBOutlet Button_IndicatorView *buttonView;
+@property (weak, nonatomic) IBOutlet WDButtonIndicator *buttonView;
 
 @end

@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class AlertView;
-typedef void (^UIAlertViewCompletionBlock) (AlertView * alertView, NSInteger buttonIndex);
+@class WDAlertView;
+typedef void (^UIAlertViewCompletionBlock) (WDAlertView * alertView, NSInteger buttonIndex);
 
-@interface AlertView : UIView
+@interface WDAlertView : UIView
 
 @property (nonatomic, copy) UIAlertViewCompletionBlock buttonDidTappedBlock;
 

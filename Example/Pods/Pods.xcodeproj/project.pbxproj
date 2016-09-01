@@ -41,7 +41,7 @@
 		254D05EF67AA8872A3FD8B23FDBB6A8B /* MDCalendarYearSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8BAF05008CA5B76C598952E117D38 /* MDCalendarYearSelector.m */; };
 		2913ED9F4D05A3DC629F443D7F07593C /* MQTTKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B53F04B9A1D53085B64B0DC6ECA6D6A /* MQTTKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29EC994CA6952A5FC202889062F3A947 /* WDIOSCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A60E797F53B4E8DEEC047FD9169EA544 /* WDIOSCollectionViewLayout.m */; };
-		2C148521B0529E47880AEE573195F7A5 /* ToastView.h in Headers */ = {isa = PBXBuildFile; fileRef = 13DD382EE9D5D15709878EF3E5D78E49 /* ToastView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C148521B0529E47880AEE573195F7A5 /* WDToastView.h in Headers */ = {isa = PBXBuildFile; fileRef = 13DD382EE9D5D15709878EF3E5D78E49 /* WDToastView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C87E1788C8FA06AE3481A2226E3AF2D /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3519293A7D5CA8C9054DAC06EC670A75 /* UIApplication+StrictKeyWindow.m */; };
 		2D07FBF7D6AE69F7117B155BAB41480B /* MDCalendarYearSelectorViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D353456B35200F432D346C1926E8683 /* MDCalendarYearSelectorViewCell.m */; };
 		2E3FA9987AF522AE9B3CE0C1A8F5C84B /* UIImage+StupidApplePhotoFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB480236B3E12AD6A66B6D809C53494 /* UIImage+StupidApplePhotoFix.m */; };
@@ -66,7 +66,7 @@
 		407EDBDD9D11ADAFD06F9CCBAF8AD81C /* NSObject+MVCSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2D905421257613E95483C500B6AD6F /* NSObject+MVCSupport.m */; };
 		40CCF60D83D09083DC28D1005DDA9AE3 /* MDTimePickerDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B8039B89B1A7BE779699EDECFB658F9 /* MDTimePickerDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		416C5F9D2F385DA80490AEBD5F52C680 /* JWTClaimsSetSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 39704427F99A2955327D866F675116BF /* JWTClaimsSetSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		424EA704F5D41D04AD5F5BB9204E4DC3 /* Button+IndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = CED09DE364928F338A9B3F5D26A26078 /* Button+IndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		424EA704F5D41D04AD5F5BB9204E4DC3 /* WDButtonIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = CED09DE364928F338A9B3F5D26A26078 /* WDButtonIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42CB5C4C242F48F36938AAD895672A9E /* Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A9F26606D099057C044C9CDDEFF51CC /* Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42FA0DB7E680918CAB9F01BE2C242AB9 /* MDSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9187C4F3B237E00346AEC4D93FADBA40 /* MDSlider.m */; };
 		44258935FD440BCB752406C5E5970DAC /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11322F8217705BD8C03A87F5238C5D8 /* CoreText.framework */; };
@@ -112,8 +112,10 @@
 		6E4A16BF4D27C48BB1FE1E1CF5E8B90E /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = A779EC25644F8FD5FC5C7EA3C5FD21BA /* FBSnapshotTestCasePlatform.m */; };
 		6EB0D221E6A1B3EF28B7E64BFDD9290F /* UIFont+WDMoreFonts.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC785C624BB50B1EC5BCFE1AF7B4669 /* UIFont+WDMoreFonts.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6ECA52E753A804819221201A14EA10C5 /* MDCalendarHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D842915C822C3992E73BB4F8D43910 /* MDCalendarHeader.m */; };
-		70F97D181D76D15B00D528CD /* AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F97D171D76D15B00D528CD /* AlertView.m */; };
-		70F97D1A1D76D17700D528CD /* AlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F97D191D76D17700D528CD /* AlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70F97D181D76D15B00D528CD /* WDAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F97D171D76D15B00D528CD /* WDAlertView.m */; };
+		70F97D1A1D76D17700D528CD /* WDAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F97D191D76D17700D528CD /* WDAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70F97D5C1D76E49800D528CD /* WDHtmlNameColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F97D5A1D76E49800D528CD /* WDHtmlNameColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70F97D5D1D76E49800D528CD /* WDHtmlNameColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F97D5B1D76E49800D528CD /* WDHtmlNameColor.m */; };
 		717D7A1A12A93B47296DB454FC3CBB42 /* util_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 98F2B99F550F017C30E0BF2EF8D21EF9 /* util_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		719BF701A265461248B373BDB41A846A /* MDTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F9866DA8DA8F483EF119EE110D0288 /* MDTextField.m */; };
 		71AD67AAFC26ED4869954BDDC5C8D275 /* send_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = CB91FFC2CE9D62BFA616B2BBC6C7E5FE /* send_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -125,7 +127,7 @@
 		73E3D137014EC29DD13D9A15D59A5FC7 /* MF_Base64Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 32EC053B5B2043B37A7EFAF12A178DA4 /* MF_Base64Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78CCA07891C201D9052EA19EA79AC2AA /* MaterialControls.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 53A025DAD02C98ECC3FDC33F608957AD /* MaterialControls.bundle */; };
 		791C5F611FFC5956FC43F3D419708920 /* Macro.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DC3ECDFB8F44ABBAFADC8B494D242AE /* Macro.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7ABA3C4A3A090EAC2CFB583D635791D2 /* Button+IndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF88704B8CA0E5A9BD103C419C270A5 /* Button+IndicatorView.m */; };
+		7ABA3C4A3A090EAC2CFB583D635791D2 /* WDButtonIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF88704B8CA0E5A9BD103C419C270A5 /* WDButtonIndicator.m */; };
 		7C1F8FF8B9F5DDD668D7C1F3CD124F56 /* MDCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = F97F1A6F15F03EAC635B071927CA3CA2 /* MDCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CC03930B29E5B90B0441947739FAED3 /* NSDate+MDExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = FF2FD5F32A037CCD2C2F05216BED0BCE /* NSDate+MDExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		81034D3CE2E804ADA127757BF07F6345 /* MDCalendarYearSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EE6A3BD1793CBD58E8885734A50BEF1 /* MDCalendarYearSelector.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -156,7 +158,7 @@
 		97D30342DFCF5C243543A62545A1FC6E /* net_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E7CBF08126333B21E0FB18688D8132E /* net_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		98ABEE0387BE6795F50ADC9DE555F68F /* NSDate+MDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F934D00AF4316559336D40616A364F3 /* NSDate+MDExtension.m */; };
 		9B932B2AFD28EAB7F175C418AFEC80CD /* MDSliderIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 58C584BCB25FB9BACA0E84D1A0D641B8 /* MDSliderIcon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C1891F35865A93B91804857F8BF7450 /* ToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E16E3F420D0F5F46C46A1ACA1DCD0 /* ToastView.m */; };
+		9C1891F35865A93B91804857F8BF7450 /* WDToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E16E3F420D0F5F46C46A1ACA1DCD0 /* WDToastView.m */; };
 		9DC485058F6BB922507BF23146D544F7 /* MDSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 380EDE493B7C605333B64BD8463B1F65 /* MDSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9EECCE392DF26A359F0168CE823F0206 /* UIViewController+MVCSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ECA29ADA51BD312F367E08ED0EB890D /* UIViewController+MVCSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9FA3B93CE0ECAC3CDC30890659AACF82 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 22ABEA667FE85574C5D2761258BFCA5F /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -395,11 +397,11 @@
 		0823D107B3440EFCE05F182C58953697 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C12C171AF7F3829E2B36B5955214B1C /* messages_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = messages_mosq.c; path = libmosquitto/messages_mosq.c; sourceTree = "<group>"; };
 		0D54CD0764724582C07E938CEE80FE1F /* UIView+MDExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MDExtension.h"; path = "iOSUILib/iOSUILib/UIView+MDExtension.h"; sourceTree = "<group>"; };
-		0E1E16E3F420D0F5F46C46A1ACA1DCD0 /* ToastView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ToastView.m; sourceTree = "<group>"; };
+		0E1E16E3F420D0F5F46C46A1ACA1DCD0 /* WDToastView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WDToastView.m; sourceTree = "<group>"; };
 		0ECA29ADA51BD312F367E08ED0EB890D /* UIViewController+MVCSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MVCSupport.h"; sourceTree = "<group>"; };
 		10DF5CC83E10B02CA0C5AF95C9B2A90E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		136B5EA87CED813D8ECE6ABC176CCC45 /* Base64.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Base64.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		13DD382EE9D5D15709878EF3E5D78E49 /* ToastView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ToastView.h; sourceTree = "<group>"; };
+		13DD382EE9D5D15709878EF3E5D78E49 /* WDToastView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WDToastView.h; sourceTree = "<group>"; };
 		13EAD044BDBD1FFA64EBA8046C23741E /* JWTAlgorithmHS256.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWTAlgorithmHS256.h; path = JWT/Algorithms/HSFamily/JWTAlgorithmHS256.h; sourceTree = "<group>"; };
 		1501CE0D1854FD3A25FEE2281B52E3C1 /* Pods_WDIOSLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WDIOSLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16A05B345F83FEB1038BE86369E17288 /* JWT-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JWT-dummy.m"; sourceTree = "<group>"; };
@@ -483,7 +485,7 @@
 		4E94076B81EB58516B68D595FBC62DF1 /* WDIOSWaitingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WDIOSWaitingView.m; sourceTree = "<group>"; };
 		4F595931BAF27BEF4B84BB2D41FE7B68 /* NSLocale+WDLocalized.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSLocale+WDLocalized.h"; sourceTree = "<group>"; };
 		4F7D0B0DFEA100FCFD923EA8656EA43D /* MDToast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDToast.m; path = iOSUILib/iOSUILib/MDToast.m; sourceTree = "<group>"; };
-		4FF88704B8CA0E5A9BD103C419C270A5 /* Button+IndicatorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Button+IndicatorView.m"; sourceTree = "<group>"; };
+		4FF88704B8CA0E5A9BD103C419C270A5 /* WDButtonIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WDButtonIndicator.m; sourceTree = "<group>"; };
 		5035DEE25D6550A2F62441D64C2FEB4E /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		51331EF0D099A3477D21E08D0B26D7B8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53A025DAD02C98ECC3FDC33F608957AD /* MaterialControls.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaterialControls.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -516,8 +518,10 @@
 		6F98E0CACB4B5FE2BD01DC1BCE8039BF /* UITableView+MVCSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+MVCSupport.m"; sourceTree = "<group>"; };
 		6FC8246BC0671658BFE36AE08CFE390E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		6FF3FDE53F14999C45F610A6ADB64636 /* JWTAlgorithmHS384.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWTAlgorithmHS384.h; path = JWT/Algorithms/HSFamily/JWTAlgorithmHS384.h; sourceTree = "<group>"; };
-		70F97D171D76D15B00D528CD /* AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertView.m; sourceTree = "<group>"; };
-		70F97D191D76D17700D528CD /* AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertView.h; sourceTree = "<group>"; };
+		70F97D171D76D15B00D528CD /* WDAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDAlertView.m; sourceTree = "<group>"; };
+		70F97D191D76D17700D528CD /* WDAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDAlertView.h; sourceTree = "<group>"; };
+		70F97D5A1D76E49800D528CD /* WDHtmlNameColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHtmlNameColor.h; sourceTree = "<group>"; };
+		70F97D5B1D76E49800D528CD /* WDHtmlNameColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDHtmlNameColor.m; sourceTree = "<group>"; };
 		7220B3619502A04D383BDCCD65D518F5 /* MDLinearProgressLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDLinearProgressLayer.h; path = iOSUILib/iOSUILib/Progress/MDLinearProgressLayer.h; sourceTree = "<group>"; };
 		73A288EE86B0981D34AF44E0E1711ABF /* NSString+WDLocalized.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+WDLocalized.m"; sourceTree = "<group>"; };
 		76081F7FAC38F0664932BA2E3352F8A7 /* MQTTKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MQTTKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -614,7 +618,7 @@
 		CD14F85347CBB67FB48D03BD6246F456 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD4CC37A4403C01EA875D30AEF8FE009 /* MDDatePickerDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDDatePickerDialog.h; path = iOSUILib/iOSUILib/Calendar/MDDatePickerDialog.h; sourceTree = "<group>"; };
 		CE0041D96E1844CC13AA636F4365F12A /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
-		CED09DE364928F338A9B3F5D26A26078 /* Button+IndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Button+IndicatorView.h"; sourceTree = "<group>"; };
+		CED09DE364928F338A9B3F5D26A26078 /* WDButtonIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WDButtonIndicator.h; sourceTree = "<group>"; };
 		D0833444CE1F0D96D4D086A1BB8279A7 /* MDSliderTickMarksView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDSliderTickMarksView.m; path = iOSUILib/iOSUILib/Slider/MDSliderTickMarksView.m; sourceTree = "<group>"; };
 		D46768440615F9000EF6E04E621EE7E6 /* NSObject+MVCSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+MVCSupport.h"; sourceTree = "<group>"; };
 		D4D91B9BD16CB849C9FE586C8418578C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -1058,16 +1062,18 @@
 			isa = PBXGroup;
 			children = (
 				A484DD8ACED9EE8983958FC27FB0DE3C /* Develop-Ben-Header.h */,
-				CED09DE364928F338A9B3F5D26A26078 /* Button+IndicatorView.h */,
-				4FF88704B8CA0E5A9BD103C419C270A5 /* Button+IndicatorView.m */,
-				13DD382EE9D5D15709878EF3E5D78E49 /* ToastView.h */,
-				0E1E16E3F420D0F5F46C46A1ACA1DCD0 /* ToastView.m */,
-				70F97D191D76D17700D528CD /* AlertView.h */,
-				70F97D171D76D15B00D528CD /* AlertView.m */,
+				CED09DE364928F338A9B3F5D26A26078 /* WDButtonIndicator.h */,
+				4FF88704B8CA0E5A9BD103C419C270A5 /* WDButtonIndicator.m */,
+				13DD382EE9D5D15709878EF3E5D78E49 /* WDToastView.h */,
+				0E1E16E3F420D0F5F46C46A1ACA1DCD0 /* WDToastView.m */,
+				70F97D191D76D17700D528CD /* WDAlertView.h */,
+				70F97D171D76D15B00D528CD /* WDAlertView.m */,
 				B35864DC9D13A65E14D2654DF12E189B /* UIViewController+AndriodUI.h */,
 				2D9F222EB6C523CF7E4D68A75D8862A5 /* UIViewController+AndriodUI.m */,
 				C8D1FDA29CFA8C3607726B1C8ED2E03D /* WDFullScreenLoading.h */,
 				98A4761974EB61F224D72A2DBB8ED09E /* WDFullScreenLoading.m */,
+				70F97D5A1D76E49800D528CD /* WDHtmlNameColor.h */,
+				70F97D5B1D76E49800D528CD /* WDHtmlNameColor.m */,
 			);
 			path = "Develop-Ben";
 			sourceTree = "<group>";
@@ -1328,15 +1334,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				424EA704F5D41D04AD5F5BB9204E4DC3 /* Button+IndicatorView.h in Headers */,
+				424EA704F5D41D04AD5F5BB9204E4DC3 /* WDButtonIndicator.h in Headers */,
 				8664D42B631956DB97AFC0B7235402AF /* Develop-Ben-Header.h in Headers */,
 				791C5F611FFC5956FC43F3D419708920 /* Macro.h in Headers */,
 				E03D94FD2209E449E66F5714AEE48EC8 /* NSLocale+WDLocalized.h in Headers */,
 				C2A05836AD6F44D94A4EAC348932B22D /* NSObject+MVCSupport.h in Headers */,
 				C2FC30C941318E9AD3A7AFB48A5C5AA3 /* NSString+WDLocalized.h in Headers */,
-				2C148521B0529E47880AEE573195F7A5 /* ToastView.h in Headers */,
+				2C148521B0529E47880AEE573195F7A5 /* WDToastView.h in Headers */,
 				6EB0D221E6A1B3EF28B7E64BFDD9290F /* UIFont+WDMoreFonts.h in Headers */,
 				CA07BB729236BB4D1EE68315B3EACCDA /* UIImage+StupidApplePhotoFix.h in Headers */,
+				70F97D5C1D76E49800D528CD /* WDHtmlNameColor.h in Headers */,
 				CE60C8C649A698373D354ACE1A5E11AC /* UITableView+MVCSupport.h in Headers */,
 				D766DD90C521BDBA4E7E07630D504A59 /* UIViewController+AndriodUI.h in Headers */,
 				9EECCE392DF26A359F0168CE823F0206 /* UIViewController+MVCSupport.h in Headers */,
@@ -1346,7 +1353,7 @@
 				8CD3366A74DC1676E67A29435C79606C /* WDIOSDataViewerHeader.h in Headers */,
 				948350F1FCC19189D317DC36BC8A76BD /* WDIOSLibrary-umbrella.h in Headers */,
 				61DAB1286E5C4BA656B71D038FC18B8E /* WDIOSWaitingView.h in Headers */,
-				70F97D1A1D76D17700D528CD /* AlertView.h in Headers */,
+				70F97D1A1D76D17700D528CD /* WDAlertView.h in Headers */,
 				F0E02666486790027534EAF76D1E3D26 /* WDJWTString.h in Headers */,
 				308FAB7FB414C206D4156FD5F3EB2771 /* WDRequestMaker.h in Headers */,
 			);
@@ -1814,14 +1821,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ABA3C4A3A090EAC2CFB583D635791D2 /* Button+IndicatorView.m in Sources */,
+				7ABA3C4A3A090EAC2CFB583D635791D2 /* WDButtonIndicator.m in Sources */,
 				AD68532F4F403D7480F595D2F0C44070 /* NSLocale+WDLocalized.m in Sources */,
 				407EDBDD9D11ADAFD06F9CCBAF8AD81C /* NSObject+MVCSupport.m in Sources */,
 				8368889A0688AE203E9F85BB7FFCE3C1 /* NSString+WDLocalized.m in Sources */,
-				9C1891F35865A93B91804857F8BF7450 /* ToastView.m in Sources */,
+				9C1891F35865A93B91804857F8BF7450 /* WDToastView.m in Sources */,
 				AD617290AFB7B0BB8830C7FB7B172EF3 /* UIFont+WDMoreFonts.m in Sources */,
 				2E3FA9987AF522AE9B3CE0C1A8F5C84B /* UIImage+StupidApplePhotoFix.m in Sources */,
-				70F97D181D76D15B00D528CD /* AlertView.m in Sources */,
+				70F97D5D1D76E49800D528CD /* WDHtmlNameColor.m in Sources */,
+				70F97D181D76D15B00D528CD /* WDAlertView.m in Sources */,
 				C59A0C7B63283853D4887C0263FB0ADB /* UITableView+MVCSupport.m in Sources */,
 				615F3D78DD0E8D4A73EC6D82148EEEDD /* UIViewController+AndriodUI.m in Sources */,
 				58DE1403C8B749E20110FD8102A7562A /* UIViewController+MVCSupport.m in Sources */,

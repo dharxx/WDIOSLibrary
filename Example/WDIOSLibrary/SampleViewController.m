@@ -9,12 +9,14 @@
 #import "SampleViewController.h"
 #import "MDProgress.h"
 #import "MDSnackbar.h"
+#import "MDToast.h"
 
 @implementation SampleViewController
 
 -(void)viewWillAppear:(BOOL)animated{
     
     [super viewWillAppear:animated];
+    [self.view setBackgroundColor:[UIColor HtmlSteelBlueColor]];
     
 }
 
@@ -26,7 +28,7 @@
 }
 
 -(IBAction)alertToast:(id)sender{
-    ToastView *toast = [[ToastView alloc]initWithMessage:@"Logged in as.. Benmore99"
+    WDToastView *toast = [[WDToastView alloc]initWithMessage:@"Logged in as.. Benmore99"
                                                 iconName:@"sample"
                                                     time:ToastShowingTimeNormal
                              usingBlockWhenFinishShowing:nil];
@@ -64,15 +66,15 @@
 }
 
 -(IBAction)addAlertView:(id)sender{
-    AlertView *alert = [[AlertView alloc]initWithTitle:@"Confirm Delete" message:@"Do you want to delete this item." confirmButtonTitle:@"Delete" cancelButtonTitle:@"No" usingBlockWhenTapButton:^(AlertView *alertView, NSInteger buttonIndex) {
+    WDAlertView *alert = [[WDAlertView alloc]initWithTitle:@"Confirm Delete" message:@"Do you want to delete this item." confirmButtonTitle:@"Delete" cancelButtonTitle:@"No" usingBlockWhenTapButton:^(WDAlertView *alertView, NSInteger buttonIndex) {
         if (buttonIndex == 0) {
-            ToastView *toast = [[ToastView alloc]initWithMessage:@"Canceled"
+            WDToastView *toast = [[WDToastView alloc]initWithMessage:@"Canceled"
                                                         iconName:@""
                                                             time:ToastShowingTimeShort
                                      usingBlockWhenFinishShowing:nil];
             [toast show];
         }else if(buttonIndex == 1){
-            ToastView *toast = [[ToastView alloc]initWithMessage:@"Deleted"
+            WDToastView *toast = [[WDToastView alloc]initWithMessage:@"Deleted"
                                                         iconName:@""
                                                             time:ToastShowingTimeShort
                                      usingBlockWhenFinishShowing:nil];
@@ -84,7 +86,18 @@
 
 -(IBAction)addSneckbar:(id)sender{
     MDSnackbar *bar = [[MDSnackbar alloc]initWithText:@"No Internet Connectivity, Please check" actionTitle:@"Close" duration:3];
+    [bar setMultiline:YES];
+    [bar setActionTitleColor:[UIColor colorWithRed:0.27 green:0.62 blue:0.18 alpha:1.0]];
     [bar show];
+}
+
+-(IBAction)addMultiLineToast:(id)sender{
+    MDToast *toast = [[MDToast alloc]initWithText:@"Account has been created, Please verify your Email" duration:3];
+    [toast show];
+}
+
+-(IBAction)addNotiMessage:(id)sender{
+    
 }
 
 @end

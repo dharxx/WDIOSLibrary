@@ -6,7 +6,7 @@
 //
 //
 
-@class ToastView;
+@class WDToastView;
 
 typedef enum {
     ToastShowingTimeShort = 1,
@@ -14,9 +14,9 @@ typedef enum {
     ToastShowingTimeLong = 5
 }ToastShowingTime;
 
-typedef void (^UIToastViewCompletionBlock) (ToastView * toastView, NSInteger timer);
+typedef void (^UIToastViewCompletionBlock) (WDToastView * toastView, NSInteger timer);
 
-@interface ToastView : UIView
+@interface WDToastView : UIView
 
 @property (nonatomic, copy) UIToastViewCompletionBlock toastDidFinishShowing;
 

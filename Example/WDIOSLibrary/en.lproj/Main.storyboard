@@ -83,7 +83,7 @@
             </objects>
             <point key="canvasLocation" x="-154" y="201"/>
         </scene>
-        <!--Test View-->
+        <!--Custom View by BM-->
         <scene sceneID="AM3-GD-EwK">
             <objects>
                 <viewController id="PjM-Fw-X9r" customClass="SampleViewController" sceneMemberID="viewController">
@@ -106,7 +106,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="7Rx-8h-kxA"/>
                                                 </constraints>
-                                                <state key="normal" title="Alert Message"/>
+                                                <state key="normal" title="iOS Alert"/>
                                                 <connections>
                                                     <action selector="alertMessage:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="fp4-MH-EHK"/>
                                                 </connections>
@@ -116,7 +116,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="qKY-uB-RmP"/>
                                                 </constraints>
-                                                <state key="normal" title="Toast Message"/>
+                                                <state key="normal" title="One Line Toast"/>
                                                 <connections>
                                                     <action selector="alertToast:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="kS9-dw-hCC"/>
                                                 </connections>
@@ -126,7 +126,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="hIU-Yu-ek1"/>
                                                 </constraints>
-                                                <state key="normal" title="Fullscreen Loading"/>
+                                                <state key="normal" title="iOS Loading"/>
                                                 <connections>
                                                     <action selector="addFullScreenLoading:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="gHn-XA-S2L"/>
                                                 </connections>
@@ -167,6 +167,11 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="ue1-JB-5K7"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
                                         <constraints>
@@ -208,14 +213,20 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="mhv-3S-rEN"/>
                                                 </constraints>
-                                                <state key="normal" title="(Emthy)"/>
+                                                <state key="normal" title="Multi Line Toast"/>
+                                                <connections>
+                                                    <action selector="addMultiLineToast:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="5vi-jq-41w"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYW-Wm-Plg" customClass="MDButton">
                                                 <rect key="frame" x="5" y="191" width="150" height="53"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="LBn-D1-wtz"/>
                                                 </constraints>
-                                                <state key="normal" title="(Emthy)"/>
+                                                <state key="normal" title="Noti Message"/>
+                                                <connections>
+                                                    <action selector="addNotiMessage:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="hdN-Bw-4eb"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Lk-dv-vFN" customClass="MDButton">
                                                 <rect key="frame" x="5" y="254" width="150" height="54"/>
@@ -259,7 +270,7 @@
                             <constraint firstItem="R8Y-Rg-zxw" firstAttribute="top" secondItem="G9V-1q-BdY" secondAttribute="bottom" constant="10" id="cfS-za-Ga1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Test View" id="zRU-fh-FNM"/>
+                    <navigationItem key="navigationItem" title="Custom View by BM" id="zRU-fh-FNM"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXX-fm-TNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
