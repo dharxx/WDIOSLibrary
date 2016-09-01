@@ -91,7 +91,11 @@
         [CATransaction begin];
         [CATransaction setCompletionBlock:^{
             [self.collectionView reloadData];
+            NSString *stringDate = [NSDateFormatter localizedStringFromDate:[NSDate date] dateStyle:NSDateFormatterShortStyle timeStyle:NSDateFormatterMediumStyle];
+            NSString *lastUpdate = [NSString stringWithFormat:@"Last updated on %@", stringDate];
+            self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:lastUpdate];
         }];
+        [self.collectionView setContentOffset:CGPointZero animated:YES];
         [self.refreshControl endRefreshing];
         [CATransaction commit];
 //        [UIView animateWithDuration:0.1 animations:^{

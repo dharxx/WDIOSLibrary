@@ -50,7 +50,7 @@ void (^cmp)(NSArray *data)  = nil;
     }
     else {
         NSMutableArray *data = [NSMutableArray arrayWithCapacity:10];
-        for (int i = r.location; i < r.location + r.length && i < max; i++) {
+        for (NSInteger i = r.location; i < r.location + r.length && i < max; i++) {
             [data addObject:self.images[i%self.images.count]];
         }
         cmp(data);
