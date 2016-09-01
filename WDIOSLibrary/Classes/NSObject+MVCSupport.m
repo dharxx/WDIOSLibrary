@@ -8,6 +8,18 @@
 
 #import "NSObject+MVCSupport.h"
 
+
+void wdois_backgroundBlock(void(^block)(void)) {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        block();
+    });
+}
+void wdois_mainBlock(void(^block)(void)) {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        block();
+    });
+}
+
 @implementation NSObject (MVCSupport)
 -(void)setId:(id)identifier
 {
@@ -75,4 +87,5 @@
     }
     return newValue;
 }
+
 @end

@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+void wdois_backgroundBlock(void(^block)(void));
+void wdois_mainBlock(void(^block)(void));
 
 @interface NSObject (MVCSupport)
 + (instancetype)newObjectFromDictionary:(NSDictionary *)info;
