@@ -21,6 +21,7 @@
 @property NSTimeInterval delayTime;
 @end
 
+
 @implementation WDNotificationView
 
 -(instancetype)initWithAppName:(NSString *)appname
@@ -158,6 +159,7 @@
 }
 
 - (void)show{
+    
     NSEnumerator *frontToBackWindows = [UIApplication.sharedApplication.windows reverseObjectEnumerator];
     for (UIWindow *window in frontToBackWindows){
         BOOL windowOnMainScreen = window.screen == UIScreen.mainScreen;
@@ -165,12 +167,15 @@
         BOOL windowLevelNormal = window.windowLevel == UIWindowLevelNormal;
         
         if (windowOnMainScreen && windowIsVisible && windowLevelNormal) {
+            for (WDNotificationView *view in window.subviews) {
+                if ([view isKindOfClass:[WDNotificationView class]]) {
+                    [view dismiss];
+                }
+            }
             [window addSubview:self];
             break;
         }
     }
-    
-    [[UIApplication sharedApplication] setStatusBarHidden:YES];
     
     self.MessageView.layer.opacity = 0.5f;
     [self.MessageView setFrame:CGRectMake(self.MessageView.frame.origin.x,
@@ -192,7 +197,6 @@
 }
 
 -(void)dismiss{
-    [[UIApplication sharedApplication] setStatusBarHidden:NO];
     
     [UIView animateWithDuration:0.15
                           delay:0

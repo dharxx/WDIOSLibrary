@@ -31,4 +31,5 @@ typedef enum{
           usingBlockWhenTapped:(UINotificationViewdidTapped)tapBlock;
 -(void)show;
 -(void)dismiss;
+
 @end

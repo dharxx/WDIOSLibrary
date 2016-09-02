@@ -6,431 +6,431 @@
 //
 //
 
-#import "WDHtmlNameColor.h"
+#import "WDCustomColor.h"
 
-@implementation UIColor (HtmlName)
+@implementation UIColor (WDCustomColorName)
 
-+(UIColor *)HtmlAliceBlueColor{
++(UIColor *)CustomAliceBlueColor{
     return [UIColor colorWithRed:0.94 green:0.97 blue:1.00 alpha:1.0];
 }
-+(UIColor *)HtmlAntiqueWhiteColor{
++(UIColor *)CustomAntiqueWhiteColor{
     return [UIColor colorWithRed:0.98 green:0.92 blue:0.84 alpha:1.0];
 }
-+(UIColor *)HtmlAquaColor{
++(UIColor *)CustomAquaColor{
     return [UIColor colorWithRed:0.00 green:1.00 blue:1.00 alpha:1.0];
 }
-+(UIColor *)HtmlAquamarineColor{
++(UIColor *)CustomAquamarineColor{
     return [UIColor colorWithRed:0.50 green:1.00 blue:0.83 alpha:1.0];
 }
-+(UIColor *)HtmlAzureColor{
++(UIColor *)CustomAzureColor{
     return [UIColor colorWithRed:0.94 green:1.00 blue:1.00 alpha:1.0];
 }
-+(UIColor *)HtmlBeigeColor{
++(UIColor *)CustomBeigeColor{
     return [UIColor colorWithRed:0.96 green:0.96 blue:0.86 alpha:1.0];
 }
-+(UIColor *)HtmlBisqueColor{
++(UIColor *)CustomBisqueColor{
     return [UIColor colorWithRed:1.00 green:0.89 blue:0.77 alpha:1.0];
 }
-+(UIColor *)HtmlBlackColor{
++(UIColor *)CustomBlackColor{
     return [UIColor colorWithRed:0.00 green:0.00 blue:0.00 alpha:1.0];
 }
-+(UIColor *)HtmlBlanchedAlmondColor{
++(UIColor *)CustomBlanchedAlmondColor{
     return [UIColor colorWithRed:1.00 green:0.92 blue:0.80 alpha:1.0];
 }
-+(UIColor *)HtmlBlueColor{
++(UIColor *)CustomBlueColor{
     return [UIColor colorWithRed:0.00 green:0.00 blue:1.00 alpha:1.0];
 }
-+(UIColor *)HtmlBlueVioletColor{
++(UIColor *)CustomBlueVioletColor{
     return [UIColor colorWithRed:0.54 green:0.17 blue:0.89 alpha:1.0];
 }
-+(UIColor *)HtmlBrownColor{
++(UIColor *)CustomBrownColor{
     return [UIColor colorWithRed:0.65 green:0.16 blue:0.16 alpha:1.0];
 }
-+(UIColor *)HtmlBurlyWoodColor{
++(UIColor *)CustomBurlyWoodColor{
     return [UIColor colorWithRed:0.87 green:0.72 blue:0.53 alpha:1.0];
 }
-+(UIColor *)HtmlCadetBlueColor{
++(UIColor *)CustomCadetBlueColor{
     return [UIColor colorWithRed:0.37 green:0.62 blue:0.63 alpha:1.0];
 }
-+(UIColor *)HtmlChartreuseColor{
++(UIColor *)CustomChartreuseColor{
     return [UIColor colorWithRed:0.50 green:1.00 blue:0.00 alpha:1.0];
 }
-+(UIColor *)HtmlChocolateColor{
++(UIColor *)CustomChocolateColor{
     return [UIColor colorWithRed:0.82 green:0.41 blue:0.12 alpha:1.0];
 }
-+(UIColor *)HtmlCoralColor{
++(UIColor *)CustomCoralColor{
     return [UIColor colorWithRed:1.00 green:0.50 blue:0.31 alpha:1.0];
 }
-+(UIColor *)HtmlCornflowerBlueColor{
++(UIColor *)CustomCornflowerBlueColor{
     return [UIColor colorWithRed:0.39 green:0.58 blue:0.93 alpha:1.0];
 }
-+(UIColor *)HtmlCornsilkColor{
++(UIColor *)CustomCornsilkColor{
     return [UIColor colorWithRed:1.00 green:0.97 blue:0.86 alpha:1.0];
 }
-+(UIColor *)HtmlCrimsonColor{
++(UIColor *)CustomCrimsonColor{
     return [UIColor colorWithRed:0.86 green:0.08 blue:0.24 alpha:1.0];
 }
-+(UIColor *)HtmlCyanColor{
++(UIColor *)CustomCyanColor{
     return [UIColor colorWithRed:0.00 green:1.00 blue:1.00 alpha:1.0];
 }
-+(UIColor *)HtmlDarkBlueColor{
++(UIColor *)CustomDarkBlueColor{
     return [UIColor colorWithRed:0.00 green:0.00 blue:0.55 alpha:1.0];
 }
-+(UIColor *)HtmlDarkCyanColor{
++(UIColor *)CustomDarkCyanColor{
     return [UIColor colorWithRed:0.00 green:0.55 blue:0.55 alpha:1.0];
 }
-+(UIColor *)HtmlDarkGoldenRodColor{
++(UIColor *)CustomDarkGoldenRodColor{
     return [UIColor colorWithRed:0.72 green:0.53 blue:0.04 alpha:1.0];
 }
-+(UIColor *)HtmlDarkGrayColor{
++(UIColor *)CustomDarkGrayColor{
     return [UIColor colorWithRed:0.66 green:0.66 blue:0.66 alpha:1.0];
 }
-+(UIColor *)HtmlDarkGreyColor{
++(UIColor *)CustomDarkGreyColor{
     return [UIColor colorWithRed:0.66 green:0.66 blue:0.66 alpha:1.0];
 }
-+(UIColor *)HtmlDarkGreenColor{
++(UIColor *)CustomDarkGreenColor{
     return [UIColor colorWithRed:0.00 green:0.39 blue:0.00 alpha:1.0];
 }
-+(UIColor *)HtmlDarkKhakiColor{
++(UIColor *)CustomDarkKhakiColor{
     return [UIColor colorWithRed:0.74 green:0.72 blue:0.42 alpha:1.0];
 }
-+(UIColor *)HtmlDarkMagentaColor{
++(UIColor *)CustomDarkMagentaColor{
     return [UIColor colorWithRed:0.55 green:0.00 blue:0.55 alpha:1.0];
 }
-+(UIColor *)HtmlDarkOliveGreenColor{
++(UIColor *)CustomDarkOliveGreenColor{
     return [UIColor colorWithRed:0.33 green:0.42 blue:0.18 alpha:1.0];
 }
-+(UIColor *)HtmlDarkOrangeColor{
++(UIColor *)CustomDarkOrangeColor{
     return [UIColor colorWithRed:1.00 green:0.55 blue:0.00 alpha:1.0];
 }
-+(UIColor *)HtmlDarkOrchidColor{
++(UIColor *)CustomDarkOrchidColor{
     return [UIColor colorWithRed:0.60 green:0.20 blue:0.80 alpha:1.0];
 }
-+(UIColor *)HtmlDarkRedColor{
++(UIColor *)CustomDarkRedColor{
     return [UIColor colorWithRed:0.55 green:0.00 blue:0.00 alpha:1.0];
 }
-+(UIColor *)HtmlDarkSalmonColor{
++(UIColor *)CustomDarkSalmonColor{
     return [UIColor colorWithRed:0.91 green:0.59 blue:0.48 alpha:1.0];
 }
-+(UIColor *)HtmlDarkSeaGreenColor{
++(UIColor *)CustomDarkSeaGreenColor{
     return [UIColor colorWithRed:0.56 green:0.74 blue:0.56 alpha:1.0];
 }
-+(UIColor *)HtmlDarkSlateBlueColor{
++(UIColor *)CustomDarkSlateBlueColor{
     return [UIColor colorWithRed:0.28 green:0.24 blue:0.55 alpha:1.0];
 }
-+(UIColor *)HtmlDarkSlateGrayColor{
++(UIColor *)CustomDarkSlateGrayColor{
     return [UIColor colorWithRed:0.18 green:0.31 blue:0.31 alpha:1.0];
 }
-+(UIColor *)HtmlDarkTurquoiseColor{
++(UIColor *)CustomDarkTurquoiseColor{
     return [UIColor colorWithRed:0.00 green:0.81 blue:0.82 alpha:1.0];
 }
-+(UIColor *)HtmlDarkVioletColor{
++(UIColor *)CustomDarkVioletColor{
     return [UIColor colorWithRed:0.58 green:0.00 blue:0.83 alpha:1.0];
 }
-+(UIColor *)HtmlDeepPinkColor{
++(UIColor *)CustomDeepPinkColor{
     return [UIColor colorWithRed:1.00 green:0.08 blue:0.58 alpha:1.0];
 }
-+(UIColor *)HtmlDeepSkyBlueColor{
++(UIColor *)CustomDeepSkyBlueColor{
     return [UIColor colorWithRed:0.00 green:0.75 blue:1.00 alpha:1.0];
 }
-+(UIColor *)HtmlDimGrayColor{
++(UIColor *)CustomDimGrayColor{
     return [UIColor colorWithRed:0.41 green:0.41 blue:0.41 alpha:1.0];
 }
-+(UIColor *)HtmlDodgerBlueColor{
++(UIColor *)CustomDodgerBlueColor{
     return [UIColor colorWithRed:0.12 green:0.56 blue:1.00 alpha:1.0];
 }
-+(UIColor *)HtmlFireBrickColor{
++(UIColor *)CustomFireBrickColor{
     return [UIColor colorWithRed:0.70 green:0.13 blue:0.13 alpha:1.0];
 }
-+(UIColor *)HtmlFloralWhiteColor{
++(UIColor *)CustomFloralWhiteColor{
     return [UIColor colorWithRed:1.00 green:0.98 blue:0.94 alpha:1.0];
 }
-+(UIColor *)HtmlForestGreenColor{
++(UIColor *)CustomForestGreenColor{
     return [UIColor colorWithRed:0.13 green:0.55 blue:0.13 alpha:1.0];
 }
-+(UIColor *)HtmlFuchsiaColor{
++(UIColor *)CustomFuchsiaColor{
     return [UIColor colorWithRed:1.00 green:0.00 blue:1.00 alpha:1.0];
 }
-+(UIColor *)HtmlGainsboroColor{
++(UIColor *)CustomGainsboroColor{
     return [UIColor colorWithRed:0.86 green:0.86 blue:0.86 alpha:1.0];
 }
-+(UIColor *)HtmlGhostWhiteColor{
++(UIColor *)CustomGhostWhiteColor{
     return [UIColor colorWithRed:0.97 green:0.97 blue:1.00 alpha:1.0];
 }
-+(UIColor *)HtmlGoldColor{
++(UIColor *)CustomGoldColor{
     return [UIColor colorWithRed:1.00 green:0.84 blue:0.00 alpha:1.0];
 }
-+(UIColor *)HtmlGoldenRodColor{
++(UIColor *)CustomGoldenRodColor{
     return [UIColor colorWithRed:0.85 green:0.65 blue:0.13 alpha:1.0];
 }
-+(UIColor *)HtmlGrayColor{
++(UIColor *)CustomGrayColor{
     return [UIColor colorWithRed:0.50 green:0.50 blue:0.50 alpha:1.0];
 }
-+(UIColor *)HtmlGreenColor{
++(UIColor *)CustomGreenColor{
     return [UIColor colorWithRed:0.00 green:0.50 blue:0.00 alpha:1.0];
 }
-+(UIColor *)HtmlGreenYellowColor{
++(UIColor *)CustomGreenYellowColor{
     return [UIColor colorWithRed:0.68 green:1.00 blue:0.18 alpha:1.0];
 }
-+(UIColor *)HtmlHoneyDewColor{
++(UIColor *)CustomHoneyDewColor{
     return [UIColor colorWithRed:0.94 green:1.00 blue:0.94 alpha:1.0];
 }
-+(UIColor *)HtmlHotPinkColor{
++(UIColor *)CustomHotPinkColor{
     return [UIColor colorWithRed:1.00 green:0.41 blue:0.71 alpha:1.0];
 }
-+(UIColor *)HtmlIndianRedColor{
++(UIColor *)CustomIndianRedColor{
     return [UIColor colorWithRed:0.80 green:0.36 blue:0.36 alpha:1.0];
 }
-+(UIColor *)HtmlIndigoColor{
++(UIColor *)CustomIndigoColor{
     return [UIColor colorWithRed:0.29 green:0.00 blue:0.51 alpha:1.0];
 }
-+(UIColor *)HtmlIvoryColor{
++(UIColor *)CustomIvoryColor{
     return [UIColor colorWithRed:1.00 green:1.00 blue:0.94 alpha:1.0];
 }
-+(UIColor *)HtmlKhakiColor{
++(UIColor *)CustomKhakiColor{
     return [UIColor colorWithRed:0.94 green:0.90 blue:0.55 alpha:1.0];
 }
-+(UIColor *)HtmlLavenderColor{
++(UIColor *)CustomLavenderColor{
     return [UIColor colorWithRed:0.90 green:0.90 blue:0.98 alpha:1.0];
 }
-+(UIColor *)HtmlLavenderBlushColor{
++(UIColor *)CustomLavenderBlushColor{
     return [UIColor colorWithRed:1.00 green:0.94 blue:0.96 alpha:1.0];
 }
-+(UIColor *)HtmlLawnGreenColor{
++(UIColor *)CustomLawnGreenColor{
     return [UIColor colorWithRed:0.49 green:0.99 blue:0.00 alpha:1.0];
 }
-+(UIColor *)HtmlLemonChiffonColor{
++(UIColor *)CustomLemonChiffonColor{
     return [UIColor colorWithRed:1.00 green:0.98 blue:0.80 alpha:1.0];
 }
-+(UIColor *)HtmlLightBlueColor{
++(UIColor *)CustomLightBlueColor{
     return [UIColor colorWithRed:0.68 green:0.85 blue:0.90 alpha:1.0];
 }
-+(UIColor *)HtmlLightCoralColor{
++(UIColor *)CustomLightCoralColor{
     return [UIColor colorWithRed:0.94 green:0.50 blue:0.50 alpha:1.0];
 }
-+(UIColor *)HtmlLightCyanColor{
++(UIColor *)CustomLightCyanColor{
     return [UIColor colorWithRed:0.88 green:1.00 blue:1.00 alpha:1.0];
 }
-+(UIColor *)HtmlLightGoldenRodYellowColor{
++(UIColor *)CustomLightGoldenRodYellowColor{
     return [UIColor colorWithRed:0.98 green:0.98 blue:0.82 alpha:1.0];
 }
-+(UIColor *)HtmlLightGrayColor{
++(UIColor *)CustomLightGrayColor{
     return [UIColor colorWithRed:0.83 green:0.83 blue:0.83 alpha:1.0];
 }
-+(UIColor *)HtmlLightPinkColor{
++(UIColor *)CustomLightPinkColor{
     return [UIColor colorWithRed:1.00 green:0.71 blue:0.76 alpha:1.0];
 }
-+(UIColor *)HtmlLightSalmonColor{
++(UIColor *)CustomLightSalmonColor{
     return [UIColor colorWithRed:1.00 green:0.63 blue:0.48 alpha:1.0];
 }
-+(UIColor *)HtmlLightSeaGreenColor{
++(UIColor *)CustomLightSeaGreenColor{
     return [UIColor colorWithRed:0.13 green:0.70 blue:0.67 alpha:1.0];
 }
-+(UIColor *)HtmlLightSkyBlueColor{
++(UIColor *)CustomLightSkyBlueColor{
     return [UIColor colorWithRed:0.53 green:0.81 blue:0.98 alpha:1.0];
 }
-+(UIColor *)HtmlLightSlateGrayColor{
++(UIColor *)CustomLightSlateGrayColor{
     return [UIColor colorWithRed:0.47 green:0.53 blue:0.60 alpha:1.0];
 }
-+(UIColor *)HtmlLightSteelBlueColor{
++(UIColor *)CustomLightSteelBlueColor{
     return [UIColor colorWithRed:0.69 green:0.77 blue:0.87 alpha:1.0];
 }
-+(UIColor *)HtmlLightYellowColor{
++(UIColor *)CustomLightYellowColor{
     return [UIColor colorWithRed:1.00 green:1.00 blue:0.88 alpha:1.0];
 }
-+(UIColor *)HtmlLimeColor{
++(UIColor *)CustomLimeColor{
     return [UIColor colorWithRed:0.00 green:1.00 blue:0.00 alpha:1.0];
 }
-+(UIColor *)HtmlLimeGreenColor{
++(UIColor *)CustomLimeGreenColor{
     return [UIColor colorWithRed:0.20 green:0.80 blue:0.20 alpha:1.0];
 }
-+(UIColor *)HtmlLinenColor{
++(UIColor *)CustomLinenColor{
     return [UIColor colorWithRed:0.98 green:0.94 blue:0.90 alpha:1.0];
 }
-+(UIColor *)HtmlMagentaColor{
++(UIColor *)CustomMagentaColor{
     return [UIColor colorWithRed:1.00 green:0.00 blue:1.00 alpha:1.0];
 }
-+(UIColor *)HtmlMaroonColor{
++(UIColor *)CustomMaroonColor{
     return [UIColor colorWithRed:0.50 green:0.00 blue:0.00 alpha:1.0];
 }
-+(UIColor *)HtmlMediumAquaMarineColor{
++(UIColor *)CustomMediumAquaMarineColor{
     return [UIColor colorWithRed:0.40 green:0.80 blue:0.67 alpha:1.0];
 }
-+(UIColor *)HtmlMediumBlueColor{
++(UIColor *)CustomMediumBlueColor{
     return [UIColor colorWithRed:0.00 green:0.00 blue:0.80 alpha:1.0];
 }
-+(UIColor *)HtmlMediumOrchidColor{
++(UIColor *)CustomMediumOrchidColor{
     return [UIColor colorWithRed:0.73 green:0.33 blue:0.83 alpha:1.0];
 }
-+(UIColor *)HtmlMediumPurpleColor{
++(UIColor *)CustomMediumPurpleColor{
     return [UIColor colorWithRed:0.58 green:0.44 blue:0.86 alpha:1.0];
 }
-+(UIColor *)HtmlMediumSeaGreenColor{
++(UIColor *)CustomMediumSeaGreenColor{
     return [UIColor colorWithRed:0.24 green:0.70 blue:0.44 alpha:1.0];
 }
-+(UIColor *)HtmlMediumSlateBlueColor{
++(UIColor *)CustomMediumSlateBlueColor{
     return [UIColor colorWithRed:0.48 green:0.41 blue:0.93 alpha:1.0];
 }
-+(UIColor *)HtmlMediumSpringGreenColor{
++(UIColor *)CustomMediumSpringGreenColor{
     return [UIColor colorWithRed:0.00 green:0.98 blue:0.60 alpha:1.0];
 }
-+(UIColor *)HtmlMediumTurquoiseColor{
++(UIColor *)CustomMediumTurquoiseColor{
     return [UIColor colorWithRed:0.28 green:0.82 blue:0.80 alpha:1.0];
 }
-+(UIColor *)HtmlMediumVioletRedColor{
++(UIColor *)CustomMediumVioletRedColor{
     return [UIColor colorWithRed:0.78 green:0.08 blue:0.52 alpha:1.0];
 }
-+(UIColor *)HtmlMidnightBlueColor{
++(UIColor *)CustomMidnightBlueColor{
     return [UIColor colorWithRed:0.10 green:0.10 blue:0.44 alpha:1.0];
 }
-+(UIColor *)HtmlMintCreamColor{
++(UIColor *)CustomMintCreamColor{
     return [UIColor colorWithRed:0.96 green:1.00 blue:0.98 alpha:1.0];
 }
-+(UIColor *)HtmlMistyRoseColor{
++(UIColor *)CustomMistyRoseColor{
     return [UIColor colorWithRed:1.00 green:0.89 blue:0.88 alpha:1.0];
 }
-+(UIColor *)HtmlMoccasinColor{
++(UIColor *)CustomMoccasinColor{
     return [UIColor colorWithRed:1.00 green:0.89 blue:0.71 alpha:1.0];
 }
-+(UIColor *)HtmlNavajoWhiteColor{
++(UIColor *)CustomNavajoWhiteColor{
     return [UIColor colorWithRed:1.00 green:0.87 blue:0.68 alpha:1.0];
 }
-+(UIColor *)HtmlNavyColor{
++(UIColor *)CustomNavyColor{
     return [UIColor colorWithRed:0.00 green:0.00 blue:0.50 alpha:1.0];
 }
-+(UIColor *)HtmlOldLaceColor{
++(UIColor *)CustomOldLaceColor{
     return [UIColor colorWithRed:0.99 green:0.96 blue:0.90 alpha:1.0];
 }
-+(UIColor *)HtmlOliveColor{
++(UIColor *)CustomOliveColor{
     return [UIColor colorWithRed:0.50 green:0.50 blue:0.00 alpha:1.0];
 }
-+(UIColor *)HtmlOliveDrabColor{
++(UIColor *)CustomOliveDrabColor{
     return [UIColor colorWithRed:0.42 green:0.56 blue:0.14 alpha:1.0];
 }
-+(UIColor *)HtmlOrangeColor{
++(UIColor *)CustomOrangeColor{
     return [UIColor colorWithRed:1.00 green:0.65 blue:0.00 alpha:1.0];
 }
-+(UIColor *)HtmlOrangeRedColor{
++(UIColor *)CustomOrangeRedColor{
     return [UIColor colorWithRed:1.00 green:0.27 blue:0.00 alpha:1.0];
 }
-+(UIColor *)HtmlOrchidColor{
++(UIColor *)CustomOrchidColor{
     return [UIColor colorWithRed:0.85 green:0.44 blue:0.84 alpha:1.0];
 }
-+(UIColor *)HtmlPaleGoldenRodColor{
++(UIColor *)CustomPaleGoldenRodColor{
     return [UIColor colorWithRed:0.93 green:0.91 blue:0.67 alpha:1.0];
 }
-+(UIColor *)HtmlPaleGreenColor{
++(UIColor *)CustomPaleGreenColor{
     return [UIColor colorWithRed:0.60 green:0.98 blue:0.60 alpha:1.0];
 }
-+(UIColor *)HtmlPaleTurquoiseColor{
++(UIColor *)CustomPaleTurquoiseColor{
     return [UIColor colorWithRed:0.69 green:0.93 blue:0.93 alpha:1.0];
 }
-+(UIColor *)HtmlPaleVioletRedColor{
++(UIColor *)CustomPaleVioletRedColor{
     return [UIColor colorWithRed:0.86 green:0.44 blue:0.58 alpha:1.0];
 }
-+(UIColor *)HtmlPapayaWhipColor{
++(UIColor *)CustomPapayaWhipColor{
     return [UIColor colorWithRed:1.00 green:0.94 blue:0.84 alpha:1.0];
 }
-+(UIColor *)HtmlPeachPuffColor{
++(UIColor *)CustomPeachPuffColor{
     return [UIColor colorWithRed:1.00 green:0.85 blue:0.73 alpha:1.0];
 }
-+(UIColor *)HtmlPeruColor{
++(UIColor *)CustomPeruColor{
     return [UIColor colorWithRed:0.80 green:0.52 blue:0.25 alpha:1.0];
 }
-+(UIColor *)HtmlPinkColor{
++(UIColor *)CustomPinkColor{
     return [UIColor colorWithRed:1.00 green:0.75 blue:0.80 alpha:1.0];
 }
-+(UIColor *)HtmlPlumColor{
++(UIColor *)CustomPlumColor{
     return [UIColor colorWithRed:0.87 green:0.63 blue:0.87 alpha:1.0];
 }
-+(UIColor *)HtmlPowderBlueColor{
++(UIColor *)CustomPowderBlueColor{
     return [UIColor colorWithRed:0.69 green:0.88 blue:0.90 alpha:1.0];
 }
-+(UIColor *)HtmlPurpleColor{
++(UIColor *)CustomPurpleColor{
     return [UIColor colorWithRed:0.50 green:0.00 blue:0.50 alpha:1.0];
 }
-+(UIColor *)HtmlRebeccaPurpleColor{
++(UIColor *)CustomRebeccaPurpleColor{
     return [UIColor colorWithRed:0.40 green:0.20 blue:0.60 alpha:1.0];
 }
-+(UIColor *)HtmlRedColor{
++(UIColor *)CustomRedColor{
     return [UIColor colorWithRed:1.00 green:0.00 blue:0.00 alpha:1.0];
 }
-+(UIColor *)HtmlRosyBrownColor{
++(UIColor *)CustomRosyBrownColor{
     return [UIColor colorWithRed:0.74 green:0.56 blue:0.56 alpha:1.0];
 }
-+(UIColor *)HtmlRoyalBlueColor{
++(UIColor *)CustomRoyalBlueColor{
     return [UIColor colorWithRed:0.25 green:0.41 blue:0.88 alpha:1.0];
 }
-+(UIColor *)HtmlSaddleBrownColor{
++(UIColor *)CustomSaddleBrownColor{
     return [UIColor colorWithRed:0.55 green:0.27 blue:0.07 alpha:1.0];
 }
-+(UIColor *)HtmlSalmonColor{
++(UIColor *)CustomSalmonColor{
     return [UIColor colorWithRed:0.98 green:0.50 blue:0.45 alpha:1.0];
 }
-+(UIColor *)HtmlSandyBrownColor{
++(UIColor *)CustomSandyBrownColor{
     return [UIColor colorWithRed:0.96 green:0.64 blue:0.38 alpha:1.0];
 }
-+(UIColor *)HtmlSeaGreenColor{
++(UIColor *)CustomSeaGreenColor{
     return [UIColor colorWithRed:0.18 green:0.55 blue:0.34 alpha:1.0];
 }
-+(UIColor *)HtmlSeaShellColor{
++(UIColor *)CustomSeaShellColor{
     return [UIColor colorWithRed:1.00 green:0.96 blue:0.93 alpha:1.0];
 }
-+(UIColor *)HtmlSiennaColor{
++(UIColor *)CustomSiennaColor{
     return [UIColor colorWithRed:0.63 green:0.32 blue:0.18 alpha:1.0];
 }
-+(UIColor *)HtmlSilverColor{
++(UIColor *)CustomSilverColor{
     return [UIColor colorWithRed:0.75 green:0.75 blue:0.75 alpha:1.0];
 }
-+(UIColor *)HtmlSkyBlueColor{
++(UIColor *)CustomSkyBlueColor{
     return [UIColor colorWithRed:0.53 green:0.81 blue:0.92 alpha:1.0];
 }
-+(UIColor *)HtmlSlateBlueColor{
++(UIColor *)CustomSlateBlueColor{
     return [UIColor colorWithRed:0.42 green:0.35 blue:0.80 alpha:1.0];
 }
-+(UIColor *)HtmlSlateGrayColor{
++(UIColor *)CustomSlateGrayColor{
     return [UIColor colorWithRed:0.44 green:0.50 blue:0.56 alpha:1.0];
 }
-+(UIColor *)HtmlSnowColor{
++(UIColor *)CustomSnowColor{
     return [UIColor colorWithRed:1.00 green:0.98 blue:0.98 alpha:1.0];
 }
-+(UIColor *)HtmlSpringGreenColor{
++(UIColor *)CustomSpringGreenColor{
     return [UIColor colorWithRed:0.00 green:1.00 blue:0.50 alpha:1.0];
 }
-+(UIColor *)HtmlSteelBlueColor{
++(UIColor *)CustomSteelBlueColor{
     return [UIColor colorWithRed:0.27 green:0.51 blue:0.71 alpha:1.0];
 }
-+(UIColor *)HtmlTanColor{
++(UIColor *)CustomTanColor{
     return [UIColor colorWithRed:0.82 green:0.71 blue:0.55 alpha:1.0];
 }
-+(UIColor *)HtmlTealColor{
++(UIColor *)CustomTealColor{
     return [UIColor colorWithRed:0.00 green:0.50 blue:0.50 alpha:1.0];
 }
-+(UIColor *)HtmlThistleColor{
++(UIColor *)CustomThistleColor{
     return [UIColor colorWithRed:0.85 green:0.75 blue:0.85 alpha:1.0];
 }
-+(UIColor *)HtmlTomatoColor{
++(UIColor *)CustomTomatoColor{
     return [UIColor colorWithRed:1.00 green:0.39 blue:0.28 alpha:1.0];
 }
-+(UIColor *)HtmlTurquoiseColor{
++(UIColor *)CustomTurquoiseColor{
     return [UIColor colorWithRed:0.25 green:0.88 blue:0.82 alpha:1.0];
 }
-+(UIColor *)HtmlVioletColor{
++(UIColor *)CustomVioletColor{
     return [UIColor colorWithRed:0.93 green:0.51 blue:0.93 alpha:1.0];
 }
-+(UIColor *)HtmlWheatColor{
++(UIColor *)CustomWheatColor{
     return [UIColor colorWithRed:0.96 green:0.87 blue:0.70 alpha:1.0];
 }
-+(UIColor *)HtmlWhiteColor{
++(UIColor *)CustomWhiteColor{
     return [UIColor colorWithRed:1.00 green:1.00 blue:1.00 alpha:1.0];
 }
-+(UIColor *)HtmlWhiteSmokeColor{
++(UIColor *)CustomWhiteSmokeColor{
     return [UIColor colorWithRed:0.96 green:0.96 blue:0.96 alpha:1.0];
 }
-+(UIColor *)HtmlYellowColor{
++(UIColor *)CustomYellowColor{
     return [UIColor colorWithRed:1.00 green:1.00 blue:0.00 alpha:1.0];
 }
-+(UIColor *)HtmlYellowGreenColor{
++(UIColor *)CustomYellowGreenColor{
     return [UIColor colorWithRed:0.60 green:0.80 blue:0.20 alpha:1.0];
 }
 

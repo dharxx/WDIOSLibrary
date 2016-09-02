@@ -38,7 +38,7 @@
         CGFloat screenWidth = screenSize.width;
         
         // self
-        [self setFrame:CGRectMake(0, 0, screenWidth, screenHeight)];
+        [self setFrame:CGRectMake(0, screenHeight-100, screenWidth, 100)];
         [self setClipsToBounds:YES];
         [self setBackgroundColor:[UIColor clearColor]];
         
@@ -51,7 +51,7 @@
         [self.barView setTextAlignment:NSTextAlignmentCenter];
         [self.barView sizeToFit];
         [self.barView setFrame:CGRectMake(screenWidth/2 - self.barView.frame.size.width/2 - kBarViewMargin/2,
-                                          screenHeight - (self.barView.frame.size.height + 60),
+                                          0,
                                           self.barView.frame.size.width + kBarViewMargin,
                                           self.barView.frame.size.height + 20)];
         [self.barView.layer setMasksToBounds:YES];
@@ -96,6 +96,11 @@
         BOOL windowLevelNormal = window.windowLevel == UIWindowLevelNormal;
         
         if (windowOnMainScreen && windowIsVisible && windowLevelNormal) {
+            for (WDToastView *view in window.subviews) {
+                if ([view isKindOfClass:[WDToastView class]]) {
+                    [view dismiss];
+                }
+            }
             [window addSubview:self];
             break;
         }
