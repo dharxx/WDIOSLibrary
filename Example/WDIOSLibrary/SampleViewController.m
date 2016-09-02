@@ -97,7 +97,10 @@
 }
 
 -(IBAction)addNotiMessage:(id)sender{
-    
+    WDNotificationView *view = [[WDNotificationView alloc]initWithAppName:@"WDIOSLibrary" TimeDesc:@"now" Title:@"Download Complete" Subtitle:@"Your file has been downloaded." iconName:@"sample" timeDelay:5 parentView:self.view style:WDNotificationViewStyleDark usingBlockWhenTapped:^(WDNotificationView *notificationView) {
+        NSLog(@"block entered !!");
+    }];
+    [view show];
 }
 
 @end

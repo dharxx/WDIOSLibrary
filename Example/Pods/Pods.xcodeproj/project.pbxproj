@@ -116,6 +116,8 @@
 		70F97D1A1D76D17700D528CD /* WDAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F97D191D76D17700D528CD /* WDAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70F97D5C1D76E49800D528CD /* WDHtmlNameColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F97D5A1D76E49800D528CD /* WDHtmlNameColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70F97D5D1D76E49800D528CD /* WDHtmlNameColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F97D5B1D76E49800D528CD /* WDHtmlNameColor.m */; };
+		70FDD6111D781A6200951594 /* WDNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FDD60E1D7807A200951594 /* WDNotificationView.m */; };
+		70FDD6121D781A6700951594 /* WDNotificationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 70FDD60D1D7807A200951594 /* WDNotificationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		717D7A1A12A93B47296DB454FC3CBB42 /* util_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 98F2B99F550F017C30E0BF2EF8D21EF9 /* util_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		719BF701A265461248B373BDB41A846A /* MDTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F9866DA8DA8F483EF119EE110D0288 /* MDTextField.m */; };
 		71AD67AAFC26ED4869954BDDC5C8D275 /* send_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = CB91FFC2CE9D62BFA616B2BBC6C7E5FE /* send_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -522,6 +524,8 @@
 		70F97D191D76D17700D528CD /* WDAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDAlertView.h; sourceTree = "<group>"; };
 		70F97D5A1D76E49800D528CD /* WDHtmlNameColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHtmlNameColor.h; sourceTree = "<group>"; };
 		70F97D5B1D76E49800D528CD /* WDHtmlNameColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDHtmlNameColor.m; sourceTree = "<group>"; };
+		70FDD60D1D7807A200951594 /* WDNotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDNotificationView.h; sourceTree = "<group>"; };
+		70FDD60E1D7807A200951594 /* WDNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDNotificationView.m; sourceTree = "<group>"; };
 		7220B3619502A04D383BDCCD65D518F5 /* MDLinearProgressLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDLinearProgressLayer.h; path = iOSUILib/iOSUILib/Progress/MDLinearProgressLayer.h; sourceTree = "<group>"; };
 		73A288EE86B0981D34AF44E0E1711ABF /* NSString+WDLocalized.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+WDLocalized.m"; sourceTree = "<group>"; };
 		76081F7FAC38F0664932BA2E3352F8A7 /* MQTTKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MQTTKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1074,6 +1078,8 @@
 				98A4761974EB61F224D72A2DBB8ED09E /* WDFullScreenLoading.m */,
 				70F97D5A1D76E49800D528CD /* WDHtmlNameColor.h */,
 				70F97D5B1D76E49800D528CD /* WDHtmlNameColor.m */,
+				70FDD60D1D7807A200951594 /* WDNotificationView.h */,
+				70FDD60E1D7807A200951594 /* WDNotificationView.m */,
 			);
 			path = "Develop-Ben";
 			sourceTree = "<group>";
@@ -1346,6 +1352,7 @@
 				70F97D5C1D76E49800D528CD /* WDHtmlNameColor.h in Headers */,
 				CE60C8C649A698373D354ACE1A5E11AC /* UITableView+MVCSupport.h in Headers */,
 				D766DD90C521BDBA4E7E07630D504A59 /* UIViewController+AndriodUI.h in Headers */,
+				70FDD6121D781A6700951594 /* WDNotificationView.h in Headers */,
 				9EECCE392DF26A359F0168CE823F0206 /* UIViewController+MVCSupport.h in Headers */,
 				602863FB9D5DE2D0D2BD12B5BF0677F4 /* WDFullScreenLoading.h in Headers */,
 				470230BD1EBD84FC6B2C961E5F9DBA95 /* WDIOSCollectionViewController.h in Headers */,
@@ -1829,6 +1836,7 @@
 				AD617290AFB7B0BB8830C7FB7B172EF3 /* UIFont+WDMoreFonts.m in Sources */,
 				2E3FA9987AF522AE9B3CE0C1A8F5C84B /* UIImage+StupidApplePhotoFix.m in Sources */,
 				70F97D5D1D76E49800D528CD /* WDHtmlNameColor.m in Sources */,
+				70FDD6111D781A6200951594 /* WDNotificationView.m in Sources */,
 				70F97D181D76D15B00D528CD /* WDAlertView.m in Sources */,
 				C59A0C7B63283853D4887C0263FB0ADB /* UITableView+MVCSupport.m in Sources */,
 				615F3D78DD0E8D4A73EC6D82148EEEDD /* UIViewController+AndriodUI.m in Sources */,

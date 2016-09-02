@@ -15,5 +15,6 @@
 #import "WDFullScreenLoading.h"
 #import "UIViewController+AndriodUI.h"
 #import "WDHtmlNameColor.h"
+#import "WDNotificationView.h"
 
 #endif /* Develop_Ben_Header_h */
