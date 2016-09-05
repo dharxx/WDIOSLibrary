@@ -21,8 +21,8 @@
 }
 
 -(IBAction)alertMessage:(id)sender{
-    [self warningAlertViewWithTitle:@"Test"
-                            message:@"message"
+    [self warningAlertViewWithTitle:@"Trust This Computer?"
+                            message:@"Your setting and data will be accessible from this computer when connected."
                          completion:^{}
                closeAlertCompletion:^{}];
 }
@@ -50,6 +50,7 @@
     MDProgress *loadingView = [[MDProgress alloc] initWithFrame:self.view.bounds];
     [loadingView setStyle:MDProgressStyleCircular];
     [loadingView setProgressType:MDProgressTypeIndeterminate];
+    [loadingView setBackgroundColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:0.6]];
     [self.view addSubview:loadingView];
     [self performSelector:@selector(removeLoadingView:) withObject:self afterDelay:5];
 }
@@ -102,5 +103,6 @@
     }];
     [view show];
 }
+
 
 @end
