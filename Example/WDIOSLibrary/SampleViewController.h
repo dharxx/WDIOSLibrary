@@ -10,5 +10,6 @@
 
 @interface SampleViewController : UIViewController
 @property (weak, nonatomic) IBOutlet WDButtonIndicator *buttonView;
+@property (weak, nonatomic) IBOutlet UITextFieldLimit *textFieldLimit;
 
 @end

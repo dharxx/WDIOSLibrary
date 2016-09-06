@@ -112,6 +112,10 @@
 		6E4A16BF4D27C48BB1FE1E1CF5E8B90E /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = A779EC25644F8FD5FC5C7EA3C5FD21BA /* FBSnapshotTestCasePlatform.m */; };
 		6EB0D221E6A1B3EF28B7E64BFDD9290F /* UIFont+WDMoreFonts.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC785C624BB50B1EC5BCFE1AF7B4669 /* UIFont+WDMoreFonts.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6ECA52E753A804819221201A14EA10C5 /* MDCalendarHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D842915C822C3992E73BB4F8D43910 /* MDCalendarHeader.m */; };
+		7045B7FD1D7D75740043EB99 /* UITextFieldLimit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7045B7F91D7D756B0043EB99 /* UITextFieldLimit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7045B7FE1D7D757B0043EB99 /* UITextFieldLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7045B7FA1D7D756B0043EB99 /* UITextFieldLimit.m */; };
+		705B412E1D7E715500403329 /* WDEmptyStateView.h in Headers */ = {isa = PBXBuildFile; fileRef = 705B412A1D7E66AC00403329 /* WDEmptyStateView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		705B412F1D7E715A00403329 /* WDEmptyStateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 705B412B1D7E66AC00403329 /* WDEmptyStateView.m */; };
 		70F97D181D76D15B00D528CD /* WDAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F97D171D76D15B00D528CD /* WDAlertView.m */; };
 		70F97D1A1D76D17700D528CD /* WDAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F97D191D76D17700D528CD /* WDAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70F97D5C1D76E49800D528CD /* WDCustomColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F97D5A1D76E49800D528CD /* WDCustomColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -520,6 +524,10 @@
 		6F98E0CACB4B5FE2BD01DC1BCE8039BF /* UITableView+MVCSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+MVCSupport.m"; sourceTree = "<group>"; };
 		6FC8246BC0671658BFE36AE08CFE390E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		6FF3FDE53F14999C45F610A6ADB64636 /* JWTAlgorithmHS384.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWTAlgorithmHS384.h; path = JWT/Algorithms/HSFamily/JWTAlgorithmHS384.h; sourceTree = "<group>"; };
+		7045B7F91D7D756B0043EB99 /* UITextFieldLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldLimit.h; sourceTree = "<group>"; };
+		7045B7FA1D7D756B0043EB99 /* UITextFieldLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldLimit.m; sourceTree = "<group>"; };
+		705B412A1D7E66AC00403329 /* WDEmptyStateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDEmptyStateView.h; sourceTree = "<group>"; };
+		705B412B1D7E66AC00403329 /* WDEmptyStateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDEmptyStateView.m; sourceTree = "<group>"; };
 		70F97D171D76D15B00D528CD /* WDAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDAlertView.m; sourceTree = "<group>"; };
 		70F97D191D76D17700D528CD /* WDAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDAlertView.h; sourceTree = "<group>"; };
 		70F97D5A1D76E49800D528CD /* WDCustomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDCustomColor.h; sourceTree = "<group>"; };
@@ -1080,6 +1088,10 @@
 				70F97D5B1D76E49800D528CD /* WDCustomColor.m */,
 				70FDD60D1D7807A200951594 /* WDNotificationView.h */,
 				70FDD60E1D7807A200951594 /* WDNotificationView.m */,
+				7045B7F91D7D756B0043EB99 /* UITextFieldLimit.h */,
+				7045B7FA1D7D756B0043EB99 /* UITextFieldLimit.m */,
+				705B412A1D7E66AC00403329 /* WDEmptyStateView.h */,
+				705B412B1D7E66AC00403329 /* WDEmptyStateView.m */,
 			);
 			path = "Develop-Ben";
 			sourceTree = "<group>";
@@ -1354,6 +1366,8 @@
 				D766DD90C521BDBA4E7E07630D504A59 /* UIViewController+AndriodUI.h in Headers */,
 				70FDD6121D781A6700951594 /* WDNotificationView.h in Headers */,
 				9EECCE392DF26A359F0168CE823F0206 /* UIViewController+MVCSupport.h in Headers */,
+				7045B7FD1D7D75740043EB99 /* UITextFieldLimit.h in Headers */,
+				705B412E1D7E715500403329 /* WDEmptyStateView.h in Headers */,
 				602863FB9D5DE2D0D2BD12B5BF0677F4 /* WDFullScreenLoading.h in Headers */,
 				470230BD1EBD84FC6B2C961E5F9DBA95 /* WDIOSCollectionViewController.h in Headers */,
 				A68FDA9A911E753B1FD6F5874A38219E /* WDIOSCollectionViewLayout.h in Headers */,
@@ -1831,6 +1845,7 @@
 				7ABA3C4A3A090EAC2CFB583D635791D2 /* WDButtonIndicator.m in Sources */,
 				AD68532F4F403D7480F595D2F0C44070 /* NSLocale+WDLocalized.m in Sources */,
 				407EDBDD9D11ADAFD06F9CCBAF8AD81C /* NSObject+MVCSupport.m in Sources */,
+				705B412F1D7E715A00403329 /* WDEmptyStateView.m in Sources */,
 				8368889A0688AE203E9F85BB7FFCE3C1 /* NSString+WDLocalized.m in Sources */,
 				9C1891F35865A93B91804857F8BF7450 /* WDToastView.m in Sources */,
 				AD617290AFB7B0BB8830C7FB7B172EF3 /* UIFont+WDMoreFonts.m in Sources */,
@@ -1840,6 +1855,7 @@
 				70F97D181D76D15B00D528CD /* WDAlertView.m in Sources */,
 				C59A0C7B63283853D4887C0263FB0ADB /* UITableView+MVCSupport.m in Sources */,
 				615F3D78DD0E8D4A73EC6D82148EEEDD /* UIViewController+AndriodUI.m in Sources */,
+				7045B7FE1D7D757B0043EB99 /* UITextFieldLimit.m in Sources */,
 				58DE1403C8B749E20110FD8102A7562A /* UIViewController+MVCSupport.m in Sources */,
 				0395A52327D96C7A15B4E32FF2E753CA /* WDFullScreenLoading.m in Sources */,
 				83E30C1146F41007A912895F7D88259F /* WDIOSCollectionViewController.m in Sources */,

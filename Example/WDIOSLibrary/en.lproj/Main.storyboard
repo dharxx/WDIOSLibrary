@@ -83,7 +83,7 @@
             </objects>
             <point key="canvasLocation" x="-154" y="201"/>
         </scene>
-        <!--Custom View by BM-->
+        <!--Custom View-->
         <scene sceneID="AM3-GD-EwK">
             <objects>
                 <viewController id="PjM-Fw-X9r" customClass="SampleViewController" sceneMemberID="viewController">
@@ -244,15 +244,21 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="SRT-kI-NEV"/>
                                                 </constraints>
-                                                <state key="normal" title="(Empty)"/>
+                                                <state key="normal" title="Empty State View"/>
+                                                <connections>
+                                                    <action selector="addEmptyStateView:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="Kmw-Ko-aD1"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nG7-Bh-EQL">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNV-Kx-Qrs">
                                                 <rect key="frame" x="5" y="318" width="150" height="53"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="mMw-eN-5hD"/>
+                                                    <constraint firstAttribute="width" constant="150" id="4Hq-G9-2fe"/>
                                                 </constraints>
-                                                <state key="normal" title="(Empty)"/>
+                                                <state key="normal" title="No internet View"/>
+                                                <connections>
+                                                    <action selector="addInternetLostView:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="815-lT-WX4"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cO-v7-Vv1" customClass="MDButton">
                                                 <rect key="frame" x="5" y="381" width="150" height="54"/>
@@ -282,10 +288,97 @@
                             <constraint firstItem="R8Y-Rg-zxw" firstAttribute="top" secondItem="G9V-1q-BdY" secondAttribute="bottom" constant="10" id="cfS-za-Ga1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Custom View by BM" id="zRU-fh-FNM"/>
+                    <navigationItem key="navigationItem" title="Custom View" id="zRU-fh-FNM"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXX-fm-TNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" id="WQY-dr-XfM">
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="435"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xak-81-VJh">
+                            <rect key="frame" x="5" y="0.0" width="150" height="54"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="Jla-jl-AZB"/>
+                            </constraints>
+                            <state key="normal" title="SweetAlert"/>
+                            <connections>
+                                <action selector="addAlertView:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="IhM-SI-NUa"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1h-U2-46c">
+                            <rect key="frame" x="5" y="64" width="150" height="53"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="e5H-0R-obe"/>
+                            </constraints>
+                            <state key="normal" title="Snackbar"/>
+                            <connections>
+                                <action selector="addSneckbar:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="1rU-s9-xOe"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AB-ya-mXc">
+                            <rect key="frame" x="5" y="127" width="150" height="54"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="bg7-qD-VtC"/>
+                            </constraints>
+                            <state key="normal" title="Multi Line Toast"/>
+                            <connections>
+                                <action selector="addMultiLineToast:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="edW-cB-Cc0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9XP-U9-XYp">
+                            <rect key="frame" x="5" y="191" width="150" height="53"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="V8w-tf-Yie"/>
+                            </constraints>
+                            <state key="normal" title="Noti Message"/>
+                            <connections>
+                                <action selector="addNotiMessage:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="lq1-R5-5dr"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cao-v1-Age">
+                            <rect key="frame" x="5" y="254" width="150" height="54"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="T9N-8y-iXi"/>
+                            </constraints>
+                            <state key="normal" title="Empty State View"/>
+                            <connections>
+                                <action selector="addEmptyStateView:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="o7c-dr-eir"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHE-Va-lTs">
+                            <rect key="frame" x="5" y="318" width="150" height="53"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="OeI-6K-grR"/>
+                            </constraints>
+                            <state key="normal" title="Nointernet View"/>
+                            <connections>
+                                <action selector="addInternetLostView:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="8g1-u9-xbH"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaR-Dy-pc2" customClass="MDButton">
+                            <rect key="frame" x="5" y="381" width="150" height="54"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="98e-vq-iFK"/>
+                            </constraints>
+                            <state key="normal" title="MDButton"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="1AB-ya-mXc" firstAttribute="leading" secondItem="WQY-dr-XfM" secondAttribute="leading" constant="96" id="Vmg-JS-FHe"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Vmg-JS-FHe"/>
+                        </mask>
+                    </variation>
+                </stackView>
             </objects>
             <point key="canvasLocation" x="988" y="-319"/>
         </scene>

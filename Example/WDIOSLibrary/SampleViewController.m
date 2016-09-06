@@ -13,16 +13,21 @@
 
 @implementation SampleViewController
 
+-(void)viewDidLoad{
+    [self.textFieldLimit setLimit:5];
+}
+
 -(void)viewWillAppear:(BOOL)animated{
     
     [super viewWillAppear:animated];
     [self.view setBackgroundColor:[UIColor CustomSteelBlueColor]];
-    
+    [self.buttonView setTitle:@"Login Now!"];
 }
 
 -(IBAction)alertMessage:(id)sender{
-    [self warningAlertViewWithTitle:@"Trust This Computer?"
-                            message:@"Your setting and data will be accessible from this computer when connected."
+    [self warningAlertViewWithTitle:@"System Infomation"
+                            message:[NSString stringWithFormat:@"Your system version is %@",
+                                     [UIDevice currentDevice].systemVersion]
                          completion:^{}
                closeAlertCompletion:^{}];
 }
@@ -102,6 +107,27 @@
         NSLog(@"block entered !!");
     }];
     [view show];
+}
+
+-(IBAction)addEmptyStateView:(id)sender{
+    WDEmptyStateView *view = [[WDEmptyStateView alloc]initWithTitle:@"NO DATA" description:@"Your collection list is empty." imageName:@"empty"];
+    [view setBackgroundColor:[UIColor whiteColor]];
+    [view setTextColor:[UIColor lightGrayColor]];
+    [self.view addSubview:view];
+    [view performSelector:@selector(removeFromSuperview) withObject:nil afterDelay:5];
+}
+
+-(IBAction)addInternetLostView:(id)sender{
+    WDEmptyStateView *view = [[WDEmptyStateView alloc]initWithTitle:@"NO INTERNET" description:@"Your internet connention was lost,\nPlease check." imageName:@""];
+    [view setBackgroundColor:[UIColor colorWithRed:0.96 green:0.98 blue:1.00 alpha:1.0]];
+    [view setTextColor:[UIColor darkGrayColor]];
+    [view setActionButtonTextColor:[UIColor whiteColor] AndBackgroundColor:[UIColor CustomCrimsonColor]];
+    [view addActionButton:@"Retry" WithHandler:^(WDEmptyStateView *view) {
+        WDToastView *toast = [[WDToastView alloc]initWithMessage:@"You press retry : )" iconName:@"" time:ToastShowingTimeShort usingBlockWhenFinishShowing:nil];
+        [toast show];
+    }];
+    [self.view addSubview:view];
+    [view performSelector:@selector(removeFromSuperview) withObject:nil afterDelay:5];
 }
 
 

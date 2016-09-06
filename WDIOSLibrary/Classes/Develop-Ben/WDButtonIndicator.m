@@ -9,7 +9,7 @@
 #import "WDButtonIndicator.h"
 
 @interface WDButtonIndicator()
-
+@property (nonatomic,strong) NSString *buttonTitle;
 @end
 
 @implementation WDButtonIndicator{
@@ -48,7 +48,7 @@
 -(void)initView{
     // Initialization view
     _button = [UIButton buttonWithType:UIButtonTypeSystem];
-    [_button setTitle:@"Spinner Button" forState:UIControlStateNormal];
+    [_button setTitle:@"spinner button" forState:UIControlStateNormal];
     [self addSubview:_button];
     [_button setFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
     [_button addTarget:self action:@selector(showSpinner) forControlEvents:UIControlEventTouchUpInside];
