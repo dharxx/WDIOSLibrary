@@ -28,6 +28,22 @@ it, simply add the following line to your Podfile:
 pod "WDIOSLibrary"
 ```
 
+## Usage
+
+### WDEmptyStateView
+![WDEmptyStateView](/images/WDEmptyStateView.png)
+
+```objective-c
+WDEmptyStateView *view = [[WDEmptyStateView alloc]initWithTitle:@"NO INTERNET" description:@"Your internet connention was lost,\nPlease check." imageName:@""];
+[view setBackgroundColor:[UIColor colorWithRed:0.96 green:0.98 blue:1.00 alpha:1.0]];
+[view setTextColor:[UIColor darkGrayColor]];
+[view setActionButtonTextColor:[UIColor whiteColor] AndBackgroundColor:[UIColor CustomCrimsonColor]];
+[view addActionButton:@"Retry" WithHandler:^(WDEmptyStateView *view) {
+        NSLog(@"User Tapped Button");
+}];
+[self.view addSubview:view];
+```
+
 ## Author
 
 Dhanu Saksrisathaporn, dharxx@gmail.com
