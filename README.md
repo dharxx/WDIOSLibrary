@@ -31,7 +31,7 @@ pod "WDIOSLibrary"
 ## Usage
 
 ### WDEmptyStateView
-![WDEmptyStateView](/images/WDEmptyStateView.png)
+![WDEmptyStateView](http://i68.tinypic.com/15fzb4.png)
 
 ```objective-c
 WDEmptyStateView *view = [[WDEmptyStateView alloc]initWithTitle:@"NO INTERNET" description:@"Your internet connention was lost,\nPlease check." imageName:@""];
