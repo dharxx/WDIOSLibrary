@@ -98,11 +98,11 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="R8Y-Rg-zxw">
                                 <rect key="frame" x="0.0" y="74" width="320" height="435"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wtJ-fg-6O5">
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wtJ-fg-6O5">
                                         <rect key="frame" x="0.0" y="0.0" width="160" height="435"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKa-lQ-UB4">
-                                                <rect key="frame" x="5" y="0.0" width="150" height="54"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKa-lQ-UB4">
+                                                <rect key="frame" x="5" y="0.0" width="150" height="44"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="7Rx-8h-kxA"/>
@@ -112,8 +112,8 @@
                                                     <action selector="alertMessage:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="fp4-MH-EHK"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxj-71-Jiu">
-                                                <rect key="frame" x="5" y="64" width="150" height="53"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxj-71-Jiu">
+                                                <rect key="frame" x="5" y="49" width="150" height="44"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="qKY-uB-RmP"/>
@@ -123,8 +123,8 @@
                                                     <action selector="alertToast:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="kS9-dw-hCC"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLf-dE-19q">
-                                                <rect key="frame" x="5" y="127" width="150" height="54"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLf-dE-19q">
+                                                <rect key="frame" x="5" y="98" width="150" height="44"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="hIU-Yu-ek1"/>
@@ -134,8 +134,8 @@
                                                     <action selector="addFullScreenLoading:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="gHn-XA-S2L"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnm-z2-gCR">
-                                                <rect key="frame" x="5" y="191" width="150" height="53"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnm-z2-gCR">
+                                                <rect key="frame" x="5" y="147" width="150" height="44"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="mv2-si-qZW"/>
@@ -145,8 +145,8 @@
                                                     <action selector="addCircularLoading:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="F3p-Iw-a0J"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHk-Rq-KXN">
-                                                <rect key="frame" x="5" y="254" width="150" height="54"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHk-Rq-KXN">
+                                                <rect key="frame" x="5" y="196" width="150" height="43"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="oiA-Dj-sIt"/>
@@ -156,8 +156,8 @@
                                                     <action selector="addLinearLoading:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="Vzy-jc-XI5"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpt-tb-9dD">
-                                                <rect key="frame" x="5" y="318" width="150" height="53"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpt-tb-9dD">
+                                                <rect key="frame" x="5" y="244" width="150" height="44"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="mac-Qr-XuK"/>
@@ -167,17 +167,34 @@
                                                     <action selector="removeLoadingView:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="typ-Wk-TMR"/>
                                                 </connections>
                                             </button>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rfM-c8-ODP" customClass="WDButtonIndicator">
-                                                <rect key="frame" x="5" y="381" width="150" height="54"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJQ-FH-kc3">
+                                                <rect key="frame" x="5" y="293" width="150" height="44"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="6fZ-Dh-MxI"/>
+                                                </constraints>
+                                                <state key="normal" title="Navbar Spinner"/>
+                                                <connections>
+                                                    <action selector="addNavbarSpinner:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="hfi-9S-xJZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8q-pE-rOZ">
+                                                <rect key="frame" x="5" y="342" width="150" height="44"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="9Gf-ET-oKM"/>
+                                                </constraints>
+                                                <state key="normal" title="Remove Spinner"/>
+                                                <connections>
+                                                    <action selector="removeNavbarSpinner:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="7GJ-lb-k74"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rfM-c8-ODP" customClass="WDButtonIndicator">
+                                                <rect key="frame" x="5" y="391" width="150" height="44"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="ue1-JB-5K7"/>
                                                 </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
-                                                        <integer key="value" value="3"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
                                         <constraints>
@@ -191,11 +208,11 @@
                                             </mask>
                                         </variation>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AL5-tR-ILq">
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="AL5-tR-ILq">
                                         <rect key="frame" x="160" y="0.0" width="160" height="435"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hm-9D-1R8">
-                                                <rect key="frame" x="5" y="0.0" width="150" height="54"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hm-9D-1R8">
+                                                <rect key="frame" x="5" y="0.0" width="150" height="44"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="gy0-UL-zIa"/>
@@ -205,8 +222,8 @@
                                                     <action selector="addAlertView:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="cUJ-PG-wJZ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ak-Xo-KJb">
-                                                <rect key="frame" x="5" y="64" width="150" height="53"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ak-Xo-KJb">
+                                                <rect key="frame" x="5" y="49" width="150" height="44"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="rUe-lw-FOH"/>
@@ -216,8 +233,8 @@
                                                     <action selector="addSneckbar:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="Qhy-mQ-61E"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0E-9V-Jes">
-                                                <rect key="frame" x="5" y="127" width="150" height="54"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0E-9V-Jes">
+                                                <rect key="frame" x="5" y="98" width="150" height="44"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="mhv-3S-rEN"/>
@@ -227,8 +244,8 @@
                                                     <action selector="addMultiLineToast:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="5vi-jq-41w"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYW-Wm-Plg">
-                                                <rect key="frame" x="5" y="191" width="150" height="53"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYW-Wm-Plg">
+                                                <rect key="frame" x="5" y="147" width="150" height="44"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="LBn-D1-wtz"/>
@@ -238,8 +255,8 @@
                                                     <action selector="addNotiMessage:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="hdN-Bw-4eb"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Lk-dv-vFN">
-                                                <rect key="frame" x="5" y="254" width="150" height="54"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Lk-dv-vFN">
+                                                <rect key="frame" x="5" y="196" width="150" height="43"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="SRT-kI-NEV"/>
@@ -249,8 +266,8 @@
                                                     <action selector="addEmptyStateView:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="Kmw-Ko-aD1"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNV-Kx-Qrs">
-                                                <rect key="frame" x="5" y="318" width="150" height="53"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNV-Kx-Qrs">
+                                                <rect key="frame" x="5" y="244" width="150" height="44"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="4Hq-G9-2fe"/>
@@ -260,8 +277,24 @@
                                                     <action selector="addInternetLostView:" destination="PjM-Fw-X9r" eventType="touchUpInside" id="815-lT-WX4"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cO-v7-Vv1" customClass="MDButton">
-                                                <rect key="frame" x="5" y="381" width="150" height="54"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bL5-C1-fTI">
+                                                <rect key="frame" x="5" y="293" width="150" height="44"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="wYA-aW-b7a"/>
+                                                </constraints>
+                                                <state key="normal" title="(Empty)"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqI-vf-CJ6">
+                                                <rect key="frame" x="5" y="342" width="150" height="44"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="9Xp-6f-x57"/>
+                                                </constraints>
+                                                <state key="normal" title="(Empty)"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cO-v7-Vv1" customClass="MDButton">
+                                                <rect key="frame" x="5" y="391" width="150" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="eh0-kL-2BM"/>
                                                 </constraints>
@@ -290,6 +323,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Custom View" id="zRU-fh-FNM"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="buttonView" destination="rfM-c8-ODP" id="0Yz-wy-wLD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXX-fm-TNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" id="WQY-dr-XfM">

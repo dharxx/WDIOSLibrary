@@ -15,13 +15,14 @@
 
 -(void)viewDidLoad{
     [self.textFieldLimit setLimit:5];
+    [self.buttonView setTitle:@"Login Now!"];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     
     [super viewWillAppear:animated];
     [self.view setBackgroundColor:[UIColor CustomSteelBlueColor]];
-    [self.buttonView setTitle:@"Login Now!"];
+    
 }
 
 -(IBAction)alertMessage:(id)sender{
@@ -61,7 +62,7 @@
 }
 
 -(IBAction)addLinearLoading:(id)sender{
-    MDProgress *loadingView = [[MDProgress alloc] initWithFrame:CGRectMake(0, 60, self.view.frame.size.width, 10)];
+    MDProgress *loadingView = [[MDProgress alloc] initWithFrame:CGRectMake(0, 60, self.view.frame.size.width, 8)];
     [loadingView setStyle:MDProgressStyleLinear];
     [loadingView setProgressType:MDProgressTypeIndeterminate];
     [self.view addSubview:loadingView];
@@ -74,17 +75,9 @@
 -(IBAction)addAlertView:(id)sender{
     WDAlertView *alert = [[WDAlertView alloc]initWithTitle:@"Confirm Delete" message:@"Do you want to delete this item." confirmButtonTitle:@"Delete" cancelButtonTitle:@"No" usingBlockWhenTapButton:^(WDAlertView *alertView, NSInteger buttonIndex) {
         if (buttonIndex == 0) {
-            WDToastView *toast = [[WDToastView alloc]initWithMessage:@"Canceled"
-                                                        iconName:@""
-                                                            time:ToastShowingTimeShort
-                                     usingBlockWhenFinishShowing:nil];
-            [toast show];
+            NSLog(@"Canceled");
         }else if(buttonIndex == 1){
-            WDToastView *toast = [[WDToastView alloc]initWithMessage:@"Deleted"
-                                                        iconName:@""
-                                                            time:ToastShowingTimeShort
-                                     usingBlockWhenFinishShowing:nil];
-            [toast show];
+            NSLog(@"Deleted");
         }
     }];
     [alert show];
@@ -118,7 +111,7 @@
 }
 
 -(IBAction)addInternetLostView:(id)sender{
-    WDEmptyStateView *view = [[WDEmptyStateView alloc]initWithTitle:@"NO INTERNET" description:@"Your internet connention was lost,\nPlease check." imageName:@""];
+    WDEmptyStateView *view = [[WDEmptyStateView alloc]initWithTitle:@"NO INTERNET" description:@"Your internet connention was lost,\nPlease check." imageName:@"nointernet"];
     [view setBackgroundColor:[UIColor colorWithRed:0.96 green:0.98 blue:1.00 alpha:1.0]];
     [view setTextColor:[UIColor darkGrayColor]];
     [view setActionButtonTextColor:[UIColor whiteColor] AndBackgroundColor:[UIColor CustomCrimsonColor]];
@@ -128,6 +121,14 @@
     }];
     [self.view addSubview:view];
     [view performSelector:@selector(removeFromSuperview) withObject:nil afterDelay:5];
+}
+
+-(IBAction)addNavbarSpinner:(id)sender{
+    [self addNavbarSpinner];
+}
+
+-(IBAction)removeNavbarSpinner:(id)sender{
+    [self removeAllNavbarSpinner];
 }
 
 

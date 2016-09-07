@@ -14,5 +14,7 @@
 -(void)showCircularProgressIndeterminate;
 -(void)showLinearProgressIndeterminate;
 -(void)removeProgressView;
+-(void)addNavbarSpinner;
+-(void)removeAllNavbarSpinner;
 
 @end

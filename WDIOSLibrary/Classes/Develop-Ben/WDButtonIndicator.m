@@ -41,6 +41,7 @@
 
 -(void)baseInit{
     isSpinning = NO;
+    self.buttonTitle = @"Spinner Button";
     // Initialization code
     //[self setBackgroundColor:[UIColor clearColor]];
 }
@@ -48,7 +49,7 @@
 -(void)initView{
     // Initialization view
     _button = [UIButton buttonWithType:UIButtonTypeSystem];
-    [_button setTitle:@"spinner button" forState:UIControlStateNormal];
+    [_button setTitle:self.buttonTitle forState:UIControlStateNormal];
     [self addSubview:_button];
     [_button setFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
     [_button addTarget:self action:@selector(showSpinner) forControlEvents:UIControlEventTouchUpInside];
@@ -63,6 +64,7 @@
 
 -(void)setTitle:(NSString *)title{
     [_button setTitle:title forState:UIControlStateNormal];
+    self.buttonTitle = title;
 }
 
 -(void)showSpinner{
@@ -71,7 +73,7 @@
         [_button setHidden:YES];
         isSpinning = YES;
     }
-    
+     
     //auto hide when 5
     [self performSelector:@selector(hideSpinner) withObject:nil afterDelay:5];
 }

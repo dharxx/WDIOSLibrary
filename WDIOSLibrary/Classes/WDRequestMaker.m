@@ -179,7 +179,6 @@ static NSString *wdRequestMainURL = nil;
 
 + (NSURLRequest *)makeGetRequest:(NSString *)url info:(NSDictionary *)info
 {
-    
     NSString *bodyString = @"?";
     NSString *format = @"%@=%@";
     NSString *formatAfter = @"&%@=%@";
