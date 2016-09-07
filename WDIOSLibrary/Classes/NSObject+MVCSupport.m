@@ -15,9 +15,14 @@ void wdios_backgroundBlock(void(^block)(void)) {
     });
 }
 void wdios_mainBlock(void(^block)(void)) {
-    dispatch_async(dispatch_get_main_queue(), ^{
+    if ([NSThread isMainThread]) {
         block();
-    });
+    }
+    else {
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            block();
+        });
+    }
 }
 
 @implementation NSObject (MVCSupport)
