@@ -37,6 +37,7 @@ pod "WDIOSLibrary"
 ### WDButtonIndicator
 ![WDButtonIndicator](http://i67.tinypic.com/htcqpe.png) ![WDButtonIndicator](http://i65.tinypic.com/16lejht.png)
 
+
 ### WDToastView
 ![WDToastView](http://i67.tinypic.com/wj80lt.png)
 ```objective-c
@@ -46,6 +47,7 @@ WDToastView *toast = [[WDToastView alloc]initWithMessage:@"Logged in as.. Benmor
                              usingBlockWhenFinishShowing:nil];
 [toast show];
 ```
+
 
 ### WDAlertView
 ![WDEmptyAlertView](http://i64.tinypic.com/hsmi42.png)
@@ -60,6 +62,7 @@ WDAlertView *alert = [[WDAlertView alloc]initWithTitle:@"Confirm Delete" message
 [alert show];
 ```
 
+
 ### WDFullScreenLoading
 ![WDFullScreenLoading](http://i68.tinypic.com/2a80w8k.png)
 ```objective-c
@@ -71,11 +74,13 @@ WDFullScreenLoading *loading = [[WDFullScreenLoading alloc]init];
 [loading hide];
 ```
 
+
 ### WDCustomColor
 See Custom Color Name at [HTML Color Names](http://www.w3schools.com/colors/colors_names.asp) (w3schools)
 ```objective-c
 [self.view setBackgroundColor:[UIColor CustomSteelBlueColor]];
 ```
+
 
 ### WDNotificationView
 ![WDNotificationView](http://i64.tinypic.com/2njh8is.png)
@@ -85,6 +90,7 @@ WDNotificationView *view = [[WDNotificationView alloc]initWithAppName:@"WDIOSLib
 }];
 [view show];
 ```
+
 
 ### WDEmptyStateView
 ![WDEmptyStateView](http://i68.tinypic.com/15fzb4.png)
