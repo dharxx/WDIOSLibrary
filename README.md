@@ -56,12 +56,11 @@ WDAlertView *alert = [[WDAlertView alloc]initWithTitle:@"Confirm Delete"
                                                message:@"Do you want to delete this item." 
                                     confirmButtonTitle:@"Delete" cancelButtonTitle:@"No"
                                usingBlockWhenTapButton:^(WDAlertView *alertView, NSInteger buttonIndex) {
-        if (buttonIndex == 0) {
-                NSLog(@"Canceled");
-        }else if(buttonIndex == 1){
-                NSLog(@"Deleted");
-        }
-}];
+                                                        if (buttonIndex == 0) {
+                                                                NSLog(@"Canceled");
+                                                        }else if(buttonIndex == 1){
+                                                                NSLog(@"Deleted");
+                                                        }}];
 [alert show];
 ```
 
@@ -88,17 +87,18 @@ See Custom Color Name at [HTML Color Names](http://www.w3schools.com/colors/colo
 ### WDNotificationView
 ![WDNotificationView](http://i64.tinypic.com/2njh8is.png) ![WDNotificationView](http://i67.tinypic.com/dftyja.png)
 ```objective-c
-WDNotificationView *view = [[WDNotificationView alloc]initWithAppName:@"WDIOSLibrary" 
-                                                             TimeDesc:@"now" 
-                                                                Title:@"Download Complete" 
-                                                             Subtitle:@"Your file has been downloaded." 
-                                                             iconName:@"sample" 
-                                                            timeDelay:5 
-                                                           parentView:self.view 
-                                                                style:WDNotificationViewStyleDark 
-                                                 usingBlockWhenTapped:^(WDNotificationView *notificationView) {
-        NSLog(@"block entered !!");
-}];
+WDNotificationView *view = 
+[[WDNotificationView alloc]initWithAppName:@"WDIOSLibrary" 
+                                  TimeDesc:@"now" 
+                                     Title:@"Download Complete" 
+                                  Subtitle:@"Your file has been downloaded." 
+                                  iconName:@"sample" 
+                                 timeDelay:5 
+                                parentView:self.view 
+                                     style:WDNotificationViewStyleDark 
+                      usingBlockWhenTapped:^(WDNotificationView *notificationView) {
+                                             NSLog(@"block entered !!");
+                                          }];
 [view show];
 ```
 
@@ -128,8 +128,8 @@ WDLightAlertView *alert = [[WDLightAlertView alloc]initWithTitle:@"Warning"
                                                      Do you realy want to overwrite it?" 
                                               PrimaryButtonTitle:@"Cancel" 
                                                       Completion:^(WDLightAlertView *alert){
-        NSLog(@"primary button tapped");
-}];
+                                                                  NSLog(@"primary button tapped");
+                                                                  }];
 [alert addSecondaryButtonWithTitle:@"Overwrite" Completion:^(WDLightAlertView *alert) {
         NSLog(@"secondary button tapped");
 }];
