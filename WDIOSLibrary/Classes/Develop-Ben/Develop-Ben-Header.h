@@ -18,5 +18,6 @@
 #import "WDNotificationView.h"
 #import "UITextFieldLimit.h"
 #import "WDEmptyStateView.h"
+#import "WDLightAlertView.h"
 
 #endif /* Develop_Ben_Header_h */

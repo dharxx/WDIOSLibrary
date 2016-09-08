@@ -116,10 +116,14 @@
 		7045B7FE1D7D757B0043EB99 /* UITextFieldLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7045B7FA1D7D756B0043EB99 /* UITextFieldLimit.m */; };
 		705B412E1D7E715500403329 /* WDEmptyStateView.h in Headers */ = {isa = PBXBuildFile; fileRef = 705B412A1D7E66AC00403329 /* WDEmptyStateView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		705B412F1D7E715A00403329 /* WDEmptyStateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 705B412B1D7E66AC00403329 /* WDEmptyStateView.m */; };
+		70855E501D8023650044B0B6 /* WDLightAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 70855E4C1D800D680044B0B6 /* WDLightAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70855E511D80236A0044B0B6 /* WDLightAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70855E4D1D800D680044B0B6 /* WDLightAlertView.m */; };
 		70F97D181D76D15B00D528CD /* WDAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F97D171D76D15B00D528CD /* WDAlertView.m */; };
 		70F97D1A1D76D17700D528CD /* WDAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F97D191D76D17700D528CD /* WDAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70F97D5C1D76E49800D528CD /* WDCustomColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F97D5A1D76E49800D528CD /* WDCustomColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70F97D5D1D76E49800D528CD /* WDCustomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F97D5B1D76E49800D528CD /* WDCustomColor.m */; };
+		70FC58FA1D815DD700F28163 /* GradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 70FC58F61D815DA300F28163 /* GradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70FC58FB1D815DDA00F28163 /* GradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FC58F71D815DA300F28163 /* GradientLayer.m */; };
 		70FDD6111D781A6200951594 /* WDNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FDD60E1D7807A200951594 /* WDNotificationView.m */; };
 		70FDD6121D781A6700951594 /* WDNotificationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 70FDD60D1D7807A200951594 /* WDNotificationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		717D7A1A12A93B47296DB454FC3CBB42 /* util_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 98F2B99F550F017C30E0BF2EF8D21EF9 /* util_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -528,10 +532,14 @@
 		7045B7FA1D7D756B0043EB99 /* UITextFieldLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldLimit.m; sourceTree = "<group>"; };
 		705B412A1D7E66AC00403329 /* WDEmptyStateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDEmptyStateView.h; sourceTree = "<group>"; };
 		705B412B1D7E66AC00403329 /* WDEmptyStateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDEmptyStateView.m; sourceTree = "<group>"; };
+		70855E4C1D800D680044B0B6 /* WDLightAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDLightAlertView.h; sourceTree = "<group>"; };
+		70855E4D1D800D680044B0B6 /* WDLightAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDLightAlertView.m; sourceTree = "<group>"; };
 		70F97D171D76D15B00D528CD /* WDAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDAlertView.m; sourceTree = "<group>"; };
 		70F97D191D76D17700D528CD /* WDAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDAlertView.h; sourceTree = "<group>"; };
 		70F97D5A1D76E49800D528CD /* WDCustomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDCustomColor.h; sourceTree = "<group>"; };
 		70F97D5B1D76E49800D528CD /* WDCustomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDCustomColor.m; sourceTree = "<group>"; };
+		70FC58F61D815DA300F28163 /* GradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradientLayer.h; path = Helper/GradientLayer.h; sourceTree = "<group>"; };
+		70FC58F71D815DA300F28163 /* GradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradientLayer.m; path = Helper/GradientLayer.m; sourceTree = "<group>"; };
 		70FDD60D1D7807A200951594 /* WDNotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDNotificationView.h; sourceTree = "<group>"; };
 		70FDD60E1D7807A200951594 /* WDNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDNotificationView.m; sourceTree = "<group>"; };
 		7220B3619502A04D383BDCCD65D518F5 /* MDLinearProgressLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDLinearProgressLayer.h; path = iOSUILib/iOSUILib/Progress/MDLinearProgressLayer.h; sourceTree = "<group>"; };
@@ -1017,6 +1025,15 @@
 			path = "../Target Support Files/FBSnapshotTestCase";
 			sourceTree = "<group>";
 		};
+		70FC58F51D815D8D00F28163 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				70FC58F61D815DA300F28163 /* GradientLayer.h */,
+				70FC58F71D815DA300F28163 /* GradientLayer.m */,
+			);
+			name = helper;
+			sourceTree = "<group>";
+		};
 		71CC5FD0676392426C9784FB3A780D5A /* CHTCollectionViewWaterfallLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -1073,6 +1090,7 @@
 		B6362E8AE2323FBD893FF6BA779B2676 /* Develop-Ben */ = {
 			isa = PBXGroup;
 			children = (
+				70FC58F51D815D8D00F28163 /* helper */,
 				A484DD8ACED9EE8983958FC27FB0DE3C /* Develop-Ben-Header.h */,
 				CED09DE364928F338A9B3F5D26A26078 /* WDButtonIndicator.h */,
 				4FF88704B8CA0E5A9BD103C419C270A5 /* WDButtonIndicator.m */,
@@ -1092,6 +1110,8 @@
 				7045B7FA1D7D756B0043EB99 /* UITextFieldLimit.m */,
 				705B412A1D7E66AC00403329 /* WDEmptyStateView.h */,
 				705B412B1D7E66AC00403329 /* WDEmptyStateView.m */,
+				70855E4C1D800D680044B0B6 /* WDLightAlertView.h */,
+				70855E4D1D800D680044B0B6 /* WDLightAlertView.m */,
 			);
 			path = "Develop-Ben";
 			sourceTree = "<group>";
@@ -1359,6 +1379,7 @@
 				C2A05836AD6F44D94A4EAC348932B22D /* NSObject+MVCSupport.h in Headers */,
 				C2FC30C941318E9AD3A7AFB48A5C5AA3 /* NSString+WDLocalized.h in Headers */,
 				2C148521B0529E47880AEE573195F7A5 /* WDToastView.h in Headers */,
+				70FC58FA1D815DD700F28163 /* GradientLayer.h in Headers */,
 				6EB0D221E6A1B3EF28B7E64BFDD9290F /* UIFont+WDMoreFonts.h in Headers */,
 				CA07BB729236BB4D1EE68315B3EACCDA /* UIImage+StupidApplePhotoFix.h in Headers */,
 				70F97D5C1D76E49800D528CD /* WDCustomColor.h in Headers */,
@@ -1370,6 +1391,7 @@
 				705B412E1D7E715500403329 /* WDEmptyStateView.h in Headers */,
 				602863FB9D5DE2D0D2BD12B5BF0677F4 /* WDFullScreenLoading.h in Headers */,
 				470230BD1EBD84FC6B2C961E5F9DBA95 /* WDIOSCollectionViewController.h in Headers */,
+				70855E501D8023650044B0B6 /* WDLightAlertView.h in Headers */,
 				A68FDA9A911E753B1FD6F5874A38219E /* WDIOSCollectionViewLayout.h in Headers */,
 				8CD3366A74DC1676E67A29435C79606C /* WDIOSDataViewerHeader.h in Headers */,
 				948350F1FCC19189D317DC36BC8A76BD /* WDIOSLibrary-umbrella.h in Headers */,
@@ -1855,11 +1877,13 @@
 				70F97D181D76D15B00D528CD /* WDAlertView.m in Sources */,
 				C59A0C7B63283853D4887C0263FB0ADB /* UITableView+MVCSupport.m in Sources */,
 				615F3D78DD0E8D4A73EC6D82148EEEDD /* UIViewController+AndriodUI.m in Sources */,
+				70FC58FB1D815DDA00F28163 /* GradientLayer.m in Sources */,
 				7045B7FE1D7D757B0043EB99 /* UITextFieldLimit.m in Sources */,
 				58DE1403C8B749E20110FD8102A7562A /* UIViewController+MVCSupport.m in Sources */,
 				0395A52327D96C7A15B4E32FF2E753CA /* WDFullScreenLoading.m in Sources */,
 				83E30C1146F41007A912895F7D88259F /* WDIOSCollectionViewController.m in Sources */,
 				29EC994CA6952A5FC202889062F3A947 /* WDIOSCollectionViewLayout.m in Sources */,
+				70855E511D80236A0044B0B6 /* WDLightAlertView.m in Sources */,
 				CA3DCAAF5724EED9CD103B8438EEB647 /* WDIOSLibrary-dummy.m in Sources */,
 				34989B2DC5FBEB3FC7A1E9CF5F666671 /* WDIOSWaitingView.m in Sources */,
 				F05A65FC3F351737BE54823663AC4F64 /* WDJWTString.m in Sources */,
