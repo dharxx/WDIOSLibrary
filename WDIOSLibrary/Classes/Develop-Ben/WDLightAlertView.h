@@ -25,11 +25,15 @@ typedef void (^WDLightAlertViewCompletionBlock) (WDLightAlertView *alert);
 -(void)addSecondaryButtonWithTitle:(NSString*)secondaryButtontitle
                         Completion:(WDLightAlertViewCompletionBlock)buttonDidTapped;
 
--(void)setTextColor:(UIColor*)color;
+-(void)setBankgroundColor:(UIColor*)color;
+-(void)setTitleColor:(UIColor*)color;
+-(void)setDescriptionColor:(UIColor*)color;
 -(void)setPrimaryButtonTextColor:(UIColor*)color;
 -(void)setSecondaryButtonTextColor:(UIColor*)color;
 -(void)setPrimaryButtonBackgroundColor:(UIColor*)color;
 -(void)setSecondaryButtonBackgroundColor:(UIColor*)color;
+-(void)setPrimaryButtonBorderColor:(UIColor*)color;
+-(void)setSecondaryButtonBorderColor:(UIColor*)color;
 
 -(void)show;
 -(void)dismiss;

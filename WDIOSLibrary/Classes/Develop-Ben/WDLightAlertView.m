@@ -46,7 +46,7 @@
         [self.layer addSublayer:gradientLayer];
         
         self.alertView = [[UIView alloc]init];
-        [self.alertView setFrame:CGRectMake(0, 0, screenWidth-MARGIN8*2, 175)];
+        [self.alertView setFrame:CGRectMake(0, 0, screenWidth-MARGIN8*2, 168)];
         [self.alertView setBackgroundColor:[UIColor whiteColor]];
         [self.alertView.layer setCornerRadius:3];
         [self.alertView setCenter:self.center];
@@ -64,7 +64,7 @@
         
         self.descriptionLable = [[UILabel alloc]init];
         [self.descriptionLable setText:description];
-        [self.descriptionLable setFont:[UIFont systemFontOfSize:16 weight:UIFontWeightRegular]];
+        [self.descriptionLable setFont:[UIFont systemFontOfSize:15 weight:UIFontWeightRegular]];
         [self.descriptionLable setTextAlignment:NSTextAlignmentCenter];
         [self.descriptionLable setNumberOfLines:0];
         [self.descriptionLable setTextColor:grayColor1];
@@ -78,7 +78,7 @@
         self.primaryButton = [UIButton buttonWithType:UIButtonTypeSystem];
         [self.primaryButton setTitle:primaryBottonTitle forState:UIControlStateNormal];
         [self.primaryButton setTitleColor:grayColor1 forState:UIControlStateNormal];
-        [self.primaryButton.titleLabel setFont:[UIFont systemFontOfSize:17 weight:UIFontWeightMedium]];
+        [self.primaryButton.titleLabel setFont:[UIFont systemFontOfSize:16 weight:UIFontWeightMedium]];
         [self.primaryButton setBackgroundColor:grayColor2];
         [self.primaryButton setFrame:CGRectMake(self.alertView.frame.size.width/2 -70,
                                                 self.descriptionLable.frame.origin.y +
@@ -87,9 +87,8 @@
         [self.primaryButton addTarget:self action:@selector(primaryButtonDidTapped:) forControlEvents:UIControlEventTouchUpInside];
         
         self.primaryButton.layer.masksToBounds = NO;
-        self.primaryButton.layer.shadowOffset = CGSizeMake(0, 0);
-        self.primaryButton.layer.shadowRadius = 1;
-        self.primaryButton.layer.shadowOpacity = 0.5;
+        self.primaryButton.layer.borderWidth = 1;
+        self.primaryButton.layer.borderColor = [UIColor colorWithRed:0.84 green:0.84 blue:0.84 alpha:1.0].CGColor;
         
         [self.alertView addSubview:self.primaryButton];
         
@@ -131,14 +130,69 @@
     [self.secondaryButton addTarget:self action:@selector(secondaryButtonDidTapped:) forControlEvents:UIControlEventTouchUpInside];
     
     self.secondaryButton.layer.masksToBounds = NO;
-    self.secondaryButton.layer.shadowOffset = CGSizeMake(0, 0);
-    self.secondaryButton.layer.shadowRadius = 1;
-    self.secondaryButton.layer.shadowOpacity = 0.5;
+    self.secondaryButton.layer.borderWidth = 1;
+    self.secondaryButton.layer.borderColor = [UIColor colorWithRed:0.88 green:0.34 blue:0.28 alpha:1.0].CGColor;
     
     [self.alertView addSubview:self.secondaryButton];
     
     [self.primaryButton setFrame:CGRectMake(self.primaryButton.frame.origin.x - 70 - MARGIN4,
                                             self.primaryButton.frame.origin.y, 140, 44)];
+    
+    self.secondaryButtonDidTapped = buttonDidTapped;
+}
+
+-(void)setBankgroundColor:(UIColor*)color{
+    if (color!=nil) {
+        [self.alertView setBackgroundColor:color];
+    }
+}
+
+-(void)setTitleColor:(UIColor*)color{
+    if (color!=nil) {
+        [self.titleLabel setTextColor:color];
+    }
+}
+
+-(void)setDescriptionColor:(UIColor*)color{
+    if (color!=nil) {
+        [self.descriptionLable setTextColor:color];
+    }
+}
+
+-(void)setPrimaryButtonTextColor:(UIColor*)color{
+    if (color!=nil) {
+        [self.primaryButton.titleLabel setTextColor:color];
+    }
+}
+
+-(void)setSecondaryButtonTextColor:(UIColor*)color{
+    if (color!=nil) {
+        [self.secondaryButton.titleLabel setTextColor:color];
+    }
+}
+
+-(void)setPrimaryButtonBackgroundColor:(UIColor*)color{
+    if (color!=nil) {
+        [self.primaryButton setBackgroundColor:color];
+    }
+}
+
+-(void)setSecondaryButtonBackgroundColor:(UIColor*)color{
+    if (color!=nil) {
+        [self.secondaryButton setBackgroundColor:color];
+    }
+}
+
+-(void)setPrimaryButtonBorderColor:(UIColor*)color{
+    if (color!=nil) {
+        self.primaryButton.layer.borderColor = color.CGColor;
+    }
+}
+
+-(void)setSecondaryButtonBorderColor:(UIColor*)color{
+    if (color!=nil) {
+        self.secondaryButton.layer.borderColor = color.CGColor;
+    }
 }
 
 -(void)show{

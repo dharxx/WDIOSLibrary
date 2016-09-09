@@ -132,7 +132,7 @@
 }
 
 -(IBAction)addLightAlertView:(id)sender{
-    WDLightAlertView *alert = [[WDLightAlertView alloc]initWithTitle:@"Warning" Description:@"Diary for Sep 8, 2016 already exist! Do you realy want to overwrite it?" PrimaryButtonTitle:@"Cancel" Completion:^(WDLightAlertView *alert){
+    WDLightAlertView *alert = [[WDLightAlertView alloc]initWithTitle:@"Warning" Description:@"Diary for Sep 8, 2016 already exists! Do you realy want to overwrite it?" PrimaryButtonTitle:@"Cancel" Completion:^(WDLightAlertView *alert){
         NSLog(@"primary button tapped");
     }];
     [alert addSecondaryButtonWithTitle:@"Overwrite" Completion:^(WDLightAlertView *alert) {
