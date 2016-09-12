@@ -29,7 +29,7 @@ WDIOSLibrary is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "WDIOSLibrary"
+pod 'WDIOSLibrary', :git => 'https://github.com/dharxx/WDIOSLibrary.git', :branch => ‘develop-ben'
 ```
 
 ## Usage
