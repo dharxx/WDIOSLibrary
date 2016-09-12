@@ -9,7 +9,7 @@
 #import "WDIOSCollectionViewController.h"
 #import "WDIOSCollectionViewLayout.h"
 #import "WDIOSWaitingView.h"
-
+#import "NSObject+MVCSupport.h"
 @interface WDIOSCollectionViewController ()<CHTCollectionViewDelegateWaterfallLayout>
 @property (nonatomic,retain) UIRefreshControl *refreshControl;
 @property (nonatomic) BOOL loading;
@@ -114,9 +114,9 @@
 {
     //remove loadmore cell
     self.loading = NO;
-    self.collectionView.alwaysBounceVertical = YES;
-    self.waterfallLayout.footerHeight = 0;
-    dispatch_async(dispatch_get_main_queue(), ^{
+    wdios_mainBlock(^{
+        self.collectionView.alwaysBounceVertical = YES;
+        self.waterfallLayout.footerHeight = 0;
         [self.collectionView reloadData];
     });
 }
