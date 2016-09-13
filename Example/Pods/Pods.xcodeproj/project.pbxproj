@@ -76,6 +76,10 @@
 		3C66EDB70F713B8753392C485F1B0EF5 /* JWT.h in Headers */ = {isa = PBXBuildFile; fileRef = 25FF9C4955BBA067D5556CE5849F75B7 /* JWT.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D6C7CC26B2EC13198F829430AA33C73 /* JWTAlgorithmHS512.h in Headers */ = {isa = PBXBuildFile; fileRef = DA79A972DE9900BA4064C5BE9DAA6A1A /* JWTAlgorithmHS512.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F1F65426739C22D60C04559433A7291 /* NSString+WDLocalized.h in Headers */ = {isa = PBXBuildFile; fileRef = FAA30A17697EA9470D9DC9218A431C33 /* NSString+WDLocalized.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4138ED5F1D87BA290092C332 /* WDIOSTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4138ED5A1D87B9C00092C332 /* WDIOSTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4138ED601D87BCEA0092C332 /* WDIOSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4138ED5B1D87B9C00092C332 /* WDIOSTableViewController.m */; };
+		4168382E1D87E2350067C810 /* WDIOSTableWaitingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4168382A1D87E1B70067C810 /* WDIOSTableWaitingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4168382F1D87E23A0067C810 /* WDIOSTableWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4168382B1D87E1B70067C810 /* WDIOSTableWaitingView.m */; };
 		424EDA87F296948AE983C3641A472CB6 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C18862A1703762101A67A6551F4EF6B /* FBSnapshotTestCasePlatform.m */; };
 		4A70DA856E246CD51C8C5A08EC48C0C4 /* logging_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 5D47946E022DCADE1B06A425130D49CF /* logging_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		5319699B6279D358776B30A46D23E2AD /* will_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 72B35283B0F55DCE8973E39B2DAE7E43 /* will_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -346,6 +350,10 @@
 		3E5E3512B0C1E383482854668065AF67 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		3E9DB954D4343FC44B73CAEBA0EE12E2 /* JWTAlgorithmNone.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JWTAlgorithmNone.m; path = JWT/Algorithms/Base/JWTAlgorithmNone.m; sourceTree = "<group>"; };
 		40EE0CE6779008FDF26E89B445075140 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4138ED5A1D87B9C00092C332 /* WDIOSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDIOSTableViewController.h; sourceTree = "<group>"; };
+		4138ED5B1D87B9C00092C332 /* WDIOSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDIOSTableViewController.m; sourceTree = "<group>"; };
+		4168382A1D87E1B70067C810 /* WDIOSTableWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDIOSTableWaitingView.h; sourceTree = "<group>"; };
+		4168382B1D87E1B70067C810 /* WDIOSTableWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDIOSTableWaitingView.m; sourceTree = "<group>"; };
 		4A7AED6981A7F72640A0F8C59D2B935C /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		4D72F275F65EEE7AB0E2928BBBA66952 /* read_handle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = read_handle.h; path = libmosquitto/read_handle.h; sourceTree = "<group>"; };
 		4DB0E4EE0524597C77AEC9CB9F6F6118 /* send_client_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = send_client_mosq.c; path = libmosquitto/send_client_mosq.c; sourceTree = "<group>"; };
@@ -613,13 +621,17 @@
 		34F1A6A81D6F06C800E0B77E /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				34F1A6A91D6F06FB00E0B77E /* WDIOSDataViewerHeader.h */,
+				4138ED5A1D87B9C00092C332 /* WDIOSTableViewController.h */,
+				4138ED5B1D87B9C00092C332 /* WDIOSTableViewController.m */,
 				34F1A69B1D6F06C500E0B77E /* WDIOSCollectionViewController.h */,
 				34F1A69C1D6F06C500E0B77E /* WDIOSCollectionViewController.m */,
 				34F1A69E1D6F06C500E0B77E /* WDIOSWaitingView.h */,
 				34F1A69F1D6F06C500E0B77E /* WDIOSWaitingView.m */,
+				4168382A1D87E1B70067C810 /* WDIOSTableWaitingView.h */,
+				4168382B1D87E1B70067C810 /* WDIOSTableWaitingView.m */,
 				34F1A6A01D6F06C500E0B77E /* WDIOSCollectionViewLayout.h */,
 				34F1A6A11D6F06C500E0B77E /* WDIOSCollectionViewLayout.m */,
-				34F1A6A91D6F06FB00E0B77E /* WDIOSDataViewerHeader.h */,
 			);
 			name = CollectionView;
 			sourceTree = "<group>";
@@ -973,6 +985,7 @@
 				349EB4301D7584210054CF14 /* UIView+MVCSupport.h in Headers */,
 				9074DFBF433CFBFD072939DF7CD11996 /* NSLocale+WDLocalized.h in Headers */,
 				3F1F65426739C22D60C04559433A7291 /* NSString+WDLocalized.h in Headers */,
+				4138ED5F1D87BA290092C332 /* WDIOSTableViewController.h in Headers */,
 				34B47DE71D5B377300A5298A /* WDJWTString.h in Headers */,
 				349911321D63499400DC6634 /* NSObject+MVCSupport.h in Headers */,
 				34F291521D631C96007C6E4B /* UIFont+WDMoreFonts.h in Headers */,
@@ -984,6 +997,7 @@
 				3461B67F1D6ABA19001B22B7 /* WDRequestMaker.h in Headers */,
 				34F1A6AA1D6F08E300E0B77E /* WDIOSDataViewerHeader.h in Headers */,
 				8E86EF115E561275017B2A28047D90E0 /* WDIOSLibrary-umbrella.h in Headers */,
+				4168382E1D87E2350067C810 /* WDIOSTableWaitingView.h in Headers */,
 				34F1A6A21D6F06C500E0B77E /* WDIOSCollectionViewController.h in Headers */,
 				34F1A6A61D6F06C500E0B77E /* WDIOSCollectionViewLayout.h in Headers */,
 				34F1A6A41D6F06C500E0B77E /* WDIOSWaitingView.h in Headers */,
@@ -1390,6 +1404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BB69670ED4148CD3294E0EB2B140654 /* NSLocale+WDLocalized.m in Sources */,
+				4138ED601D87BCEA0092C332 /* WDIOSTableViewController.m in Sources */,
 				34F1A6A51D6F06C500E0B77E /* WDIOSWaitingView.m in Sources */,
 				AC9E60DDDDBE3B8B41BE6F41099C5235 /* NSString+WDLocalized.m in Sources */,
 				349911371D6349E600DC6634 /* UITableView+MVCSupport.m in Sources */,
@@ -1402,6 +1417,7 @@
 				3461B6871D6ABA19001B22B7 /* WDRequestMaker.m in Sources */,
 				7B6D28BE738976D7B3ADA467AC4A07D9 /* WDIOSLibrary-dummy.m in Sources */,
 				34F291531D631C96007C6E4B /* UIFont+WDMoreFonts.m in Sources */,
+				4168382F1D87E23A0067C810 /* WDIOSTableWaitingView.m in Sources */,
 				34B47DE81D5B377300A5298A /* WDJWTString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

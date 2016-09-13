@@ -7,4 +7,5 @@
 //
 
 #import "WDIOSCollectionViewController.h"
+#import "WDIOSTableViewController.h"
 #import "WDIOSCollectionViewLayout.h"
