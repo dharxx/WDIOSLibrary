@@ -189,7 +189,7 @@
 {
     return 10;
 }
-- (UICollectionViewCell *)cellByObject:(id)object atIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)cellByObject:(id)object atIndexPath:(NSIndexPath *)indexPath
 {
     return nil;
 }
@@ -304,7 +304,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     id object = [self objectByIndexPath:indexPath];
-    UICollectionViewCell *cell = [self cellByObject:object atIndexPath:indexPath];
+    UITableViewCell *cell = [self cellByObject:object atIndexPath:indexPath];
     return cell;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -312,7 +312,13 @@
     id object = [self objectByIndexPath:indexPath];
     return [self viewHeightByObject:object];
 }
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    id obj = [self objectByIndexPath:indexPath];
+    if (obj) {
+        [self didSelectObject:obj];
+    }
+}
 - (UIColor *)activityIndicatorViewLoadMoreColor
 {
     return nil;
