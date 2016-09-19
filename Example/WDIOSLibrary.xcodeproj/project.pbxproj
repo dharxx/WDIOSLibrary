@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E7C0E0C1A086CA0B7F23FF1 /* Pods_WDIOSLibrary_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF05D9740D5D0322A4C7810B /* Pods_WDIOSLibrary_Example.framework */; };
-		2FBE7C8440A411BD95605612 /* Pods_WDIOSLibrary_Example_WDIOSLibrary_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DB6E1DA3BAD5A5FA204E01 /* Pods_WDIOSLibrary_Example_WDIOSLibrary_Tests.framework */; };
 		340269BC1D4B465000EE20DD /* Dictionary.strings in Resources */ = {isa = PBXBuildFile; fileRef = 340269BE1D4B465000EE20DD /* Dictionary.strings */; };
 		348435CF1D5105A10005990F /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F83AF71D5098B500EB89F1 /* CoreMotion.framework */; };
 		34A4310B1D51A1F500CEBDFD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A4310A1D51A1F500CEBDFD /* MapKit.framework */; };
 		34A4310D1D51AB8D00CEBDFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A4310C1D51AB8D00CEBDFD /* LaunchScreen.storyboard */; };
 		34A431131D51EE1B00CEBDFD /* WDIOSStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A431121D51EE1B00CEBDFD /* WDIOSStartViewController.m */; };
 		34A433191D523DF60027EA4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A433171D523DF60027EA4A /* Main.storyboard */; };
+		34B56A2F1D703890000903F0 /* SomeSwiftClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B56A2E1D703890000903F0 /* SomeSwiftClass.swift */; };
 		34EE01CA1D54C56A0068D942 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EE01C91D54C56A0068D942 /* 1.jpg */; };
 		34EE01CC1D54C5890068D942 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EE01CB1D54C5890068D942 /* 2.jpg */; };
 		34EE01CE1D54C5960068D942 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EE01CD1D54C5960068D942 /* 3.jpg */; };
@@ -28,6 +27,9 @@
 		34F1A69A1D6DFD5F00E0B77E /* ExampleCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F1A6991D6DFD5F00E0B77E /* ExampleCollectionViewController.m */; };
 		34F1A6B21D6F257000E0B77E /* SampleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F1A6B11D6F257000E0B77E /* SampleCollectionViewCell.m */; };
 		34F83AFC1D5098FB00EB89F1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F83AFB1D5098FB00EB89F1 /* AVFoundation.framework */; };
+		4138ED631D87C2820092C332 /* ExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4138ED621D87C2820092C332 /* ExampleTableViewController.m */; };
+		4138ED661D87C32E0092C332 /* SampleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4138ED651D87C32E0092C332 /* SampleTableViewCell.m */; };
+		47574D9B1D366F5214033358 /* Pods_WDIOSLibrary_Example_WDIOSLibrary_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D37386D5319D1F3E9CE384 /* Pods_WDIOSLibrary_Example_WDIOSLibrary_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -40,7 +42,8 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		705E94B71D73ED8000AFBCE5 /* SampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 705E94B61D73ED8000AFBCE5 /* SampleViewController.m */; };
+		7061C92B1D8FC0B10088875D /* TestUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7061C92A1D8FC0B10088875D /* TestUIViewController.m */; };
+		AF9141856387BA10C1616749 /* Pods_WDIOSLibrary_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E1F22434FB5E30256C9F97 /* Pods_WDIOSLibrary_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A7F2C19314937AC043A1C85 /* Pods-WDIOSLibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDIOSLibrary_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-WDIOSLibrary_Example/Pods-WDIOSLibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
+		2569D3FB09940764ECD62137 /* Pods-WDIOSLibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDIOSLibrary_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-WDIOSLibrary_Example/Pods-WDIOSLibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2FEE5AB9C27DD518CC9BF3E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		30DB6E1DA3BAD5A5FA204E01 /* Pods_WDIOSLibrary_Example_WDIOSLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WDIOSLibrary_Example_WDIOSLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		340269AD1D4B460200EE20DD /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		340269AF1D4B460E00EE20DD /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		340269B11D4B461A00EE20DD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -82,6 +84,8 @@
 		34A431111D51EE1B00CEBDFD /* WDIOSStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDIOSStartViewController.h; sourceTree = "<group>"; };
 		34A431121D51EE1B00CEBDFD /* WDIOSStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDIOSStartViewController.m; sourceTree = "<group>"; };
 		34A433181D523DF60027EA4A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34B56A2E1D703890000903F0 /* SomeSwiftClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeSwiftClass.swift; sourceTree = "<group>"; };
+		34B56A301D703912000903F0 /* WDIOSLibrary_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WDIOSLibrary_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		34EE01C91D54C56A0068D942 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		34EE01CB1D54C5890068D942 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		34EE01CD1D54C5960068D942 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
@@ -93,12 +97,18 @@
 		34EE01D91D54C6020068D942 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
 		34EE01DE1D54D88F0068D942 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		34F1A6981D6DFD5F00E0B77E /* ExampleCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleCollectionViewController.h; sourceTree = "<group>"; };
-		34F1A6991D6DFD5F00E0B77E /* ExampleCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleCollectionViewController.m; path = WDIOSLibrary/ExampleCollectionViewController.m; sourceTree = "<group>"; };
+		34F1A6991D6DFD5F00E0B77E /* ExampleCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleCollectionViewController.m; sourceTree = "<group>"; };
 		34F1A6B01D6F257000E0B77E /* SampleCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleCollectionViewCell.h; sourceTree = "<group>"; };
 		34F1A6B11D6F257000E0B77E /* SampleCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleCollectionViewCell.m; sourceTree = "<group>"; };
 		34F83AF71D5098B500EB89F1 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		34F83AFB1D5098FB00EB89F1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		4614BA501335F566E1CC43F8 /* Pods-WDIOSLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDIOSLibrary_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WDIOSLibrary_Example/Pods-WDIOSLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		35309CB392FE04E62D5F7A36 /* Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests/Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		40D37386D5319D1F3E9CE384 /* Pods_WDIOSLibrary_Example_WDIOSLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WDIOSLibrary_Example_WDIOSLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4138ED611D87C2820092C332 /* ExampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleTableViewController.h; sourceTree = "<group>"; };
+		4138ED621D87C2820092C332 /* ExampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleTableViewController.m; sourceTree = "<group>"; };
+		4138ED641D87C32E0092C332 /* SampleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTableViewCell.h; sourceTree = "<group>"; };
+		4138ED651D87C32E0092C332 /* SampleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTableViewCell.m; sourceTree = "<group>"; };
+		54881F1D7EB0AAECD3A5550F /* Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests/Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* WDIOSLibrary_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDIOSLibrary_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,12 +127,11 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		61F756974360EA42DEA2E4C3 /* Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests/Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		705E94B51D73ED8000AFBCE5 /* SampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleViewController.h; sourceTree = "<group>"; };
-		705E94B61D73ED8000AFBCE5 /* SampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleViewController.m; sourceTree = "<group>"; };
-		7E6609854FBCD33CA50BCFE6 /* Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests/Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7061C9291D8FC0B10088875D /* TestUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestUIViewController.h; sourceTree = "<group>"; };
+		7061C92A1D8FC0B10088875D /* TestUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestUIViewController.m; sourceTree = "<group>"; };
 		B8B7563A692BCE00E79EF016 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		CF05D9740D5D0322A4C7810B /* Pods_WDIOSLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WDIOSLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6D0159C956D2F47CD53F184 /* Pods-WDIOSLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDIOSLibrary_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WDIOSLibrary_Example/Pods-WDIOSLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F9E1F22434FB5E30256C9F97 /* Pods_WDIOSLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WDIOSLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC62445876A4C629E8A16A43 /* WDIOSLibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WDIOSLibrary.podspec; path = ../WDIOSLibrary.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,7 +147,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				1E7C0E0C1A086CA0B7F23FF1 /* Pods_WDIOSLibrary_Example.framework in Frameworks */,
+				AF9141856387BA10C1616749 /* Pods_WDIOSLibrary_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +158,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				2FBE7C8440A411BD95605612 /* Pods_WDIOSLibrary_Example_WDIOSLibrary_Tests.framework in Frameworks */,
+				47574D9B1D366F5214033358 /* Pods_WDIOSLibrary_Example_WDIOSLibrary_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,7 +189,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				E41E92387229DD0B45506C79 /* Pods */,
+				981566D54D5DA8A96AD8FE82 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -204,8 +213,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				CF05D9740D5D0322A4C7810B /* Pods_WDIOSLibrary_Example.framework */,
-				30DB6E1DA3BAD5A5FA204E01 /* Pods_WDIOSLibrary_Example_WDIOSLibrary_Tests.framework */,
+				F9E1F22434FB5E30256C9F97 /* Pods_WDIOSLibrary_Example.framework */,
+				40D37386D5319D1F3E9CE384 /* Pods_WDIOSLibrary_Example_WDIOSLibrary_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -215,16 +224,23 @@
 			children = (
 				34EE01C81D54C5490068D942 /* Photos */,
 				6003F59C195388D20070C39A /* WDIOSAppDelegate.h */,
+				6003F59D195388D20070C39A /* WDIOSAppDelegate.m */,
+				34B56A2E1D703890000903F0 /* SomeSwiftClass.swift */,
+				34B56A301D703912000903F0 /* WDIOSLibrary_Example-Bridging-Header.h */,
 				6003F5A5195388D20070C39A /* WDIOSViewController.h */,
 				6003F5A6195388D20070C39A /* WDIOSViewController.m */,
 				34A431111D51EE1B00CEBDFD /* WDIOSStartViewController.h */,
-				6003F59D195388D20070C39A /* WDIOSAppDelegate.m */,
 				34A431121D51EE1B00CEBDFD /* WDIOSStartViewController.m */,
 				34F1A6981D6DFD5F00E0B77E /* ExampleCollectionViewController.h */,
+				34F1A6991D6DFD5F00E0B77E /* ExampleCollectionViewController.m */,
+				4138ED611D87C2820092C332 /* ExampleTableViewController.h */,
+				4138ED621D87C2820092C332 /* ExampleTableViewController.m */,
 				34F1A6B01D6F257000E0B77E /* SampleCollectionViewCell.h */,
 				34F1A6B11D6F257000E0B77E /* SampleCollectionViewCell.m */,
-				705E94B51D73ED8000AFBCE5 /* SampleViewController.h */,
-				705E94B61D73ED8000AFBCE5 /* SampleViewController.m */,
+				4138ED641D87C32E0092C332 /* SampleTableViewCell.h */,
+				4138ED651D87C32E0092C332 /* SampleTableViewCell.m */,
+				7061C9291D8FC0B10088875D /* TestUIViewController.h */,
+				7061C92A1D8FC0B10088875D /* TestUIViewController.m */,
 				340269BE1D4B465000EE20DD /* Dictionary.strings */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -267,7 +283,6 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				34F1A6991D6DFD5F00E0B77E /* ExampleCollectionViewController.m */,
 				FC62445876A4C629E8A16A43 /* WDIOSLibrary.podspec */,
 				B8B7563A692BCE00E79EF016 /* README.md */,
 				2FEE5AB9C27DD518CC9BF3E1 /* LICENSE */,
@@ -275,13 +290,13 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		E41E92387229DD0B45506C79 /* Pods */ = {
+		981566D54D5DA8A96AD8FE82 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4614BA501335F566E1CC43F8 /* Pods-WDIOSLibrary_Example.debug.xcconfig */,
-				0A7F2C19314937AC043A1C85 /* Pods-WDIOSLibrary_Example.release.xcconfig */,
-				61F756974360EA42DEA2E4C3 /* Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.debug.xcconfig */,
-				7E6609854FBCD33CA50BCFE6 /* Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.release.xcconfig */,
+				C6D0159C956D2F47CD53F184 /* Pods-WDIOSLibrary_Example.debug.xcconfig */,
+				2569D3FB09940764ECD62137 /* Pods-WDIOSLibrary_Example.release.xcconfig */,
+				54881F1D7EB0AAECD3A5550F /* Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.debug.xcconfig */,
+				35309CB392FE04E62D5F7A36 /* Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -293,12 +308,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "WDIOSLibrary_Example" */;
 			buildPhases = (
-				B4FDFBA6CFE95943C356FC51 /* Check Pods Manifest.lock */,
+				3907DB55DD7DC38B83DDDE07 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				D5DE63174D25B1C4B8A66369 /* Embed Pods Frameworks */,
-				81DD993AE2EBBCEDEB2B0E8F /* Copy Pods Resources */,
+				88584B8B72FE723CAE00826A /* [CP] Embed Pods Frameworks */,
+				D6F888615F4748F39E15561B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -313,12 +328,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "WDIOSLibrary_Tests" */;
 			buildPhases = (
-				E63ED047860271CBB050B4E9 /* Check Pods Manifest.lock */,
+				AAE781D350DCEDEBDA6A7DDD /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				5F49CB837742CC68D3ABC89F /* Embed Pods Frameworks */,
-				A407D7B13EAC360DA64CE920 /* Copy Pods Resources */,
+				735BC37D9D7A55551526C0DA /* [CP] Embed Pods Frameworks */,
+				8A3C9056CC1B6D52D017C037 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -337,11 +352,13 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = WDIOS;
-				LastUpgradeCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Dhanu Saksrisathaporn";
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
 						DevelopmentTeam = R485TH293S;
+						LastSwiftMigration = 0800;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -349,6 +366,8 @@
 						};
 					};
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = R485TH293S;
+						ProvisioningStyle = Manual;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -413,14 +432,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5F49CB837742CC68D3ABC89F /* Embed Pods Frameworks */ = {
+		3907DB55DD7DC38B83DDDE07 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		735BC37D9D7A55551526C0DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,59 +462,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests/Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		81DD993AE2EBBCEDEB2B0E8F /* Copy Pods Resources */ = {
+		88584B8B72FE723CAE00826A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WDIOSLibrary_Example/Pods-WDIOSLibrary_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A407D7B13EAC360DA64CE920 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests/Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B4FDFBA6CFE95943C356FC51 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D5DE63174D25B1C4B8A66369 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,19 +477,49 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WDIOSLibrary_Example/Pods-WDIOSLibrary_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E63ED047860271CBB050B4E9 /* Check Pods Manifest.lock */ = {
+		8A3C9056CC1B6D52D017C037 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests/Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAE781D350DCEDEBDA6A7DDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D6F888615F4748F39E15561B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WDIOSLibrary_Example/Pods-WDIOSLibrary_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -512,10 +531,13 @@
 			files = (
 				34F1A6B21D6F257000E0B77E /* SampleCollectionViewCell.m in Sources */,
 				6003F59E195388D20070C39A /* WDIOSAppDelegate.m in Sources */,
+				4138ED661D87C32E0092C332 /* SampleTableViewCell.m in Sources */,
+				4138ED631D87C2820092C332 /* ExampleTableViewController.m in Sources */,
+				7061C92B1D8FC0B10088875D /* TestUIViewController.m in Sources */,
 				34F1A69A1D6DFD5F00E0B77E /* ExampleCollectionViewController.m in Sources */,
+				34B56A2F1D703890000903F0 /* SomeSwiftClass.swift in Sources */,
 				6003F5A7195388D20070C39A /* WDIOSViewController.m in Sources */,
 				34A431131D51EE1B00CEBDFD /* WDIOSStartViewController.m in Sources */,
-				705E94B71D73ED8000AFBCE5 /* SampleViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,6 +612,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -599,14 +622,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -631,6 +659,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -640,13 +669,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -655,6 +689,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -662,20 +697,28 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4614BA501335F566E1CC43F8 /* Pods-WDIOSLibrary_Example.debug.xcconfig */;
+			baseConfigurationReference = C6D0159C956D2F47CD53F184 /* Pods-WDIOSLibrary_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Burin Tajama (233NVP2D94)";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R485TH293S;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WDIOSLibrary/WDIOSLibrary-Prefix.pch";
 				INFOPLIST_FILE = "WDIOSLibrary/WDIOSLibrary-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.WDIOSLibrary-Example-Ben";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "00e3ba81-245d-46c6-8f70-8745be66148d";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Wildcard (*)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WDIOSLibrary/WDIOSLibrary_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -683,20 +726,28 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A7F2C19314937AC043A1C85 /* Pods-WDIOSLibrary_Example.release.xcconfig */;
+			baseConfigurationReference = 2569D3FB09940764ECD62137 /* Pods-WDIOSLibrary_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R485TH293S;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WDIOSLibrary/WDIOSLibrary-Prefix.pch";
 				INFOPLIST_FILE = "WDIOSLibrary/WDIOSLibrary-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.WDIOSLibrary-Example-Ben";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "00e3ba81-245d-46c6-8f70-8745be66148d";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Wildcard (*)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WDIOSLibrary/WDIOSLibrary_Example-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -704,9 +755,10 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61F756974360EA42DEA2E4C3 /* Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.debug.xcconfig */;
+			baseConfigurationReference = 54881F1D7EB0AAECD3A5550F /* Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = R485TH293S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -728,9 +780,10 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E6609854FBCD33CA50BCFE6 /* Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.release.xcconfig */;
+			baseConfigurationReference = 35309CB392FE04E62D5F7A36 /* Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = R485TH293S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

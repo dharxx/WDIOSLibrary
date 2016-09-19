@@ -1,22 +1,21 @@
 //
-//  ExampleCollectionViewController.m
+//  ExampleTableViewController.m
 //  WDIOSLibrary
 //
-//  Created by Dhanu Saksrisathaporn on 8/24/2559 BE.
+//  Created by Dhanu Saksrisathaporn on 9/13/2559 BE.
 //  Copyright © 2559 Dhanu Saksrisathaporn. All rights reserved.
 //
 
-#import "ExampleCollectionViewController.h"
-#import <ImageIO/ImageIO.h>
-#import "SampleCollectionViewCell.h"
+#import "ExampleTableViewController.h"
+#import "SampleTableViewCell.h"
 
-@interface ExampleCollectionViewController ()
+@interface ExampleTableViewController ()
 @property (nonatomic,retain) NSMutableArray<NSString *> *images;
 @property (nonatomic) void (^cmp)(NSArray *data);
 @end
 
+@implementation ExampleTableViewController
 
-@implementation ExampleCollectionViewController
 - (NSMutableArray<NSString *> *)images
 {
     if (!_images) {
@@ -29,15 +28,18 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.view.backgroundColor = [UIColor redColor];
     // Do any additional setup after loading the view.
-}
 
+}
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+}
 - (NSInteger)preferNumberOfDatasPerLoad
 {
     return 20;
 }
-
 
 - (void)completation:(NSValue *)range;
 {
@@ -65,8 +67,8 @@
         completation(nil);
     }
 }
-- (UICollectionViewCell *)cellByObject:(id)object atIndexPath:(NSIndexPath *)indexPath {
-    SampleCollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+- (UITableViewCell *)cellByObject:(id)object atIndexPath:(NSIndexPath *)indexPath {
+    SampleTableViewCell *cell = (id)[self.tableView dequeueReusableCellWithIdentifier:@"cell"];
     // Configure the cell
     [cell setImage:[UIImage imageNamed:object]];
     cell.numberLabel.text = @(indexPath.row).stringValue;
@@ -78,31 +80,24 @@
 {
     return [o1 isEqual:o2];
 }
--(void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [super collectionView:collectionView willDisplayCell:cell forItemAtIndexPath:indexPath];
-    [(SampleCollectionViewCell *)cell updateCellOriginByView:self.collectionView];
+    [super tableView:tableView willDisplayCell:cell forRowAtIndexPath:indexPath];
+    [(SampleTableViewCell *)cell updateCellOriginByView:tableView];
 }
-- (CGSize)viewSizeByObject:(id)object
+-(CGFloat)viewHeightByObject:(id)object
 {
-    NSString *path = [[NSBundle mainBundle] pathForResource:object ofType:nil];
-    CGSize size = [UIImage imageSize:path];
-    CGFloat max = size.width / GOLDEN_RATIO;
-    if (size.height > max) {
-        size.height = max;
-    }
-    return size;
+    return 144;
 }
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    NSArray<UICollectionViewCell *> *cells = self.collectionView.visibleCells;
-    for (SampleCollectionViewCell *cell in cells) {
-        [(SampleCollectionViewCell *)cell updateCellOriginByView:self.collectionView];
-
+    NSArray<SampleTableViewCell *> *cells = self.tableView.visibleCells;
+    for (SampleTableViewCell *cell in cells) {
+        [(SampleTableViewCell *)cell updateCellOriginByView:self.tableView];
     }
 }
-  
-  
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -120,4 +115,5 @@
 {
     return [UIColor blueColor];
 }
+
 @end
