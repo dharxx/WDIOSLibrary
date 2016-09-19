@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "JWTRSAlgorithm.h"
+extern NSString *const JWTAlgorithmNameRS256;
+extern NSString *const JWTAlgorithmNameRS384;
+extern NSString *const JWTAlgorithmNameRS512;
 
 @interface JWTAlgorithmRSBase : NSObject <JWTRSAlgorithm>
 
@@ -22,5 +25,11 @@
 + (instancetype)algorithm256;
 + (instancetype)algorithm384;
 + (instancetype)algorithm512;
++ (instancetype)mutableAlgorithm __deprecated;
 
 @end
+
+/*
+ // when you can't live without mutability, uncomment.
+ @class JWTAlgorithmRSFamilyMemberMutable;
+*/

@@ -10,7 +10,17 @@
 #import <Base64/MF_Base64Additions.h>
 #import <CommonCrypto/CommonCrypto.h>
 #import <CommonCrypto/CommonHMAC.h>
+#import "JWTAlgorithmHS256.h"
+#import "JWTAlgorithmHS384.h"
+#import "JWTAlgorithmHS512.h"
 
+NSString *const JWTAlgorithmNameHS256 = @"HS256";
+NSString *const JWTAlgorithmNameHS384 = @"HS384";
+NSString *const JWTAlgorithmNameHS512 = @"HS512";
+
+// TODO:
+// 1. hide algorithms as it was done in RSBase.
+// 2. remove remain headers.
 @interface JWTAlgorithmHSBase ()
 
 @end
@@ -41,7 +51,10 @@
     CCHmacAlgorithm ccAlg = self.ccHmacAlgSHANumber;
 
     CCHmac(ccAlg, cSecret, strlen(cSecret), cString, strlen(cString), cHMAC);
-    return [[NSData alloc] initWithBytes:cHMAC length:fullSize];
+    
+    NSData *returnData = [[NSData alloc] initWithBytes:cHMAC length:fullSize];
+    free(cHMAC);
+    return returnData;
 }
 
 - (NSData *)encodePayloadData:(NSData *)theStringData withSecret:(NSData *)theSecretData
@@ -52,7 +65,10 @@
     CCHmacAlgorithm ccAlg = self.ccHmacAlgSHANumber;
     
     CCHmac(ccAlg, theSecretData.bytes, [theSecretData length], theStringData.bytes, [theStringData length], cHMAC);
-    return [[NSData alloc] initWithBytes:cHMAC length:fullSize];
+    
+    NSData *returnData = [[NSData alloc] initWithBytes:cHMAC length:fullSize];
+    free(cHMAC);
+    return returnData;
 }
 
 - (BOOL)verifySignedInput:(NSString *)input withSignature:(NSString *)signature verificationKey:(NSString *)verificationKey
@@ -73,16 +89,22 @@
 
 @end
 
+@interface JWTAlgorithmHSFamilyMember : JWTAlgorithmHSBase @end
+@implementation JWTAlgorithmHSFamilyMember @end
 
-@interface JWTAlgorithmHSBaseTest : JWTAlgorithmHSBase
+/* JWTAlgorithmHS256 : JWTAlgorithmHSFamilyMember and others */
+
+@interface JWTAlgorithmHSFamilyMemberMutable : JWTAlgorithmHSFamilyMember
 @property (assign, nonatomic, readwrite) size_t ccSHANumberDigestLength;
 @property (assign, nonatomic, readwrite) uint32_t ccHmacAlgSHANumber;
+@property (copy, nonatomic, readwrite) NSString *name;
 @end
 
-@implementation JWTAlgorithmHSBaseTest
+@implementation JWTAlgorithmHSFamilyMemberMutable
 
 @synthesize ccSHANumberDigestLength = _ccSHANumberDigestLength;
 @synthesize ccHmacAlgSHANumber = _ccHmacAlgSHANumber;
+@synthesize name = _name;
 
 - (size_t)ccSHANumberDigestLength {
     return _ccSHANumberDigestLength;
@@ -97,24 +119,30 @@
 @implementation JWTAlgorithmHSBase (Create)
 
 + (instancetype)algorithm256 {
-    JWTAlgorithmHSBaseTest *base = [JWTAlgorithmHSBaseTest new];
-    base.ccSHANumberDigestLength = CC_SHA256_DIGEST_LENGTH;
-    base.ccHmacAlgSHANumber = kCCHmacAlgSHA256;
-    return base;
+//    JWTAlgorithmHSBaseTest *base = [JWTAlgorithmHSBaseTest new];
+//    base.ccSHANumberDigestLength = CC_SHA256_DIGEST_LENGTH;
+//    base.ccHmacAlgSHANumber = kCCHmacAlgSHA256;
+//    base.name = @"HS256";
+//    return base;
+    return [JWTAlgorithmHS256 new];
 }
 
 + (instancetype)algorithm384 {
-    JWTAlgorithmHSBaseTest *base = [JWTAlgorithmHSBaseTest new];
-    base.ccSHANumberDigestLength = CC_SHA384_DIGEST_LENGTH;
-    base.ccHmacAlgSHANumber = kCCHmacAlgSHA384;
-    return base;
+//    JWTAlgorithmHSBaseTest *base = [JWTAlgorithmHSBaseTest new];
+//    base.ccSHANumberDigestLength = CC_SHA384_DIGEST_LENGTH;
+//    base.ccHmacAlgSHANumber = kCCHmacAlgSHA384;
+//    base.name = @"HS384";
+//    return base;
+    return [JWTAlgorithmHS384 new];
 }
 
 + (instancetype)algorithm512 {
-    JWTAlgorithmHSBaseTest *base = [JWTAlgorithmHSBaseTest new];
-    base.ccSHANumberDigestLength = CC_SHA512_DIGEST_LENGTH;
-    base.ccHmacAlgSHANumber = kCCHmacAlgSHA512;
-    return base;
+//    JWTAlgorithmHSBaseTest *base = [JWTAlgorithmHSBaseTest new];
+//    base.ccSHANumberDigestLength = CC_SHA512_DIGEST_LENGTH;
+//    base.ccHmacAlgSHANumber = kCCHmacAlgSHA512;
+//    base.name = @"HS512";
+//    return base;
+    return [JWTAlgorithmHS512 new];
 }
 
 @end

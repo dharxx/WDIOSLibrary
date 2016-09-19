@@ -7,28 +7,26 @@
 //
 
 #import "JWTAlgorithmFactory.h"
-#import "JWTAlgorithmHS256.h"
-#import "JWTAlgorithmHS384.h"
-#import "JWTAlgorithmHS512.h"
-#import <TargetConditionals.h>
-
-#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
-#import "JWTAlgorithmRS256.h"
-#endif
-
+#import "JWTAlgorithmHSBase.h"
+#import "JWTAlgorithmRSBase.h"
 #import "JWTAlgorithmNone.h"
+
+// not implemented.
+NSString *const JWTAlgorithmNameES256 = @"ES256";
+NSString *const JWTAlgorithmNameES384 = @"ES384";
+NSString *const JWTAlgorithmNameES512 = @"ES512";
 
 @implementation JWTAlgorithmFactory
 
 + (NSArray *)algorithms {
     return @[
             [JWTAlgorithmNone new],
-            [JWTAlgorithmHS256 new],
-            [JWTAlgorithmHS384 new],
-            [JWTAlgorithmHS512 new],
-#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
-            [JWTAlgorithmRS256 new]
-#endif
+            [JWTAlgorithmHSBase algorithm256],
+            [JWTAlgorithmHSBase algorithm384],
+            [JWTAlgorithmHSBase algorithm512],
+            [JWTAlgorithmRSBase algorithm256],
+            [JWTAlgorithmRSBase algorithm384],
+            [JWTAlgorithmRSBase algorithm512]
             ];
 
 }
