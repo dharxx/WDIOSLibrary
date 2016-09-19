@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface WDJWTString : NSObject
++ (void)setShowLog:(BOOL)showLog;
 +(NSString *)jwtString:(NSDictionary *)payload subject:(NSString *)subject secret:(NSString *)secret;
 @end

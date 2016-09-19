@@ -1,17 +1,22 @@
 //
-//  WDIOSWaitingView.m
-//  WDIOSLibrary
+//  WDIOSTableWaitingView.m
+//  Pods
 //
-//  Created by Dhanu Saksrisathaporn on 8/24/2559 BE.
-//  Copyright © 2559 Dhanu Saksrisathaporn. All rights reserved.
+//  Created by Dhanu Saksrisathaporn on 9/13/2559 BE.
+//
 //
 
-#import "WDIOSWaitingView.h"
+#import "WDIOSTableWaitingView.h"
 
-@implementation WDIOSWaitingView
+@implementation WDIOSTableWaitingView
 
-#pragma mark - Accessors
-
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect {
+    // Drawing code
+}
+*/
 - (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         self.backgroundColor = [UIColor clearColor];

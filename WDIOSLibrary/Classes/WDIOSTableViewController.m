@@ -1,23 +1,29 @@
 //
-//  WDIOSCollectionViewController.m
-//  WDIOSLibrary
+//  WDIOSTableViewController.m
+//  Pods
 //
-//  Created by Dhanu Saksrisathaporn on 8/5/2559 BE.
-//  Copyright © 2559 Dhanu Saksrisathaporn. All rights reserved.
+//  Created by Dhanu Saksrisathaporn on 9/13/2559 BE.
+//
 //
 
-#import "WDIOSCollectionViewController.h"
-#import "WDIOSCollectionViewLayout.h"
-#import "WDIOSWaitingView.h"
+#import "WDIOSTableViewController.h"
+#import "WDIOSTableWaitingView.h"
 #import "NSObject+MVCSupport.h"
-@interface WDIOSCollectionViewController ()<CHTCollectionViewDelegateWaterfallLayout>
-@property (nonatomic,retain) UIRefreshControl *refreshControl;
+
+@interface WDIOSTableViewController ()
 @property (nonatomic) BOOL loading;
 @property (nonatomic,retain) NSMutableArray<NSMutableArray *>*datas;
 @property BOOL doneLoad;
 @end
 
-@implementation WDIOSCollectionViewController
+@implementation WDIOSTableViewController
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+
 
 - (NSInteger)lastSectionIndex
 {
@@ -65,10 +71,10 @@
 {
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.refreshControl beginRefreshing];
-         [self.collectionView setContentOffset:CGPointMake(0, -self.refreshControl.frame.size.height) animated:YES];
+        [self.tableView setContentOffset:CGPointMake(0, -self.refreshControl.frame.size.height) animated:YES];
     });
     self.loading = YES;
-    self.waterfallLayout.footerHeight = 0;
+    self.tableView.sectionFooterHeight = 0;
     
     NSRange range = NSMakeRange(0, self.preferNumberOfDatasPerLoad);
     [self loadDataOnSection:0
@@ -84,30 +90,30 @@
 }
 - (void)endRefresh:(id)sender
 {
-//    [self.collectionView reloadData];
-//    [self.collectionView layoutIfNeeded];
+    //    [self.collectionView reloadData];
+    //    [self.collectionView layoutIfNeeded];
     //    [self.refreshControl endRefreshing];
     dispatch_async(dispatch_get_main_queue(), ^{
         [CATransaction begin];
         [CATransaction setCompletionBlock:^{
-            [self.collectionView reloadData];
+            [self.tableView reloadData];
             NSString *stringDate = [NSDateFormatter localizedStringFromDate:[NSDate date] dateStyle:NSDateFormatterShortStyle timeStyle:NSDateFormatterMediumStyle];
             NSString *lastUpdate = [NSString stringWithFormat:@"Last updated on %@", stringDate];
             self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:lastUpdate];
         }];
-        [self.collectionView setContentOffset:CGPointZero animated:YES];
+        [self.tableView setContentOffset:CGPointZero animated:YES];
         [self.refreshControl endRefreshing];
         [CATransaction commit];
-//        [UIView animateWithDuration:0.1 animations:^{
-//            [self.refreshControl endRefreshing];
-//            self.collectionView.alpha = 0;
-//        } completion:^(BOOL finished) {
-//            [self.collectionView reloadData];
-//            [UIView animateWithDuration:0.3 animations:^{
-//                self.collectionView.alpha = 1;
-//            } completion:^(BOOL finished) {
-//            }];
-//        }];
+        //        [UIView animateWithDuration:0.1 animations:^{
+        //            [self.refreshControl endRefreshing];
+        //            self.collectionView.alpha = 0;
+        //        } completion:^(BOOL finished) {
+        //            [self.collectionView reloadData];
+        //            [UIView animateWithDuration:0.3 animations:^{
+        //                self.collectionView.alpha = 1;
+        //            } completion:^(BOOL finished) {
+        //            }];
+        //        }];
     });
 }
 - (void)doneLoad:(id)sender
@@ -115,17 +121,17 @@
     //remove loadmore cell
     self.loading = NO;
     wdios_mainBlock(^{
-        self.collectionView.alwaysBounceVertical = YES;
-        self.waterfallLayout.footerHeight = 0;
-        [self.collectionView reloadData];
+        self.tableView.alwaysBounceVertical = YES;
+        self.tableView.sectionFooterHeight = 0;
+        [self.tableView reloadData];
     });
 }
 - (void)loadMore:(id)sender
 {
     if (!self.loading) {
         self.loading = YES;
-        self.waterfallLayout.footerHeight = 60;
-        self.collectionView.alwaysBounceVertical = NO;
+        self.tableView.sectionFooterHeight = 60;
+        self.tableView.alwaysBounceVertical = NO;
         //add loadmore cell
         
         NSInteger section  = self.lastSectionIndex;
@@ -135,9 +141,10 @@
             [self.datas addObject:[NSMutableArray arrayWithCapacity:10]];
             section = 0;
             location = 0;
-            [self.collectionView reloadData];
+            [self.tableView reloadData];
         }else {
-            [self.collectionView reloadSections:[NSIndexSet indexSetWithIndex:section]];
+//            [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:section] withRowAnimation:UITableViewRowAnimationFade];
+            [self.tableView reloadData];
             location = self.datas[section].count;
         }
         
@@ -169,10 +176,10 @@
                    }];
     }
 }
-- (CGSize)viewSizeByObject:(id)object
+- (CGFloat)viewHeightByObject:(id)object
 {
-    NSLog(@"implement %@ for size of%@",__func__,object);
-    return CGSizeZero;
+    NSLog(@"implement %@ for height of%@",__func__,object);
+    return 0;
 }
 - (void)didSelectObject:(id)object
 {
@@ -182,7 +189,7 @@
 {
     return 10;
 }
-- (UICollectionViewCell *)cellByObject:(id)object atIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)cellByObject:(id)object atIndexPath:(NSIndexPath *)indexPath
 {
     return nil;
 }
@@ -222,16 +229,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UICollectionView *cv = self.collectionView;
     self.refreshControl = [[UIRefreshControl alloc] init];
-    [_refreshControl addTarget:self action:@selector(startRefresh:)
+    [self.refreshControl addTarget:self action:@selector(startRefresh:)
               forControlEvents:UIControlEventValueChanged];
-    [self.collectionView insertSubview:_refreshControl atIndex:0];
-    self.collectionView.alwaysBounceVertical = YES;
-    
-    [self.collectionView registerClass:[WDIOSWaitingView class] forSupplementaryViewOfKind:CHTCollectionElementKindSectionFooter withReuseIdentifier:@"WDIOSWaitingView"];
+    self.tableView.alwaysBounceVertical = YES;
+//    [self.tableView registerClass:[WDIOSTableWaitingView class]  forHeaderFooterViewReuseIdentifier:@"WDIOSTableWaitingView"];
     self.loading = NO;
-    self.waterfallLayout.footerHeight = 0;
+    self.tableView.sectionFooterHeight = 0;
     if (_datas.count == 0) {
         [self loadMore:nil];
     }
@@ -239,30 +243,24 @@
         
     }
 }
--(void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (!_doneLoad && !_loading && indexPath.section == self.lastSectionIndex && indexPath.row == self.lastRowIndex) {
-        [self loadMore:cell];
-    }
-}
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [self updateLayoutForOrientation:[UIApplication sharedApplication].statusBarOrientation];
 }
-
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
     [super willAnimateRotationToInterfaceOrientation:toInterfaceOrientation duration:duration];
     [self updateLayoutForOrientation:toInterfaceOrientation];
 }
-
 - (void)updateLayoutForOrientation:(UIInterfaceOrientation)orientation {
-    WDIOSCollectionViewLayout *layout = [self waterfallLayout];
-    layout.columnCount = UIInterfaceOrientationIsPortrait(orientation) ? 2 : 3;
+    //nothing to do yet
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (!_doneLoad && !_loading && indexPath.section == self.lastSectionIndex && indexPath.row == self.lastRowIndex) {
+        [self loadMore:cell];
+    }
 }
 
 /*
@@ -282,93 +280,45 @@
     }
     return self.datas[indexPath.section][indexPath.row];
 }
-#pragma mark <UICollectionViewDataSource>
+#pragma mark <UITableViewDataSource>
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
     NSInteger n = MAX(1,self.datas.count);
     return n;
 }
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     NSInteger n = self.datas.count == 0 ? 0: self.datas[section].count;
     return n;
-    
 }
-- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+-(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
-    if ([kind isEqualToString:CHTCollectionElementKindSectionFooter]) {
-        WDIOSWaitingView *v =[collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"WDIOSWaitingView" forIndexPath:indexPath];
-        UIColor *c  = [self activityIndicatorViewLoadMoreColor];
-        if (c) {
-            v.activityIndicatorView.color = c;
-        }
-        return v;
+    WDIOSTableWaitingView *v = [[WDIOSTableWaitingView alloc] initWithFrame:CGRectMake(0, 0, 1, 1)];//[tableView dequeueReusableHeaderFooterViewWithIdentifier:@"WDIOSTableWaitingView"];
+    UIColor *c  = [self activityIndicatorViewLoadMoreColor];
+    if (c) {
+        v.activityIndicatorView.color = c;
     }
-    return nil;
+    return v;
 }
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     id object = [self objectByIndexPath:indexPath];
-    UICollectionViewCell *cell = [self cellByObject:object atIndexPath:indexPath];
+    UITableViewCell *cell = [self cellByObject:object atIndexPath:indexPath];
     return cell;
 }
-
-#pragma mark - CHTCollectionViewDelegateWaterfallLayout
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    id object = [self objectByIndexPath:indexPath];
-    return [self viewSizeByObject:object];
-}
-//-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout heightForFooterInSection:(NSInteger)section
-//{
-//    if (!_doneLoad && _loading && section >= [self lastSectionIndex] ) {
-//        WDIOSCollectionViewLayout *fLayout = (id)collectionViewLayout;
-//        CGSize size = CGSizeMake(CGRectGetWidth(collectionView.bounds), fLayout.footerHeight);
-//        NSLog(@"%@",NSStringFromCGSize(size));
-//        return size;
-//    }
-//    return CGSizeZero;
-//}
-- (WDIOSCollectionViewLayout *)waterfallLayout
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return (WDIOSCollectionViewLayout *)self.collectionView.collectionViewLayout;
+    id object = [self objectByIndexPath:indexPath];
+    return [self viewHeightByObject:object];
 }
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     id obj = [self objectByIndexPath:indexPath];
     if (obj) {
         [self didSelectObject:obj];
     }
 }
-//#pragma mark <UICollectionViewDelegate>
-
-/*
- // Uncomment this method to specify if the specified item should be highlighted during tracking
- - (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
- }
- */
-
-/*
- // Uncomment this method to specify if the specified item should be selected
- - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
- return YES;
- }
- */
-
-/*
- // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
- - (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
- }
- 
- - (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
- }
- 
- - (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
- }
- */
-
 - (UIColor *)activityIndicatorViewLoadMoreColor
 {
     return nil;

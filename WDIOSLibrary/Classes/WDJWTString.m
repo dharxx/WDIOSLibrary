@@ -15,6 +15,11 @@
 {
     return [[NSBundle mainBundle] bundleIdentifier];
 }
+BOOL showLogJWT = NO;
++ (void)setShowLog:(BOOL)showLog
+{
+    showLogJWT = showLog;
+}
 + (NSArray<NSString *> *)jwtAlgorithms {
     static NSString *algorithms = nil;
     if (!algorithms) {
@@ -46,9 +51,11 @@
     
     NSArray *algs = [self jwtAlgorithms];
     int randomAlgorithms = rand() % algs.count;
-    NSLog(@"\nalgorithm : %@",algs[randomAlgorithms]);
-    NSLog(@"\npayload : %@",allPayload);
-    NSLog(@"\ngenerated secret : %@",usedSecret);
+    if (showLogJWT) {
+        NSLog(@"\nalgorithm : %@",algs[randomAlgorithms]);
+        NSLog(@"\npayload : %@",allPayload);
+        NSLog(@"\ngenerated secret : %@",usedSecret);
+    }
     
     jwt.secret(usedSecret).payload(allPayload).algorithm([JWTAlgorithmFactory algorithmByName:algs[randomAlgorithms]]);
     

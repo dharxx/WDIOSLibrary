@@ -9,7 +9,7 @@
 #import "UIViewController+MVCSupport.h"
 #import "NSString+WDLocalized.h"
 #import "NSObject+MVCSupport.h"
-
+#import "UIView+MVCSupport.h"
 @implementation UIViewController (MVCSupport)
 
 - (UIAlertController *)inputAlertViewWithTitle:(NSString *)title textFieldInfo:(NSDictionary *)info completion:(void (^)(void))completion closeAlertCompletion:(void (^)(NSString *inputString))closeAlertCompletion
@@ -167,22 +167,4 @@
 {
     
 }
-@end
-
-@implementation UIView(MVCSupport)
-
-- (id)findFirstResponder
-{
-    if (self.isFirstResponder) {
-        return self;
-    }
-    for (UIView *subView in self.subviews) {
-        id responder = [subView findFirstResponder];
-        if (responder){
-            return responder;
-        }
-    }
-    return nil;
-}
-
 @end
