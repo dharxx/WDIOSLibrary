@@ -14,3 +14,4 @@
 #import "NSObject+MVCSupport.h"
 #import "UIViewController+MVCSupport.h"
 #import "UIView+MVCSupport.h"
+#import "NSString+MVCSupport.h"

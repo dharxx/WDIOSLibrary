@@ -14,6 +14,8 @@
 {
     [SomeSwiftClass swift];
     
+    NSString *s = @"check this \nthing\nit have \n4 line";
+    NSLog(@"\n%@\nok %@ line",s,@([s occurrenceCountOfCharacter:'\n'] +1));
     NSLog(@"%@",[NSString languages]);
     NSLog(@"%@",[NSLocale preferredLanguages]);
     if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]){
