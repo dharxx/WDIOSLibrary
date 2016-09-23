@@ -10,7 +10,6 @@
 #import "NSObject+MVCSupport.h"
 
 @interface WDIOSPopOverlayViewController ()
-
 @end
 
 @implementation WDIOSPopOverlayViewController
