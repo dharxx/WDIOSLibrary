@@ -184,7 +184,7 @@ static NSString *wdRequestMainURL = nil;
     NSString *format = @"%@=%@";
     NSString *formatAfter = @"&%@=%@";
     for (NSString *key in [info allKeys]) {
-        bodyString = [bodyString stringByAppendingFormat:format,key , info[key] ];
+        bodyString = [bodyString stringByAppendingFormat:format,[key stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] , [info[key] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] ];
         format = formatAfter;
     }
     
