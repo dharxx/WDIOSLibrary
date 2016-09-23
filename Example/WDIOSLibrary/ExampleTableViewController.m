@@ -75,6 +75,13 @@
     return cell;
 }
 
+- (void)didSelectObject:(id)object
+{
+    WDIOSPopOverlayViewController *pop = [WDIOSPopOverlayViewController popWithSource:self];
+    pop.imageView.image = [UIImage imageNamed:object];
+    pop.label.text = [object description];
+    [pop closeAfter:1];
+}
 
 - (BOOL)isSameObject:(id)o1 with:(id)o2 ofSection:(NSInteger)section
 {

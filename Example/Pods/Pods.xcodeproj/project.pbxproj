@@ -36,6 +36,8 @@
 		3F773253A02D29C27F898A9500B01C3A /* CHTCollectionViewWaterfallLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F005F7166A1627C34AD95ABEEF2A1DB8 /* CHTCollectionViewWaterfallLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4153DF8B1D926E3B007DA5F4 /* NSString+MVCSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 4153DF871D926E2E007DA5F4 /* NSString+MVCSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4153DF8C1D926E3B007DA5F4 /* NSString+MVCSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 4153DF881D926E2E007DA5F4 /* NSString+MVCSupport.m */; };
+		41717CD91D952301009260B9 /* WDIOSPopOverlayViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 41717CD71D952301009260B9 /* WDIOSPopOverlayViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41717CDA1D952301009260B9 /* WDIOSPopOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41717CD81D952301009260B9 /* WDIOSPopOverlayViewController.m */; };
 		4252E0638A04B13155FEF575DB9F5DFC /* UIFont+WDMoreFonts.h in Headers */ = {isa = PBXBuildFile; fileRef = BE82E15F1BB4130099EEF8E12F82B187 /* UIFont+WDMoreFonts.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42DBEF1549DCEFE8F5718522B7ADB2F6 /* Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E499C9197724DEE597A32313CEEEAF7 /* Pods-WDIOSLibrary_Example-WDIOSLibrary_Tests-dummy.m */; };
 		47C43FD3A2C8ECC6D8DA9FD622393A5B /* JWTAlgorithmFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5270C987F1256A433CA5F7548AC5C559 /* JWTAlgorithmFactory.m */; };
@@ -292,6 +294,8 @@
 		3F448540AA539266440438DC38689EE4 /* util_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = util_mosq.c; path = libmosquitto/util_mosq.c; sourceTree = "<group>"; };
 		4153DF871D926E2E007DA5F4 /* NSString+MVCSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MVCSupport.h"; sourceTree = "<group>"; };
 		4153DF881D926E2E007DA5F4 /* NSString+MVCSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MVCSupport.m"; sourceTree = "<group>"; };
+		41717CD71D952301009260B9 /* WDIOSPopOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDIOSPopOverlayViewController.h; sourceTree = "<group>"; };
+		41717CD81D952301009260B9 /* WDIOSPopOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDIOSPopOverlayViewController.m; sourceTree = "<group>"; };
 		469A86D5DD6A5BC2D44322DA236FE65D /* MQTTKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MQTTKit.m; path = MQTTKit/MQTTKit.m; sourceTree = "<group>"; };
 		49332E1CC752603EDAA73024C1546A08 /* WDIOSWaitingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WDIOSWaitingView.h; sourceTree = "<group>"; };
 		4A3AC9F433C16ACA6F5B65DAC563C745 /* will_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = will_mosq.h; path = libmosquitto/will_mosq.h; sourceTree = "<group>"; };
@@ -692,6 +696,8 @@
 				63FE5C31CDED61C6E77C70CFEB050A23 /* WDIOSDataViewerHeader.h */,
 				3092528EFD4D90B06F54C2240B91BB56 /* WDIOSTableViewController.h */,
 				26DB0390F94CA36B52486229C835E16D /* WDIOSTableViewController.m */,
+				41717CD71D952301009260B9 /* WDIOSPopOverlayViewController.h */,
+				41717CD81D952301009260B9 /* WDIOSPopOverlayViewController.m */,
 				518B061695D22AE007F00F9FA51A1269 /* WDIOSTableWaitingView.h */,
 				003AF0372EDFB5444ED779DFBD454A8C /* WDIOSTableWaitingView.m */,
 				49332E1CC752603EDAA73024C1546A08 /* WDIOSWaitingView.h */,
@@ -860,6 +866,7 @@
 				DF2760513D4016A15BD0CA40BB7CEC73 /* UITableView+MVCSupport.h in Headers */,
 				8E0EB6E0F3A05E7151A8D90E7417F95F /* UIView+MVCSupport.h in Headers */,
 				4153DF8B1D926E3B007DA5F4 /* NSString+MVCSupport.h in Headers */,
+				41717CD91D952301009260B9 /* WDIOSPopOverlayViewController.h in Headers */,
 				33E76EACB59B24452290C6BA0FDE947D /* UIViewController+MVCSupport.h in Headers */,
 				3EC00B0C74162DD6B483AD2B4B201448 /* WDIOSCollectionViewController.h in Headers */,
 				58A17749D791D916F5A30148FCE4D9B4 /* WDIOSCollectionViewLayout.h in Headers */,
@@ -1208,6 +1215,7 @@
 				7951F78AF39143930D01C5B0834CFABF /* WDIOSTableWaitingView.m in Sources */,
 				482A65E0B4CE8204CDB014101B7E87D6 /* WDIOSWaitingView.m in Sources */,
 				CC79540C1084D8F8C8E5B2234E4B3F67 /* WDJWTString.m in Sources */,
+				41717CDA1D952301009260B9 /* WDIOSPopOverlayViewController.m in Sources */,
 				661BB4A5DE8C9E489F231FBA7C912CD4 /* WDRequestMaker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,6 +10,7 @@
 
 void wdios_backgroundBlock(void(^block)(void));
 void wdios_mainBlock(void(^block)(void));
+void wdios_afterDelayBlock(NSTimeInterval delay,void(^block)(void));
 
 @interface NSObject (MVCSupport)
 + (instancetype)newObjectFromDictionary:(NSDictionary *)info;

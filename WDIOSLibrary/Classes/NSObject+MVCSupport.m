@@ -14,6 +14,7 @@ void wdios_backgroundBlock(void(^block)(void)) {
         block();
     });
 }
+
 void wdios_mainBlock(void(^block)(void)) {
     if ([NSThread isMainThread]) {
         block();
@@ -24,7 +25,12 @@ void wdios_mainBlock(void(^block)(void)) {
         });
     }
 }
-
+void wdios_afterDelayBlock(NSTimeInterval delay,void(^block)(void))
+{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, delay * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        block();
+    });
+}
 @implementation NSObject (MVCSupport)
 -(void)setId:(id)identifier
 {
