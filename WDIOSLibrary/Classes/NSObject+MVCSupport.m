@@ -16,7 +16,7 @@ void wdios_backgroundBlock(void(^block)(void)) {
 }
 
 void wdios_mainBlock(void(^block)(void)) {
-    if ([NSThread isMainThread]) {
+    if (dispatch_get_current_queue() == dispatch_get_main_queue()) {
         block();
     }
     else {
