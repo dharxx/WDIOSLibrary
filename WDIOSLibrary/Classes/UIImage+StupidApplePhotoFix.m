@@ -33,6 +33,41 @@ static BOOL RequestThumb = NO;
     RequestThumb = NO;
 }
 
++ (void)requestImageWithObject:(id)object completion:(void (^)(UIImage *image, NSString *imagePath))completion
+{
+    if ([object isKindOfClass:[UIImage class]])  {
+        completion(object,nil);
+    }
+    
+    NSString *path = nil;
+    if ([object isKindOfClass:[NSString class]])  {
+        path = object;
+    }
+    if ([object isKindOfClass:[NSURL class]])  {
+        path = [object absoluteString];
+    }
+    if (path) {
+        UIImage *img = [UIImage imageWithContentsOfFile:object];
+        if (img) {
+            completion(img,path);
+            return;
+        }
+    }
+    if ([object isKindOfClass:[PHAsset class]])  {
+        
+        PHImageRequestOptions *option = [[PHImageRequestOptions alloc] init];
+        option.synchronous = YES;
+        [[PHImageManager defaultManager] requestImageForAsset:object
+                                                   targetSize:PhotoAssetRequestSize
+                                                  contentMode:PHImageContentModeAspectFit
+                                                      options:option
+                                                resultHandler:^(UIImage *result, NSDictionary *info) {
+                                                    NSURL *pathURL = info[@"PHImageFileURLKey"];
+                                                    completion(result,[pathURL absoluteString]);
+                                                }];
+    }
+}
+
 - (instancetype)scaleAndRotatePhoto
 {
     int kMaxResolution = 640;

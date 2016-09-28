@@ -32,7 +32,83 @@
     
     NSLog(@"%@",@([NSObject goldenRatio]));
     NSLog(@"%@",@(GOLDEN_RATIO));
+    
+    
+    NSArray *src = [self randomIntList];
+    NSDate *start = [NSDate date];
+    NSArray *cs = [self countingSort:src];
+    NSTimeInterval dif = [start timeIntervalSinceNow];
+    NSLog(@"\ncounting sort time %@\nmax:%@ min:%@",@(-dif),cs.lastObject,cs.firstObject);
+    
+    start = [NSDate date];
+    NSArray *ns = [src sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+        return [obj1 compare:obj2];
+    }];
+    dif = [start timeIntervalSinceNow];
+    NSLog(@"\nnormal sort time %@\nmax:%@ min:%@",@(-dif),ns.lastObject,ns.firstObject);
+
+    
     return YES;
+}
+- (NSArray *)randomIntList
+{
+    uint seed = 12345;
+    NSInteger count = 5000000;
+    NSRange r = NSMakeRange(-100000, 200000);
+    NSMutableArray *a = [NSMutableArray arrayWithCapacity:count];
+    srandom(seed);
+    for (NSInteger i = 0; i < count; i++) {
+        NSInteger v = (random() % r.length) + r.location;
+        a[i] = @(v);
+    }
+    return a;
+}
+- (NSArray *)countingSort:(NSArray *)src
+{
+    NSInteger count = src.count;
+    
+    NSInteger min = LONG_MAX;
+    NSInteger max = LONG_MIN;
+    
+    for (NSInteger i = 0; i < count; i++) {
+        NSInteger v = [src[i] integerValue];
+        min = MIN(min,v);
+        max = MAX(max,v);
+    }
+    
+    NSInteger length = max-min+1;
+    NSInteger countArray[length];
+    
+    for (NSInteger i = 0; i < length; i++) {
+        countArray[i] = 0;
+    }
+
+    
+    for (NSInteger i = 0; i < count; i++) {
+        NSInteger v = [src[i] integerValue];
+        NSInteger index = v - min;
+        countArray[index] += 1;
+    }
+
+    NSInteger c = 0;
+    for (NSInteger i = 0; i < length; i++) {
+        countArray[i] += c;
+        c = countArray[i];
+    }
+    
+    NSMutableArray *result = [NSMutableArray arrayWithCapacity:count];
+    for (NSInteger i = 0; i < count; i++) {
+        result[i] = [NSNull null];
+    }
+    for (NSInteger i = 0; i < count; i++) {
+        NSInteger v = [src[i] integerValue];
+        NSInteger index = v - min;
+        countArray[index] -= 1;
+        NSInteger rIndex = countArray[index];
+        result[rIndex] = src[i];
+    }
+    return result;
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
