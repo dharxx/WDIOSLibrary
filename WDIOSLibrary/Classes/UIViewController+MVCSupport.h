@@ -17,6 +17,7 @@
 - (UIAlertController *)waitingAlertViewWithTitle:(NSString *)title completion:(void (^)(void))completion;
 - (UIAlertController *)warningAlertViewWithTitle:(NSString *)title completion:(void (^)(void))completion closeAlertCompletion:(void (^)(void))closeAlertCompletion;
 - (UIAlertController *)warningAlertViewWithTitle:(NSString *)title message:(NSString *)message completion:(void (^)(void))completion closeAlertCompletion:(void (^)(void))closeAlertCompletion;
+- (UIAlertController *)warningAlertViewWithTitle:(NSString *)title message:(NSString *)message cancel:(NSString *)cancel completion:(void (^)(void))completion closeAlertCompletion:(void (^)(void))closeAlertCompletion;
 - (UIAlertController *)inputAlertViewWithTitle:(NSString *)title textFieldInfo:(NSDictionary *)info completion:(void (^)(void))completion closeAlertCompletion:(void (^)(NSString *inputString))closeAlertCompletion;
 
 //Abstract method

@@ -44,20 +44,24 @@
 }
 - (UIAlertController *)warningAlertViewWithTitle:(NSString *)title message:(NSString *)message completion:(void (^ __nullable)(void))completion closeAlertCompletion:(void (^ __nullable)(void))closeAlertCompletion\
 {
+    return [self warningAlertViewWithTitle:title message:nil cancel:[@"close" localString]  completion:completion closeAlertCompletion:closeAlertCompletion];
+}
+
+- (UIAlertController *)warningAlertViewWithTitle:(NSString *)title message:(NSString *)message cancel:(NSString *)cancel completion:(void (^)(void))completion closeAlertCompletion:(void (^)(void))closeAlertCompletion
+{
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:[title localString] message:message preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *action = [UIAlertAction actionWithTitle:[@"close" localString] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *action = [UIAlertAction actionWithTitle:cancel style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         closeAlertCompletion();
     }];
     [alert addAction:action];
     
     dispatch_async(dispatch_get_main_queue(), ^{
         [self presentViewController:alert animated:YES completion:^{
-        completion();
+            completion();
         }];
     });
     return alert;
 }
-
 - (UIAlertController *)waitingAlertViewWithTitle:(NSString *)title completion:(void (^ __nullable)(void))completion
 {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:[title localString] message:nil preferredStyle:UIAlertControllerStyleAlert];
