@@ -36,7 +36,14 @@ static BOOL RequestThumb = NO;
 + (void)requestImageWithObject:(id)object completion:(void (^)(UIImage *image, NSString *imagePath))completion
 {
     if ([object isKindOfClass:[UIImage class]])  {
-        completion(object,nil);
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+        static NSUInteger c = 0;
+        c+=1;
+        NSString *name = [@(ceilf([NSDate date].timeIntervalSince1970)).stringValue stringByAppendingString:@(c).stringValue];
+        NSString *path = [paths[0] stringByAppendingPathComponent:name];
+        NSData *data = UIImageJPEGRepresentation(object, 0.8);
+        [data writeToFile:path atomically:YES];
+        completion(object,path);
     }
     
     NSString *path = nil;
