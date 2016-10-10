@@ -12,6 +12,11 @@
 @implementation UIImage (StupidApplePhotoFix)
 static CGSize PhotoAssetRequestSize = {320,480};
 static BOOL RequestThumb = NO;
+static NSUInteger MaxImageCache = 20;
++ (void)setMaxImageCache:(NSUInteger)maxImageCache
+{
+    MaxImageCache = maxImageCache;
+}
 + (void)setPhotoAssetRequestSize:(CGSize)photoAssetRequestSize
 {
     PhotoAssetRequestSize = photoAssetRequestSize;
@@ -39,7 +44,10 @@ static BOOL RequestThumb = NO;
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
         static NSUInteger c = 0;
         c+=1;
-        NSString *name = [@(ceilf([NSDate date].timeIntervalSince1970)).stringValue stringByAppendingString:@(c).stringValue];
+        if (c >= MaxImageCache) {
+            c -= MaxImageCache;
+        }
+        NSString *name = [@"imgCache" stringByAppendingString:@(c).stringValue];
         NSString *path = [paths[0] stringByAppendingPathComponent:name];
         NSData *data = UIImageJPEGRepresentation(object, 0.8);
         [data writeToFile:path atomically:YES];

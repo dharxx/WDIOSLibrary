@@ -13,6 +13,7 @@
 - (instancetype)scaleAndRotatePhoto;
 
 //this is add-on nothing about StupidApplePhotoFix
++ (void)setMaxImageCache:(NSUInteger)maxImageCache;
 + (void)requestImageWithObject:(id)object completion:(void (^)(UIImage *image, NSString *imagePath))completion;
 + (void)setPhotoAssetRequestThumbSize;
 + (void)setPhotoAssetRequestSizeWithWidth:(CGFloat)width;
