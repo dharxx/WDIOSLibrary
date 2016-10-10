@@ -149,6 +149,10 @@ static NSString *wdRequestMainURL = nil;
                 filename  = [value lastPathComponent];
                 data = [NSData dataWithContentsOfFile:value];
             }
+            else  if ([value isKindOfClass:[NSURL class]]) {
+                filename  = [value lastPathComponent];
+                data = [NSData dataWithContentsOfURL:value];
+            }
         }
         if (data) {
             if (!filename) {
