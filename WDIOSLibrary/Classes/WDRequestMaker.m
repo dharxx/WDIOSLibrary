@@ -96,7 +96,7 @@ static NSString *wdRequestMainURL = nil;
         if([value isKindOfClass:[NSArray class]]) {
             NSUInteger i = 0;
             for (id v in value) {
-                mInfo[[key stringByAppendingFormat:@"[%d]",i]] = value;
+                mInfo[[key stringByAppendingFormat:@"[%d]",i]] = v;
                 i++;
             }
         }
