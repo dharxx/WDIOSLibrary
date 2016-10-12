@@ -88,7 +88,24 @@ static NSString *wdRequestMainURL = nil;
     [request setValue:@"Keep-Alive" forHTTPHeaderField:@"Connection"];
     return request;
 }
-
++ (NSDictionary *)infoByExtractArray:(NSDictionary *)info
+{
+    NSMutableDictionary *mInfo = [NSMutableDictionary dictionaryWithCapacity:100];
+    for (NSString *key in info.allKeys) {
+        id value = info[key];
+        if([value isKindOfClass:[NSArray class]]) {
+            NSUInteger i = 0;
+            for (id v in value) {
+                mInfo[[key stringByAppendingFormat:@"[%d]",i]] = value;
+                i++;
+            }
+        }
+        else {
+            mInfo[key] = value;
+        }
+    }
+    return mInfo;
+}
 //dont run on main please async this
 + (NSURLRequest *)uploadDataRequest:(NSString *)urlString method:(NSString *)method info:(NSDictionary *)info
 {
@@ -107,8 +124,8 @@ static NSString *wdRequestMainURL = nil;
     NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@",boundary];
     [request addValue:contentType forHTTPHeaderField: @"Content-Type"];
     
-    NSDictionary *dataTempFiles = info[@"files"];
-    NSDictionary *dataTempParameters = info[@"params"];
+    NSDictionary *dataTempFiles = [self infoByExtractArray:info[@"files"]];
+    NSDictionary *dataTempParameters = [self infoByExtractArray:info[@"params"]];
     
     NSMutableData *httpBody = [NSMutableData data];
     
@@ -213,6 +230,7 @@ static NSString *wdRequestMainURL = nil;
     if (info) {
         NSString *bodyString = @"";
         NSString *format = @"%@=%@";
+        info = [self infoByExtractArray:info];
         for (NSString *key in [info allKeys]) {
             bodyString = [bodyString stringByAppendingFormat:format,key , info[key] ];
             format = @"&%@=%@";
