@@ -171,4 +171,25 @@
 {
     
 }
+- (IBAction)back:(id)sender
+{
+    if (self.navigationController.viewControllers.firstObject == self) {
+        [self.navigationController dismissViewControllerAnimated:YES completion:^{
+        }];
+    }
+    else {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
+- (IBAction)cancel:(id)sender
+{
+    if (self.navigationController) {
+        [self.navigationController dismissViewControllerAnimated:YES completion:^{
+        }];
+    }
+    else {
+        [self dismissViewControllerAnimated:YES completion:^{
+        }];
+    }
+}
 @end

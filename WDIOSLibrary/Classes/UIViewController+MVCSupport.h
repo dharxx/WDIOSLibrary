@@ -22,4 +22,7 @@
 
 //Abstract method
 - (void)setInputData:(id)data;
+
+- (IBAction)back:(id)sender;
+- (IBAction)cancel:(id)sender;
 @end
