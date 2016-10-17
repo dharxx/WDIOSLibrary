@@ -20,6 +20,7 @@ void wdios_afterDelayBlock(NSTimeInterval delay,void(^block)(void));
 - (NSString *)valueStringForKey:(NSString *)key;
 - (NSString *)stringValue;
 - (NSString *)priceValue;
+- (NSString *)percentValue;
 
 //*SUPER SPECIAL WTF GOLDEN RATIO By Calculate is HERE!!
 + (double)goldenRatio;

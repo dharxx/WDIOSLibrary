@@ -88,6 +88,16 @@ void wdios_afterDelayBlock(NSTimeInterval delay,void(^block)(void))
     }
     return @"";
 }
+- (NSString *)percentValue
+{
+    if ([self respondsToSelector:@selector(floatValue)]) {
+        NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+        [numberFormatter setNumberStyle: NSNumberFormatterPercentStyle];
+        numberFormatter.locale = [NSLocale localeWithLocaleIdentifier:@"de-De"];
+        return [numberFormatter stringFromNumber:@([(id)self floatValue])];
+    }
+    return @"";
+}
 + (double)goldenRatio
 {
     double oldValue = 1;
