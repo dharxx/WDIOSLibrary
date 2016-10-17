@@ -93,6 +93,7 @@ void wdios_afterDelayBlock(NSTimeInterval delay,void(^block)(void))
     if ([self respondsToSelector:@selector(floatValue)]) {
         NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
         [numberFormatter setNumberStyle: NSNumberFormatterPercentStyle];
+        [numberFormatter setMinimumFractionDigits:2];
         numberFormatter.locale = [NSLocale localeWithLocaleIdentifier:@"de-De"];
         return [numberFormatter stringFromNumber:@([(id)self floatValue] * 0.01)];
     }
