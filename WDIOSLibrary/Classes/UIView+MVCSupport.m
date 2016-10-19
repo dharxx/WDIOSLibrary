@@ -25,4 +25,10 @@
     }
     return nil;
 }
+- (void)removeAllSubviews
+{
+    for (UIView *v in self.subviews.copy) {
+        [v removeFromSuperview];
+    }
+}
 @end
