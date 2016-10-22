@@ -197,14 +197,16 @@
 {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:[title localString] message:message preferredStyle:UIAlertControllerStyleAlert];
     
-    UIAlertAction *actionYes = [UIAlertAction actionWithTitle:[@"Yes" localString] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        noCompletion();
+    UIAlertAction *actionYes = [UIAlertAction actionWithTitle:[@"Yes" localString] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        yesCompletion();
     }];
+    [alert addAction:actionYes];
+    
+    
     UIAlertAction *actionNo = [UIAlertAction actionWithTitle:[@"No" localString] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         noCompletion();
     }];
     
-    [alert addAction:actionYes];
     [alert addAction:actionNo];
     
     dispatch_async(dispatch_get_main_queue(), ^{
