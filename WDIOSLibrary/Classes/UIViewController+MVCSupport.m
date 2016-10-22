@@ -192,4 +192,26 @@
         }];
     }
 }
+
+- (UIAlertController *)yesnoAlertViewWithTitle:(NSString *)title message:(NSString *)message completion:(void (^)(void))completion noCompletion:(void (^)(void))yesCompletion noCompletion:(void (^)(void))noCompletion
+{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:[title localString] message:message preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *actionYes = [UIAlertAction actionWithTitle:[@"Yes" localString] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        noCompletion();
+    }];
+    UIAlertAction *actionNo = [UIAlertAction actionWithTitle:[@"No" localString] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        noCompletion();
+    }];
+    
+    [alert addAction:actionYes];
+    [alert addAction:actionNo];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self presentViewController:alert animated:YES completion:^{
+            completion();
+        }];
+    });
+    return alert;
+}
 @end
