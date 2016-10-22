@@ -193,7 +193,7 @@
     }
 }
 
-- (UIAlertController *)yesnoAlertViewWithTitle:(NSString *)title message:(NSString *)message completion:(void (^)(void))completion noCompletion:(void (^)(void))yesCompletion noCompletion:(void (^)(void))noCompletion
+- (UIAlertController *)yesnoAlertViewWithTitle:(NSString *)title message:(NSString *)message completion:(void (^)(void))completion yesCompletion:(void (^)(void))yesCompletion noCompletion:(void (^)(void))noCompletion
 {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:[title localString] message:message preferredStyle:UIAlertControllerStyleAlert];
     
