@@ -56,7 +56,7 @@
 }
 - (void)popFromSource:(UIViewController *)source
 {
-    
+    _isOpen = YES;
     wdios_mainBlock(^{
         source.definesPresentationContext = YES;
         source.providesPresentationContextTransitionStyle = YES;
@@ -80,6 +80,7 @@
         [UIView animateWithDuration:0.2 animations:^{
             self.view.alpha = 0;
         } completion:^(BOOL b){
+            _isOpen = NO;
             [self.presentingViewController dismissViewControllerAnimated:NO completion:^{
             }];
         }];

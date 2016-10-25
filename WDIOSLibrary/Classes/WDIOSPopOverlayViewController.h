@@ -12,6 +12,7 @@
 @property (nonatomic,retain) UIView *backgoundView;
 @property (nonatomic,retain) UIImageView *imageView;
 @property (nonatomic,retain) UILabel *label;
+@property (nonatomic,readonly) BOOL isOpen;
 + (instancetype)popWithSource:(UIViewController *)source;
 - (void)popFromSource:(UIViewController *)source;
 - (void)close;
