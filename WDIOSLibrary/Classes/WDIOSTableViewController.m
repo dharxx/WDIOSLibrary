@@ -197,10 +197,7 @@
 {
     completation(nil);
 }
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
+
 - (NSArray *)recursivePathsForResourcesOfType:(NSString *)type inDirectory:(NSString *)directoryPath{
     
     NSMutableArray *filePaths = [[NSMutableArray alloc] init];
@@ -236,6 +233,11 @@
 //    [self.tableView registerClass:[WDIOSTableWaitingView class]  forHeaderFooterViewReuseIdentifier:@"WDIOSTableWaitingView"];
     self.loading = NO;
     self.tableView.sectionFooterHeight = 0;
+
+}
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
     if (_datas.count == 0) {
         [self loadMore:nil];
     }

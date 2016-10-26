@@ -25,6 +25,6 @@
 - (UIColor *)activityIndicatorViewLoadMoreColor;
 - (void)setInitialDatas:(NSArray *)datas;
 - (void)updateLayoutForOrientation:(UIInterfaceOrientation)orientation;
-
+- (void)loadMore:(id)sender;
 - (void)startRefresh:(id)sender;
 @end
