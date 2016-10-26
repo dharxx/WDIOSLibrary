@@ -23,8 +23,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-
 - (NSInteger)lastSectionIndex
 {
     return _datas.count - 1;
