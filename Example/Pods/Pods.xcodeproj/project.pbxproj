@@ -34,6 +34,8 @@
 		3E472CBA15647C3ADD6F52BD2E194055 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D148D27BEF8A62745826CF20747C01 /* CoreMotion.framework */; };
 		3EC00B0C74162DD6B483AD2B4B201448 /* WDIOSCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BE22BBA231490F597124C96ADC411728 /* WDIOSCollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F773253A02D29C27F898A9500B01C3A /* CHTCollectionViewWaterfallLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F005F7166A1627C34AD95ABEEF2A1DB8 /* CHTCollectionViewWaterfallLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4141C46D1DC101850086614E /* UIColor+WDMore.h in Headers */ = {isa = PBXBuildFile; fileRef = 4141C46B1DC101850086614E /* UIColor+WDMore.h */; };
+		4141C46E1DC101850086614E /* UIColor+WDMore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4141C46C1DC101850086614E /* UIColor+WDMore.m */; };
 		4153DF8B1D926E3B007DA5F4 /* NSString+MVCSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 4153DF871D926E2E007DA5F4 /* NSString+MVCSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4153DF8C1D926E3B007DA5F4 /* NSString+MVCSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 4153DF881D926E2E007DA5F4 /* NSString+MVCSupport.m */; };
 		41717CD91D952301009260B9 /* WDIOSPopOverlayViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 41717CD71D952301009260B9 /* WDIOSPopOverlayViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -292,6 +294,8 @@
 		3C13504801A3BCE7FB58FEB1B8149D44 /* MQTTKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MQTTKit.xcconfig; sourceTree = "<group>"; };
 		3E5DC8189610EBEA7339053FF2D6F87E /* Pods-WDIOSLibrary_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WDIOSLibrary_Example-resources.sh"; sourceTree = "<group>"; };
 		3F448540AA539266440438DC38689EE4 /* util_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = util_mosq.c; path = libmosquitto/util_mosq.c; sourceTree = "<group>"; };
+		4141C46B1DC101850086614E /* UIColor+WDMore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+WDMore.h"; sourceTree = "<group>"; };
+		4141C46C1DC101850086614E /* UIColor+WDMore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WDMore.m"; sourceTree = "<group>"; };
 		4153DF871D926E2E007DA5F4 /* NSString+MVCSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MVCSupport.h"; sourceTree = "<group>"; };
 		4153DF881D926E2E007DA5F4 /* NSString+MVCSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MVCSupport.m"; sourceTree = "<group>"; };
 		41717CD71D952301009260B9 /* WDIOSPopOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDIOSPopOverlayViewController.h; sourceTree = "<group>"; };
@@ -687,6 +691,8 @@
 				C761221ECCAAC04759BC60599E210FC8 /* UITableView+MVCSupport.m */,
 				4BEE15FA42CC6066AC68470B6A25E149 /* UIView+MVCSupport.h */,
 				9FEA4090CEC12B5079355277BCF26E14 /* UIView+MVCSupport.m */,
+				4141C46B1DC101850086614E /* UIColor+WDMore.h */,
+				4141C46C1DC101850086614E /* UIColor+WDMore.m */,
 				C55A7F7BEF160AD5C58D2261C8B30BED /* UIViewController+MVCSupport.h */,
 				1B5B1CE53C61B8C8038C0C8268F54599 /* UIViewController+MVCSupport.m */,
 				BE22BBA231490F597124C96ADC411728 /* WDIOSCollectionViewController.h */,
@@ -870,6 +876,7 @@
 				33E76EACB59B24452290C6BA0FDE947D /* UIViewController+MVCSupport.h in Headers */,
 				3EC00B0C74162DD6B483AD2B4B201448 /* WDIOSCollectionViewController.h in Headers */,
 				58A17749D791D916F5A30148FCE4D9B4 /* WDIOSCollectionViewLayout.h in Headers */,
+				4141C46D1DC101850086614E /* UIColor+WDMore.h in Headers */,
 				173F45BFA56C3FEA012BC012EF076701 /* WDIOSDataViewerHeader.h in Headers */,
 				8E52DEFC0743F8AB3179698769093910 /* WDIOSLibrary-umbrella.h in Headers */,
 				77CDE22B54225533B68077BF45AE6364 /* WDIOSTableViewController.h in Headers */,
@@ -1209,6 +1216,7 @@
 				E5B319C5A67CCB55FE7BE9C289E18401 /* UIViewController+MVCSupport.m in Sources */,
 				E8D159BCD91B5032D41B4F35ECC4D744 /* WDIOSCollectionViewController.m in Sources */,
 				4153DF8C1D926E3B007DA5F4 /* NSString+MVCSupport.m in Sources */,
+				4141C46E1DC101850086614E /* UIColor+WDMore.m in Sources */,
 				BFCF9D590F287AF9A864983833DE40A7 /* WDIOSCollectionViewLayout.m in Sources */,
 				5D3F571DC32104B64C77211F7067FAB6 /* WDIOSLibrary-dummy.m in Sources */,
 				20475A069169AFFA1B3490EF25727979 /* WDIOSTableViewController.m in Sources */,

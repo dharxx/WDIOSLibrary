@@ -19,6 +19,7 @@
 - (UITableViewCell *)cellByObject:(id)object atIndexPath:(NSIndexPath *)indexPath;
 - (NSArray *)filterData:(NSArray *)data ofSection:(NSInteger)section;
 - (BOOL)isSameObject:(id)o1 with:(id)o2 ofSection:(NSInteger)section;
+- (id)objectByIndexPath:(NSIndexPath *)indexPath;
 ////
 
 - (NSComparisonResult)compareObject:(id)o1 with:(id)o2;
