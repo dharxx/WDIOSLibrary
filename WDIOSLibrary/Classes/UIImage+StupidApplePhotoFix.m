@@ -38,7 +38,7 @@ static NSUInteger MaxImageCache = 20;
     RequestThumb = NO;
 }
 
-+ (void)requestImageWithObject:(id)object completion:(void (^)(UIImage *image, NSString *imagePath))completion
++ (void)requestImageWithObject:(id)object completion:(void (^)(UIImage *image, id imageRef))completion
 {
     if ([object isKindOfClass:[UIImage class]])  {
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
@@ -69,7 +69,6 @@ static NSUInteger MaxImageCache = 20;
         }
     }
     if ([object isKindOfClass:[PHAsset class]])  {
-        
         PHImageRequestOptions *option = [[PHImageRequestOptions alloc] init];
         option.synchronous = YES;
         [[PHImageManager defaultManager] requestImageForAsset:object
@@ -77,8 +76,8 @@ static NSUInteger MaxImageCache = 20;
                                                   contentMode:PHImageContentModeAspectFit
                                                       options:option
                                                 resultHandler:^(UIImage *result, NSDictionary *info) {
-                                                    NSURL *pathURL = info[@"PHImageFileURLKey"];
-                                                    completion(result,[pathURL absoluteString]);
+//                                                    NSURL *pathURL = info[@"PHImageFileURLKey"];
+                                                    completion(result,object);
                                                 }];
     }
 }

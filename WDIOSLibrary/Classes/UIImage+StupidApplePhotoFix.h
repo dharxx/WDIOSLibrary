@@ -14,7 +14,7 @@
 
 //this is add-on nothing about StupidApplePhotoFix
 + (void)setMaxImageCache:(NSUInteger)maxImageCache;
-+ (void)requestImageWithObject:(id)object completion:(void (^)(UIImage *image, NSString *imagePath))completion;
++ (void)requestImageWithObject:(id)object completion:(void (^)(UIImage *image, id imageRef))completion;//imageRef maybe NSString or PHAsset
 + (void)setPhotoAssetRequestThumbSize;
 + (void)setPhotoAssetRequestSizeWithWidth:(CGFloat)width;
 + (void)setPhotoAssetRequestSizeWithHeight:(CGFloat)height;
