@@ -62,7 +62,7 @@ static NSUInteger MaxImageCache = 20;
         path = [object absoluteString];
     }
     if (path) {
-        UIImage *img = [UIImage imageWithContentsOfFile:object];
+        UIImage *img = [UIImage imageWithContentsOfFile:path];
         if (img) {
             completion(img,path);
             return;
