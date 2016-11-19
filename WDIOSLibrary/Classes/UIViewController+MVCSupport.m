@@ -44,7 +44,7 @@
 }
 - (UIAlertController *)warningAlertViewWithTitle:(NSString *)title message:(NSString *)message completion:(void (^ __nullable)(void))completion closeAlertCompletion:(void (^ __nullable)(void))closeAlertCompletion
 {
-    return [self warningAlertViewWithTitle:title message:nil cancel:[@"close" localString]  completion:completion closeAlertCompletion:closeAlertCompletion];
+    return [self warningAlertViewWithTitle:title message:message cancel:[@"close" localString]  completion:completion closeAlertCompletion:closeAlertCompletion];
 }
 
 - (UIAlertController *)warningAlertViewWithTitle:(NSString *)title message:(NSString *)message cancel:(NSString *)cancel completion:(void (^)(void))completion closeAlertCompletion:(void (^)(void))closeAlertCompletion
