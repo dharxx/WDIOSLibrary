@@ -250,6 +250,13 @@ static NSString *boundary = @"MayuyuIsNumber1inAKB48SasshiiIsJustGoodOldBoringPo
         
 //        [request setHTTPBody:postData];
         [request setHTTPBody:httpBody];
+        
+        NSString *bodyLength = [NSString stringWithFormat:@"%lu",(unsigned long)[httpBody length]];
+        
+        NSLog(@"%@",bodyLength);
+        //content length
+        [request addValue:bodyLength forHTTPHeaderField:@"Content-Length"];
+        
     }
     
     [request setHTTPMethod:method];
@@ -258,7 +265,11 @@ static NSString *boundary = @"MayuyuIsNumber1inAKB48SasshiiIsJustGoodOldBoringPo
     if (authenKey.length > 0) {
         [request setAllHTTPHeaderFields:@{@"Authorization":authenKey}];
     }
-    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+//    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    
+    NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@",boundary];
+    [request addValue:contentType forHTTPHeaderField: @"Content-Type"];
+    
     return request;
 }
 
