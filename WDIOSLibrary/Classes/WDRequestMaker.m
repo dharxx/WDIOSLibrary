@@ -233,8 +233,6 @@ static NSString *wdRequestMainURL = nil;
         NSString *formatAfter = @"&%@=%@";
         info = [self infoByExtractArray:info];
         for (NSString *key in [info allKeys]) {
-            bodyString = [bodyString stringByAppendingFormat:format,key , info[key] ];
-            
             bodyString = [bodyString stringByAppendingFormat:format,
                           [key stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
                           [[info[key] stringValue] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]
