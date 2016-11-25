@@ -230,10 +230,16 @@ static NSString *wdRequestMainURL = nil;
     if (info) {
         NSString *bodyString = @"";
         NSString *format = @"%@=%@";
+        NSString *formatAfter = @"&%@=%@";
         info = [self infoByExtractArray:info];
         for (NSString *key in [info allKeys]) {
             bodyString = [bodyString stringByAppendingFormat:format,key , info[key] ];
-            format = @"&%@=%@";
+            
+            bodyString = [bodyString stringByAppendingFormat:format,
+                          [key stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
+                          [[info[key] stringValue] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]
+                          ];
+            format = formatAfter;
         }
         
         NSData *postData = [bodyString dataUsingEncoding:NSUTF8StringEncoding];
