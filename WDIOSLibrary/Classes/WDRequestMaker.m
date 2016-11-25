@@ -16,6 +16,7 @@
 static NSString *(^wdRequestAuthenKeyCallBack)(NSString *subject) = nil;
 static NSString *wdRequestSubject = nil;
 static NSString *wdRequestMainURL = nil;
+static NSString *boundary = @"MayuyuIsNumber1inAKB48SasshiiIsJustGoodOldBoringPolitician";
 + (void)setAuthenKeyCallBack:(NSString *(^)(NSString *subject))handler
 {
     wdRequestAuthenKeyCallBack = handler;
@@ -120,7 +121,6 @@ static NSString *wdRequestMainURL = nil;
     }
     [request setHTTPMethod:method];
     //body
-    NSString *boundary = @"MayuyuIsNumber1inAKB48SasshiiIsJustGoodOldBoringPolitician";
     NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@",boundary];
     [request addValue:contentType forHTTPHeaderField: @"Content-Type"];
     
@@ -228,21 +228,28 @@ static NSString *wdRequestMainURL = nil;
     //[request setValue:@"gzip" forHTTPHeaderField:@"Accept-Encoding"];
     
     if (info) {
-        NSString *bodyString = @"";
-        NSString *format = @"%@=%@";
-        NSString *formatAfter = @"&%@=%@";
+//        NSString *bodyString = @"";
+//        NSString *format = @"%@=%@";
+//        NSString *formatAfter = @"&%@=%@";
         info = [self infoByExtractArray:info];
+        
+        NSMutableData *httpBody = [NSMutableData data];
         for (NSString *key in [info allKeys]) {
-            bodyString = [bodyString stringByAppendingFormat:format,
-                          [key stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
-                          [[info[key] stringValue] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]
-                          ];
-            format = formatAfter;
+//            bodyString = [bodyString stringByAppendingFormat:format,
+//                          [key stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
+//                          [[info[key] stringValue] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]
+//                          ];
+//            format = formatAfter;
+            
+            [httpBody appendData:[[NSString stringWithFormat:@"--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+            [httpBody appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"\r\n\r\n", key] dataUsingEncoding:NSUTF8StringEncoding]];
+            [httpBody appendData:[[NSString stringWithFormat:@"%@\r\n", info[key]] dataUsingEncoding:NSUTF8StringEncoding]];
         }
         
-        NSData *postData = [bodyString dataUsingEncoding:NSUTF8StringEncoding];
+//        NSData *postData = [bodyString dataUsingEncoding:NSUTF8StringEncoding];
         
-        [request setHTTPBody:postData];
+//        [request setHTTPBody:postData];
+        [request setHTTPBody:httpBody];
     }
     
     [request setHTTPMethod:method];
