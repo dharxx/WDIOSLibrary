@@ -10,4 +10,6 @@
 
 @interface NSString (MVCSupport)
 - (NSUInteger)occurrenceCountOfCharacter:(UniChar)character;
+- (NSString *)urlencode;
+- (NSString *)urlencodeCustom;
 @end

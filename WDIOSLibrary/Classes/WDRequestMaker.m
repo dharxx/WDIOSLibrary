@@ -9,6 +9,7 @@
 #import "WDRequestMaker.h"
 #import <Photos/Photos.h>
 #import "UIImage+StupidApplePhotoFix.h"
+#import "NSString+MVCSupport.h"
 @implementation WDRequestMaker
 {
 }
@@ -206,8 +207,8 @@ static NSString *boundary = @"MayuyuIsNumber1inAKB48SasshiiIsJustGoodOldBoringPo
     NSString *formatAfter = @"&%@=%@";
     for (NSString *key in [info allKeys]) {
         bodyString = [bodyString stringByAppendingFormat:format,
-                      [key stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
-                      [[info[key] stringValue] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]
+                      [key urlencode],
+                      [[info[key] stringValue] urlencode]
                       ];
         format = formatAfter;
     }
@@ -228,34 +229,22 @@ static NSString *boundary = @"MayuyuIsNumber1inAKB48SasshiiIsJustGoodOldBoringPo
     //[request setValue:@"gzip" forHTTPHeaderField:@"Accept-Encoding"];
     
     if (info) {
-//        NSString *bodyString = @"";
-//        NSString *format = @"%@=%@";
-//        NSString *formatAfter = @"&%@=%@";
+        NSString *bodyString = @"";
+        NSString *format = @"%@=%@";
+        NSString *formatAfter = @"&%@=%@";
         info = [self infoByExtractArray:info];
         
-        NSMutableData *httpBody = [NSMutableData data];
         for (NSString *key in [info allKeys]) {
-//            bodyString = [bodyString stringByAppendingFormat:format,
-//                          [key stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
-//                          [[info[key] stringValue] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]
-//                          ];
-//            format = formatAfter;
-            
-            [httpBody appendData:[[NSString stringWithFormat:@"--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
-            [httpBody appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"\r\n\r\n", key] dataUsingEncoding:NSUTF8StringEncoding]];
-            [httpBody appendData:[[NSString stringWithFormat:@"%@\r\n", info[key]] dataUsingEncoding:NSUTF8StringEncoding]];
+            bodyString = [bodyString stringByAppendingFormat:format,
+                          [key urlencode],
+                          [[info[key] stringValue] urlencode]
+                          ];
+            format = formatAfter;
         }
         
-//        NSData *postData = [bodyString dataUsingEncoding:NSUTF8StringEncoding];
+        NSData *httpBody = [bodyString dataUsingEncoding:NSUTF8StringEncoding];
         
-//        [request setHTTPBody:postData];
         [request setHTTPBody:httpBody];
-        
-        NSString *bodyLength = [NSString stringWithFormat:@"%lu",(unsigned long)[httpBody length]];
-        
-        NSLog(@"%@",bodyLength);
-        //content length
-        [request addValue:bodyLength forHTTPHeaderField:@"Content-Length"];
         
     }
     
@@ -265,10 +254,7 @@ static NSString *boundary = @"MayuyuIsNumber1inAKB48SasshiiIsJustGoodOldBoringPo
     if (authenKey.length > 0) {
         [request setAllHTTPHeaderFields:@{@"Authorization":authenKey}];
     }
-//    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
-    
-    NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@",boundary];
-    [request addValue:contentType forHTTPHeaderField: @"Content-Type"];
+    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
     
     return request;
 }
