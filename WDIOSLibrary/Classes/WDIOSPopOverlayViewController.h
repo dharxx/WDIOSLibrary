@@ -14,6 +14,7 @@
 @property (nonatomic,retain) UILabel *label;
 @property (nonatomic,readonly) BOOL isOpen;
 + (instancetype)popWithSource:(UIViewController *)source;
+- (void)settingView;
 - (void)popFromSource:(UIViewController *)source;
 - (void)close;
 - (void)closeAfter:(NSTimeInterval)delay;

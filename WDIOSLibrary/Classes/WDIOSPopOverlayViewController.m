@@ -88,6 +88,10 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self settingView];
+}
+- (void)settingView
+{
     // Do any additional setup after loading the view.
     [self.backgoundView addSubview:self.label];
     [self.backgoundView addSubview:self.imageView];
