@@ -82,6 +82,10 @@
                    [self endRefresh:sender];
                }];
 }
+- (NSDictionary *)refreshControlTitleAttribute
+{
+    return nil;
+}
 - (void)endRefresh:(id)sender
 {
 //    [self.collectionView reloadData];
@@ -93,7 +97,17 @@
             [self.collectionView reloadData];
             NSString *stringDate = [NSDateFormatter localizedStringFromDate:[NSDate date] dateStyle:NSDateFormatterShortStyle timeStyle:NSDateFormatterMediumStyle];
             NSString *lastUpdate = [NSString stringWithFormat:@"Last updated on %@", stringDate];
-            self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:lastUpdate];
+            NSDictionary *attribute = [self refreshControlTitleAttribute];
+            if (!attribute) {
+                self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:lastUpdate];
+            }
+            else {
+                NSMutableDictionary * a = [attribute mutableCopy];
+                NSMutableParagraphStyle *p = [attribute[NSParagraphStyleAttributeName] mutableCopy];
+                p.alignment = NSTextAlignmentCenter;
+                a[NSParagraphStyleAttributeName] = p;
+                self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:lastUpdate attributes:a];
+            }
         }];
         [self.collectionView setContentOffset:CGPointZero animated:YES];
         [self.refreshControl endRefreshing];
@@ -119,6 +133,26 @@
         self.waterfallLayout.footerHeight = 0;
         [self.collectionView reloadData];
     });
+}
+- (void)loadNextSection:(NSInteger)section sender:(id)sender
+{
+    NSInteger nsection = section + 1;
+    NSRange nrange = NSMakeRange(0, self.preferNumberOfDatasPerLoad);
+    [self loadDataOnSection:nsection
+               withRowRange:nrange
+               completation:^(NSArray *data) {
+                   if (data.count == 0) {
+                       _doneLoad = YES;
+                       [self doneLoad:sender];
+                   }
+                   else {
+                       if (data.count < self.preferNumberOfDatasPerLoad) {
+                           _doneLoad = YES;
+                       }
+                       [self mergingData:data section:nsection];
+                       [self doneLoad:sender];
+                   }
+               }];
 }
 - (void)loadMore:(id)sender
 {
@@ -147,25 +181,16 @@
                    completation:^(NSArray *data) {
                        //merging refresh data
                        if (data.count == 0) {
-                           NSInteger nsection = section + 1;
-                           NSRange nrange = NSMakeRange(0, self.preferNumberOfDatasPerLoad);
-                           [self loadDataOnSection:nsection
-                                      withRowRange:nrange
-                                      completation:^(NSArray *data) {
-                                          if (data.count == 0) {
-                                              _doneLoad = YES;
-                                              [self doneLoad:sender];
-                                          }
-                                          else {
-                                              [self mergingData:data section:nsection];
-                                              [self doneLoad:sender];
-                                          }
-                                      }];
+                           [self loadNextSection:section sender:sender];
                        }
                        else {
+                           if (data.count < self.preferNumberOfDatasPerLoad) {
+                               [self loadNextSection:section sender:sender];
+                           }
                            [self mergingData:data section:section];
                            [self doneLoad:sender];
                        }
+                       
                    }];
     }
 }

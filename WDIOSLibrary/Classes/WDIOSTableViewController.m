@@ -86,6 +86,10 @@
                    [self endRefresh:sender];
                }];
 }
+- (NSDictionary *)refreshControlTitleAttribute
+{
+    return nil;
+}
 - (void)endRefresh:(id)sender
 {
     //    [self.collectionView reloadData];
@@ -97,7 +101,13 @@
             [self.tableView reloadData];
             NSString *stringDate = [NSDateFormatter localizedStringFromDate:[NSDate date] dateStyle:NSDateFormatterShortStyle timeStyle:NSDateFormatterMediumStyle];
             NSString *lastUpdate = [NSString stringWithFormat:@"Last updated on %@", stringDate];
-            self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:lastUpdate];
+            NSDictionary *attribute = [self refreshControlTitleAttribute];
+            if (!attribute) {
+                self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:lastUpdate];
+            }
+            else {
+                self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:lastUpdate attributes:attribute];
+            }
         }];
         [self.tableView setContentOffset:CGPointZero animated:YES];
         [self.refreshControl endRefreshing];

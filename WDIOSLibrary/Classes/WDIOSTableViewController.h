@@ -28,4 +28,5 @@
 - (void)updateLayoutForOrientation:(UIInterfaceOrientation)orientation;
 - (void)loadMore:(id)sender;
 - (void)startRefresh:(id)sender;
+- (NSDictionary *)refreshControlTitleAttribute;
 @end
