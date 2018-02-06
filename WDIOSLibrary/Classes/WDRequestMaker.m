@@ -17,6 +17,7 @@
 static NSString *(^wdRequestAuthenKeyCallBack)(NSString *subject) = nil;
 static NSString *wdRequestSubject = nil;
 static NSString *wdRequestMainURL = nil;
+static NSString *wdRequestMainURLImage = nil;
 static NSString *boundary = @"MayuyuIsNumber1inAKB48SasshiiIsJustGoodOldBoringPolitician";
 + (void)setAuthenKeyCallBack:(NSString *(^)(NSString *subject))handler
 {
@@ -30,6 +31,10 @@ static NSString *boundary = @"MayuyuIsNumber1inAKB48SasshiiIsJustGoodOldBoringPo
 {
     wdRequestMainURL = mainURL;
 }
++ (void)setMainURLImage:(NSString *)mainURLImage
+{
+    wdRequestMainURLImage = mainURLImage;
+}
 + (NSString *)authenKey
 {
     if (wdRequestAuthenKeyCallBack) {
@@ -40,6 +45,10 @@ static NSString *boundary = @"MayuyuIsNumber1inAKB48SasshiiIsJustGoodOldBoringPo
 + (NSString *)defaultURL:(NSString *)component
 {
     return [wdRequestMainURL stringByAppendingPathComponent:component];
+}
++ (NSString *)defaultURLImage:(NSString *)component
+{
+    return [wdRequestMainURLImage stringByAppendingPathComponent:component];
 }
 //
 + (NSURL *)URLWithString:(NSString *)string
@@ -57,10 +66,7 @@ static NSString *boundary = @"MayuyuIsNumber1inAKB48SasshiiIsJustGoodOldBoringPo
     NSURL *URL= [self URLWithString:url];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:20];
     [request setHTTPMethod:@"HEAD"];
-    NSString *authenKey = [self authenKey];
-    if (authenKey.length > 0) {
-        [request setAllHTTPHeaderFields:@{@"Authorization":authenKey}];
-    }
+    [request setAllHTTPHeaderFields:[self getHeaderFields]];
     [request setValue:@"*/*" forHTTPHeaderField:@"Accept"];
     [request setValue:@"application/octet-stream" forHTTPHeaderField:@"Content-Type"];
     [request setValue:@"Keep-Alive" forHTTPHeaderField:@"Connection"];
@@ -72,13 +78,14 @@ static NSString *boundary = @"MayuyuIsNumber1inAKB48SasshiiIsJustGoodOldBoringPo
 }
 + (NSURLRequest *)makeDownloadRequest:(NSString *)url eTag:(NSString *)_eTag size:(long long)_bytes 
 {
+    NSLog(@"makeDownloadRequest with URL : %@",url);
+    NSLog(@"eTag : %@",_eTag);
+    NSLog(@"size : %lld",_bytes);
+    
     NSURL *URL= [self URLWithString:url];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:20];
     [request setHTTPMethod:@"GET"];
-    NSString *authenKey = [self authenKey];
-    if (authenKey.length > 0) {
-        [request setAllHTTPHeaderFields:@{@"Authorization":authenKey}];
-    }
+    [request setAllHTTPHeaderFields:[self getHeaderFields]];
     if (_eTag) {
         [request setValue:_eTag forHTTPHeaderField:@"If-Range"];
         NSString *range = [NSString stringWithFormat:@"bytes=%lld-", _bytes];
@@ -98,7 +105,7 @@ static NSString *boundary = @"MayuyuIsNumber1inAKB48SasshiiIsJustGoodOldBoringPo
         if([value isKindOfClass:[NSArray class]]) {
             NSUInteger i = 0;
             for (id v in value) {
-                mInfo[[key stringByAppendingFormat:@"[%d]",i]] = v;
+                mInfo[[key stringByAppendingFormat:@"[%d]", (int)i]] = v;
                 i++;
             }
         }
@@ -111,15 +118,15 @@ static NSString *boundary = @"MayuyuIsNumber1inAKB48SasshiiIsJustGoodOldBoringPo
 //dont run on main please async this
 + (NSURLRequest *)uploadDataRequest:(NSString *)urlString method:(NSString *)method info:(NSDictionary *)info
 {
-    NSLog(@"%@",urlString);
+    NSLog(@"uploadDataRequest with URL : %@",urlString);
+    NSLog(@"method : %@",method);
+    NSLog(@"info : %@",info);
+    
     NSURL *url = [NSURL URLWithString:urlString];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:10];
     
     //request header
-    NSString *authenKey = [self authenKey];
-    if (authenKey.length > 0) {
-         [request setAllHTTPHeaderFields:@{@"Authorization":authenKey}];
-    }
+    [request setAllHTTPHeaderFields:[self getHeaderFields]];
     [request setHTTPMethod:method];
     //body
     NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@",boundary];
@@ -224,6 +231,10 @@ static NSString *boundary = @"MayuyuIsNumber1inAKB48SasshiiIsJustGoodOldBoringPo
 }
 + (NSURLRequest *)makeRequest:(NSString *)url method:(NSString *)method info:(NSDictionary *)info
 {
+    NSLog(@"makeRequest with URL : %@",url);
+    NSLog(@"method : %@",method);
+    NSLog(@"Info : %@",info);
+    
     NSURL *URL= [self URLWithString:url];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL];
     //[request setValue:@"gzip" forHTTPHeaderField:@"Accept-Encoding"];
@@ -250,13 +261,36 @@ static NSString *boundary = @"MayuyuIsNumber1inAKB48SasshiiIsJustGoodOldBoringPo
     
     [request setHTTPMethod:method];
     
-    NSString *authenKey = [self authenKey];
-    if (authenKey.length > 0) {
-        [request setAllHTTPHeaderFields:@{@"Authorization":authenKey}];
-    }
+    [request setAllHTTPHeaderFields:[self getHeaderFields]];
     [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
     
     return request;
+}
+
++(NSDictionary *)getHeaderFields
+{
+    NSString * appVersionString = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
+    NSString * appBuildString = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];
+    
+    NSString *authenKey = [self authenKey];
+    
+    NSDictionary *headerFields = [NSDictionary dictionary];
+    
+    // check if have authenKey
+    if (authenKey.length > 0) {
+        headerFields = @{@"Authorization":authenKey,
+                         @"device":@"ios",
+                         @"lang":@"de",
+                         @"appversion":[NSString stringWithFormat:@"%@(%@)",appVersionString,appBuildString]};
+    }else{
+        headerFields = @{@"device":@"ios",
+                         @"lang":@"de",
+                         @"appversion":[NSString stringWithFormat:@"%@(%@)",appVersionString,appBuildString]};
+    }
+    
+    NSLog(@"headerFields : %@",headerFields);
+    
+    return headerFields;
 }
 
 

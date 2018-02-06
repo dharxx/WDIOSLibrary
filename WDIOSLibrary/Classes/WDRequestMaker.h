@@ -12,6 +12,7 @@
 
 //custom more
 + (NSString *)defaultURL:(NSString *)component;
++ (NSString *)defaultURLImage:(NSString *)component;
 //info = @{@"files":@{key:path},@"params":@{key:value}}
 + (NSURLRequest *)uploadDataRequest:(NSString *)urlString method:(NSString *)method info:(NSDictionary *)info;
 
@@ -29,5 +30,6 @@
 + (void)setCurrentRequestSubject:(NSString *)subject;
 + (void)setAuthenKeyCallBack:(NSString *(^)(NSString *subject))handler;
 + (void)setMainURL:(NSString *)mainURL;
++ (void)setMainURLImage:(NSString *)mainURLImage;
 
 @end

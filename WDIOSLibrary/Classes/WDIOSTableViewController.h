@@ -24,9 +24,10 @@
 
 - (NSComparisonResult)compareObject:(id)o1 with:(id)o2;
 - (UIColor *)activityIndicatorViewLoadMoreColor;
-- (void)setInitialDatas:(NSArray *)datas;
+- (void)setInitialDatas:(NSArray<NSMutableArray *> *)datas;
 - (void)updateLayoutForOrientation:(UIInterfaceOrientation)orientation;
 - (void)loadMore:(id)sender;
 - (void)startRefresh:(id)sender;
+- (void)startRefreshWithoutAnimation:(id)sender;
 - (NSDictionary *)refreshControlTitleAttribute;
 @end

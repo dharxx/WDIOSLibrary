@@ -86,6 +86,23 @@
                    [self endRefresh:sender];
                }];
 }
+- (void)startRefreshWithoutAnimation:(id)sender
+{
+    self.loading = YES;
+    self.tableView.sectionFooterHeight = 0;
+    
+    NSRange range = NSMakeRange(0, self.preferNumberOfDatasPerLoad);
+    [self loadDataOnSection:0
+               withRowRange:range
+               completation:^(NSArray *data) {
+                   //merging refresh data
+                   _doneLoad = NO;
+                   self.datas = [NSMutableArray arrayWithCapacity:10];
+                   [self mergingData:data section:0];
+                   self.loading = NO;
+                   [self endRefresh:sender];
+               }];
+}
 - (NSDictionary *)refreshControlTitleAttribute
 {
     return nil;
@@ -186,7 +203,7 @@
 }
 - (CGFloat)viewHeightByObject:(id)object
 {
-    NSLog(@"implement %@ for height of%@",__func__,object);
+    NSLog(@"implement %s for height of%@",__func__,object);
     return 0;
 }
 - (void)didSelectObject:(id)object
@@ -227,9 +244,9 @@
     
     return filePaths;
 }
-- (void)setInitialDatas:(NSArray *)datas
+- (void)setInitialDatas:(NSArray<NSMutableArray *> *)datas
 {
-    self.datas = datas;
+    self.datas = datas.mutableCopy;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];

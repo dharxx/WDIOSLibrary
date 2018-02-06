@@ -197,17 +197,41 @@
 {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:[title localString] message:message preferredStyle:UIAlertControllerStyleAlert];
     
-    UIAlertAction *actionYes = [UIAlertAction actionWithTitle:[@"Yes" localString] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *actionYES = [UIAlertAction actionWithTitle:[@"Yes" localString] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         yesCompletion();
     }];
-    [alert addAction:actionYes];
+    [alert addAction:actionYES];
     
     
-    UIAlertAction *actionNo = [UIAlertAction actionWithTitle:[@"No" localString] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *actionNO = [UIAlertAction actionWithTitle:[@"No" localString] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         noCompletion();
     }];
     
-    [alert addAction:actionNo];
+    [alert addAction:actionNO];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self presentViewController:alert animated:YES completion:^{
+            completion();
+        }];
+    });
+    return alert;
+}
+
+- (UIAlertController *)leftRightAlertViewWithTitle:(NSString *)title message:(NSString *)message leftButton:(NSString *)leftString RightButton:(NSString *)rightString completion:(void (^)(void))completion leftCompletion:(void (^)(void))leftCompletion rightCompletion:(void (^)(void))rightCompletion
+{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:[title localString] message:message preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *actionLeft = [UIAlertAction actionWithTitle:leftString style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        leftCompletion();
+    }];
+    [alert addAction:actionLeft];
+    
+    
+    UIAlertAction *actionRight = [UIAlertAction actionWithTitle:rightString style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        rightCompletion();
+    }];
+    
+    [alert addAction:actionRight];
     
     dispatch_async(dispatch_get_main_queue(), ^{
         [self presentViewController:alert animated:YES completion:^{
